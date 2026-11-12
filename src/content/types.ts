@@ -25,6 +25,8 @@ export type EditionDay = {
 
 export type Edition = {
   id: string;
+  /** Идентификатор события в каноне. Не заменяет id сайта. */
+  canonicalId?: string;
   slug: string;
   moscowNumber: number;
   adnomadsNumber: number;
@@ -47,24 +49,34 @@ export type Edition = {
 
 export type Organization = {
   id: string;
+  /** Идентификатор организации в каноне. Публичное имя остаётся в name. */
+  canonicalId?: string;
   name: string;
   sourceIds: string[];
 };
 
-export type ParticipationRole = "host";
+export type ParticipationRole = "host" | "participant";
 
 export type Participation = {
   id: string;
   editionId: string;
-  organizationId: string;
+  organizationId?: string;
+  personId?: string;
   role: ParticipationRole;
+  /** Подпись хоста в этом выпуске, если она отличается от имени организации. */
+  label?: string;
+  companyLabel?: string;
+  roleLabel?: string;
+  city?: string;
+  canonicalEdgeId?: string;
   sourceIds: string[];
 };
 
-export type PersonKind = "team" | "review-author";
+export type PersonKind = "team" | "review-author" | "participant";
 
 export type Person = {
   id: string;
+  canonicalId?: string;
   name: string;
   kind: PersonKind;
   publicRole?: string;

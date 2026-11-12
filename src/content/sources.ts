@@ -86,6 +86,32 @@ export const sources = {
     url: "https://adnomads.ru/history/sz0debeso1-53-moskva-rossiya",
     retrieved: "2026-11-12",
   },
+  companyEngagements: {
+    id: "go-20261010-company-engagements",
+    title: "Канон компаний-хостов московских выпусков",
+    repo: "roman-a-pivovarov/rpkb",
+    revision: "61e7e09cc6f1cdf75aa7fb017bb384aa52c45bff",
+  },
+  septemberProgram: {
+    id: "src-adnomads-moscow-program-2026-20261112",
+    title: "Программа московского выпуска, сентябрь 2026",
+    revision: "61e7e09cc6f1cdf75aa7fb017bb384aa52c45bff",
+  },
+  salesMsp: {
+    id: "src-sales1820-file-6-20261014",
+    title: "Именные строки участников выпуска 2019, только разрешённые поля",
+    revision: "61e7e09cc6f1cdf75aa7fb017bb384aa52c45bff",
+  },
+  liveParticipants: {
+    id: "rpkb-source-live-adnomads-participants-2026-10-11",
+    title: "Подтверждённые участия в прошедших выпусках",
+    revision: "61e7e09cc6f1cdf75aa7fb017bb384aa52c45bff",
+  },
+  participantHandoff: {
+    id: "src-owner-moscow-participants-handoff-20261113",
+    title: "Разрешение владельца на публикацию отобранных полей участников",
+    revision: "dd54257b962338f82279d54702c2e0c3353db174",
+  },
   publicAssets: {
     id: "src-public-assets",
     title: "Публичные обложки и репортажные кадры со статусом public",

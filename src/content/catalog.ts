@@ -44,9 +44,43 @@ export function organizationById(id: string): Organization | undefined {
 
 export function hostsOf(editionId: string): Organization[] {
   return participations
-    .filter((item) => item.editionId === editionId && item.role === "host")
-    .map((item) => organizationById(item.organizationId))
-    .filter((item): item is Organization => Boolean(item));
+    .filter((item) => item.editionId === editionId && item.role === "host" && item.organizationId)
+    .flatMap((item) => {
+      const organization = organizationById(item.organizationId ?? "");
+      if (!organization) {
+        return [];
+      }
+      return [{ ...organization, name: item.label || organization.name }];
+    });
+}
+
+export type PublicParticipant = {
+  id: string;
+  name: string;
+  companyLabel?: string;
+  roleLabel?: string;
+  city?: string;
+};
+
+/** Подтверждённые участники этой поездки. Пустые поля другой поездки сюда не переносятся. */
+export function participantsOf(editionId: string): PublicParticipant[] {
+  return participations
+    .filter((item) => item.editionId === editionId && item.role === "participant" && item.personId)
+    .flatMap((item) => {
+      const person = people.find((entry) => entry.id === item.personId);
+      if (!person) {
+        return [];
+      }
+      return [
+        {
+          id: person.id,
+          name: person.name,
+          ...(item.companyLabel ? { companyLabel: item.companyLabel } : {}),
+          ...(item.roleLabel ? { roleLabel: item.roleLabel } : {}),
+          ...(item.city ? { city: item.city } : {}),
+        },
+      ];
+    });
 }
 
 export function featuredHasConfirmedHosts(): boolean {

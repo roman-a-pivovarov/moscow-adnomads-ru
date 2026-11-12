@@ -1,6 +1,6 @@
 ---
 import { goals } from "../../content/analytics";
-import { completedEditions, hostsOf, moscowOrdinal, publicReviews } from "../../content/catalog";
+import { completedEditions, hostsOf, moscowOrdinal, participantsOf, publicReviews } from "../../content/catalog";
 import { imagesFor } from "../../content/images";
 import type { Edition } from "../../content/types";
 import { historyStory, historyUi } from "./copy";
@@ -13,6 +13,7 @@ interface Props {
 const { edition } = Astro.props;
 const story = historyStory(edition.id);
 const hosts = hostsOf(edition.id);
+const participants = participantsOf(edition.id);
 const reviews = publicReviews().filter((item) => item.editionId === edition.id);
 const others = completedEditions().filter((item) => item.id !== edition.id);
 const frames = imagesFor("history", edition.id)
@@ -38,6 +39,21 @@ const headline = story?.headline ?? edition.dateLabel;
     {story ? <p class="lead">{story.lead}</p> : null}
     {
       story?.paragraphs.map((paragraph) => <p>{paragraph}</p>)
+    }
+    {
+      edition.days && edition.days.length > 0 ? (
+        <>
+          <h2>{historyUi.programTitle}</h2>
+          <ol class="history-stages">
+            {edition.days.map((day) => (
+              <li>
+                <h3>{day.label}</h3>
+                <p>{day.focus}</p>
+              </li>
+            ))}
+          </ol>
+        </>
+      ) : null
     }
     {
       story?.stages && story.stages.length > 0 ? (
@@ -96,6 +112,25 @@ const headline = story?.headline ?? edition.dateLabel;
             {hosts.map((host) => (
               <li class="chip">{host.name}</li>
             ))}
+          </ul>
+        </>
+      ) : null
+    }
+    {
+      participants.length > 0 ? (
+        <>
+          <h2>{historyUi.participantsTitle}</h2>
+          <p>{historyUi.participantsNote}</p>
+          <ul class="history-people">
+            {participants.map((person) => {
+              const details = [person.companyLabel, person.roleLabel, person.city].filter(Boolean);
+              return (
+                <li class="history-person">
+                  <h3>{person.name}</h3>
+                  {details.length > 0 ? <p>{details.join(" · ")}</p> : null}
+                </li>
+              );
+            })}
           </ul>
         </>
       ) : null
@@ -221,6 +256,39 @@ const headline = story?.headline ?? edition.dateLabel;
   .chip-list .chip {
     max-width: 100%;
     white-space: normal;
+  }
+
+  .history-people {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .history-person {
+    min-width: 0;
+    margin: 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-ui);
+    background: var(--surface);
+  }
+
+  .history-person h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .history-person p {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+  }
+
+  @media (min-width: 800px) {
+    .history-people {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .history-reviews {
