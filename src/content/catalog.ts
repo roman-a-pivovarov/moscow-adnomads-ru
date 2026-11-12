@@ -1,5 +1,5 @@
 import { editions } from "./editions";
-import { imagesFor } from "./images";
+import { imagesFor, type PublishedImage } from "./images";
 import { media } from "./media";
 import { organizations } from "./organizations";
 import { participations } from "./participations";
@@ -93,6 +93,25 @@ export function pastHostEditions(): Array<{ edition: Edition; hosts: Organizatio
     .filter((edition) => edition.status === "completed" && edition.hostListStatus !== "none")
     .sort((a, b) => b.moscowNumber - a.moscowNumber)
     .map((edition) => ({ edition, hosts: hostsOf(edition.id) }));
+}
+
+/**
+ * Кадр постоянного проекта на первом экране.
+ * Это основной hero-кадр последней прошедшей поездки из уже опубликованного отбора.
+ * edition_id кадра не меняется и не становится идентификатором ближайшего анонса.
+ * Пока нет отдельного файла hero, берётся web того же отбора. Это предложение команды, не выбор Романа.
+ */
+export function projectStill(): { image: PublishedImage; edition: Edition } | undefined {
+  const completed = editions
+    .filter((edition) => edition.status === "completed")
+    .sort((a, b) => b.moscowNumber - a.moscowNumber);
+  for (const edition of completed) {
+    const image = imagesFor("hero", edition.id)[0];
+    if (image && image.edition_id === edition.id) {
+      return { image, edition };
+    }
+  }
+  return undefined;
 }
 
 export function coverOf(editionId: string): MediaItem | undefined {

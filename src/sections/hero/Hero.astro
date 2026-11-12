@@ -2,21 +2,20 @@
 import { goals } from "../../content/analytics";
 import { productName } from "../../content/brand";
 import { contacts } from "../../content/contacts";
-import { featuredEdition, moscowOrdinal } from "../../content/catalog";
-import { imagesFor } from "../../content/images";
+import { featuredEdition, moscowOrdinal, projectStill } from "../../content/catalog";
 import { heroCopy } from "./copy";
 
 const featured = featuredEdition();
 const [titleMain, titleRest] = productName.includes(" by ")
   ? productName.split(" by ")
   : [productName, ""];
-const slides = featured ? imagesFor("hero", featured.id) : [];
+const still = projectStill();
 const programLabel =
   featured?.days?.length === 4 ? heroCopy.programLinkFour : heroCopy.programLink;
 ---
 
 <section class="section" id="top">
-  <div class:list={["container", "hero", { "hero--plain": slides.length === 0 }]}>
+  <div class:list={["container", "hero", { "hero--plain": !still }]}>
     <h1 class="hero-headline">
       <span class="hero-title-line">{titleMain}</span>
       {
@@ -27,6 +26,24 @@ const programLabel =
         ) : null
       }
     </h1>
+    {
+      still ? (
+        <figure class="hero-figure">
+          <div class="hero-media">
+            <img
+              class="hero-slide adn-photo is-active"
+              src={still.image.src}
+              alt={still.image.alt}
+              width={still.image.width}
+              height={still.image.height}
+            />
+          </div>
+          <figcaption class="hero-caption">
+            {heroCopy.pastFrame}, {still.edition.dateLabel}
+          </figcaption>
+        </figure>
+      ) : null
+    }
     <div class="hero-copy">
       <div class="hero-leads">
         {heroCopy.leads.map((paragraph) => <p>{paragraph}</p>)}
@@ -62,22 +79,6 @@ const programLabel =
         </div>
       </aside>
     </div>
-    {
-      slides.length > 0 ? (
-        <div class="hero-media">
-          {slides.map((slide, index) => (
-            <img
-              class:list={["hero-slide", "adn-photo", index === 0 && "is-active"]}
-              src={slide.src}
-              alt={index === 0 ? slide.alt : ""}
-              data-hero-slide
-              width="960"
-              height="720"
-            />
-          ))}
-        </div>
-      ) : null
-    }
   </div>
 </section>
 
@@ -171,6 +172,17 @@ const programLabel =
     white-space: normal;
   }
 
+  .hero-figure {
+    min-width: 0;
+    margin: 0;
+  }
+
+  .hero-caption {
+    margin: 0.45rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
   @media (min-width: 900px) {
     .hero-headline {
       font-size: clamp(3.2rem, 4.7vw, 4.25rem);
@@ -199,6 +211,12 @@ const programLabel =
       grid-row: 2;
       align-self: stretch;
       margin-top: 0;
+    }
+
+    .hero-figure {
+      grid-column: 2;
+      grid-row: 2;
+      align-self: stretch;
     }
 
     .hero-announce__date {

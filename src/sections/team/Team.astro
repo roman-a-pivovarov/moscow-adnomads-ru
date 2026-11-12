@@ -1,6 +1,7 @@
 ---
 import { teamMembers } from "../../content/catalog";
 import { contacts } from "../../content/contacts";
+import { imagesFor } from "../../content/images";
 
 const members = teamMembers();
 const channels = {
@@ -19,8 +20,20 @@ const channels = {
       {
         members.map((person) => {
           const channel = channels[person.id as keyof typeof channels];
+          const portrait = imagesFor("team", undefined, person.id)[0];
           return (
             <li>
+              {
+                portrait ? (
+                  <img
+                    class="team-portrait"
+                    src={portrait.src}
+                    alt={portrait.alt}
+                    width={portrait.width}
+                    height={portrait.height}
+                  />
+                ) : null
+              }
               <h3>{person.name}</h3>
               {person.publicRole ? <p class="role">{person.publicRole}</p> : null}
               {channel ? (
@@ -61,6 +74,15 @@ const channels = {
     margin: 0;
     padding: 1.15rem 1.2rem;
     border: 1px solid var(--border);
+    border-radius: var(--radius-ui);
+  }
+
+  .team-portrait {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-bottom: 0.85rem;
+    object-fit: cover;
     border-radius: var(--radius-ui);
   }
 

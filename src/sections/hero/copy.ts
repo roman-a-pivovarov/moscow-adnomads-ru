@@ -4,6 +4,7 @@ export const heroCopy = {
     "Программу готовит и модерирует команда ADNOMADS.",
   ],
   announceEyebrow: "Ближайшая программа",
+  pastFrame: "Кадр прошедшей поездки",
   programLinkFour: "Программа четырёх дней",
   programLink: "Подробнее о выпуске",
   missingEyebrow: "Следующая программа",
