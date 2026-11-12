@@ -1,0 +1,58 @@
+---
+import BrandLogo from "./BrandLogo.astro";
+import { mobileNav, nav } from "../content/navigation";
+---
+
+<header class="site-header" data-site-header>
+  <div class="container site-header__inner">
+    <a class="brand brand--raster" href="/#top">
+      <img
+        class="brand__logo"
+        src="/assets/brand/logo/adnomads-logo-compact.webp"
+        alt="ADNOMADS"
+        height="32"
+        width="160"
+      />
+    </a>
+    <BrandLogo class="brand brand--vector" />
+    <nav class="site-nav" aria-label="Разделы страницы">
+      {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+      aria-label="Открыть меню"
+      data-menu-toggle
+    >
+      <span class="menu-toggle__icons" aria-hidden="true">
+        <span class="menu-toggle__icon menu-toggle__icon--open">
+          <svg viewBox="0 0 24 24" width="26" height="26" focusable="false">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              d="M3.5 7h17M3.5 12h17M3.5 17h17"></path>
+          </svg>
+        </span>
+        <span class="menu-toggle__icon menu-toggle__icon--close">
+          <svg viewBox="0 0 24 24" width="26" height="26" focusable="false">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              d="M6 6l12 12M18 6L6 18"></path>
+          </svg>
+        </span>
+      </span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Меню" aria-hidden="true" data-mobile-nav>
+    <div class="mobile-nav__inner">
+      {mobileNav.map((item) => <a href={item.href}>{item.label}</a>)}
+    </div>
+  </nav>
+</header>

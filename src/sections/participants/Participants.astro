@@ -1,0 +1,25 @@
+---
+import { featuredEdition } from "../../content/catalog";
+import { participantsEmpty } from "./copy";
+import { contacts } from "../../content/contacts";
+
+const featured = featuredEdition();
+---
+
+<section class="section section--muted" id="participants">
+  <div class="container">
+    <h2>{participantsEmpty.title}</h2>
+    {
+      featured ? (
+        <p class="lead">
+          {featured.dateLabel}. {participantsEmpty.text}
+        </p>
+      ) : (
+        <p class="lead">{participantsEmpty.text}</p>
+      )
+    }
+    <p>
+      <a class="btn" href="#participate">{contacts.participate.label}</a>
+    </p>
+  </div>
+</section>

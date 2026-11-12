@@ -1,2 +1,21 @@
 .ftp-deploy-sync-state.json
-.cursor/
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+node_modules/
+dist/
+.astro/
+
+# Фотобанк. Сырьё, ZIP и рабочая распаковка не коммитятся.
+# Обработанные WebP (assets-photobank) и реестр (data/photobank) переносимы и остаются в git.
+# Внутренний HTML-каталог генерируется локально и в репозиторий не входит.
+/assets-inbox/**
+!/assets-inbox/**/
+!/assets-inbox/**/.gitkeep
+!/assets-inbox/README.md
+/assets-raw/**
+!/assets-raw/**/
+!/assets-raw/**/.gitkeep
+/assets-work/
+/docs/photo-review/**
+!/docs/photo-review/README.md

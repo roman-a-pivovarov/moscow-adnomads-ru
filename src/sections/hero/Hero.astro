@@ -1,0 +1,69 @@
+---
+import { productName } from "../../content/brand";
+import { contacts } from "../../content/contacts";
+import { featuredEdition, moscowOrdinal, reportage } from "../../content/catalog";
+
+const featured = featuredEdition();
+const [titleMain, titleRest] = productName.includes(" by ")
+  ? productName.split(" by ")
+  : [productName, ""];
+const slides = reportage().slice(0, 3);
+---
+
+<section class="section" id="top">
+  <div class="container hero">
+    <h1 class="hero-headline">
+      <span class="hero-title-line">{titleMain}</span>
+      {
+        titleRest ? (
+          <span class="hero-title-line">
+            <span class="hero-title-accent">by</span> {titleRest}
+          </span>
+        ) : null
+      }
+    </h1>
+    <div class="hero-copy">
+      <div class="hero-leads">
+        <p>Встречи и обмен управленческим опытом между владельцами и руководителями агентского, маркетингового и медиабизнеса.</p>
+        <p>Московская программа ADNOMADS: подготовленные разговоры с коллегами, а не конференция и не экскурсия.</p>
+      </div>
+      {
+        featured ? (
+          <div class="hero-announce">
+            <p class="eyebrow">Ближайший выпуск</p>
+            <p class="hero-announce__date">{featured.dateLabel}</p>
+            <p>
+              {moscowOrdinal(featured.moscowNumber)} московский выпуск · ADNOMADS №{featured.adnomadsNumber}
+            </p>
+            <p>
+              <a href="#edition">Программа четырёх дней</a>
+            </p>
+          </div>
+        ) : (
+          <div class="hero-announce">
+            <p class="eyebrow">Следующая программа</p>
+            <p>Даты ещё не опубликованы. Напишите команде — расскажем, когда откроется следующий выпуск.</p>
+          </div>
+        )
+      }
+      <div class="btn-row" style="margin-top: 1.25rem">
+        <a class="btn" href="#participate">{contacts.participate.label}</a>
+        <a class="btn btn--ghost" href="#host">{contacts.host.label}</a>
+      </div>
+    </div>
+    <div class="hero-media" aria-hidden={slides.length ? undefined : "true"}>
+      {
+        slides.map((slide, index) => (
+          <img
+            class:list={["hero-slide", "adn-photo", index === 0 && "is-active"]}
+            src={slide.src}
+            alt={index === 0 ? slide.alt : ""}
+            data-hero-slide
+            width="960"
+            height="720"
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

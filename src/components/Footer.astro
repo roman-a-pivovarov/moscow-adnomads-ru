@@ -1,0 +1,40 @@
+---
+import BrandLogo from "./BrandLogo.astro";
+import { footerNavColumns } from "../content/navigation";
+import { productName } from "../content/brand";
+import { contacts } from "../content/contacts";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <BrandLogo class="footer-logo" href="/#top" />
+        <p class="footer-tagline">{productName}</p>
+        <p class="footer-meta">
+          Проект
+          <a class="footer-meta__link" href={contacts.parentSite.href}>{contacts.parentSite.label}</a>
+        </p>
+        <p class="footer-meta">Москва</p>
+      </div>
+      <nav class="footer-nav" aria-label="Подвал">
+        {
+          footerNavColumns.map((column) => (
+            <ul class="footer-nav__col">
+              {column.map((item) => (
+                <li>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          ))
+        }
+      </nav>
+    </div>
+    <div class="footer-bar">
+      <p class="footer-copy">© 2012–{year} ADNOMADS</p>
+    </div>
+  </div>
+</footer>

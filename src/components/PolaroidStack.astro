@@ -1,0 +1,28 @@
+---
+export type PolaroidItem = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
+interface Props {
+  items: readonly PolaroidItem[];
+  label: string;
+}
+
+const { items, label } = Astro.props;
+const tilts = ["-7deg", "4deg", "-3deg", "6deg", "-5deg"];
+---
+
+<ul class="polaroid-stack" aria-label={label}>
+  {
+    items.map((item, index) => (
+      <li>
+        <figure class="polaroid" style={`--tilt: ${tilts[index % tilts.length]}`}>
+          <img src={item.src} alt={item.alt} width="640" height="480" loading="lazy" decoding="async" />
+          <figcaption>{item.caption}</figcaption>
+        </figure>
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,75 @@
+---
+import { publicReviews } from "../../content/catalog";
+
+const items = publicReviews();
+---
+
+<section class="section section--muted" id="reviews">
+  <div class="container">
+    <h2>Отзывы</h2>
+    {
+      items.length > 0 ? (
+        <ul class="review-list">
+          {items.map((item) => (
+            <li>
+              <blockquote>
+                <p>{item.quote}</p>
+              </blockquote>
+              <p class="review-author">
+                {item.authorName}
+                {item.authorRole ? <span> · {item.authorRole}</span> : null}
+              </p>
+              <p class="review-source">{item.editionLabel}</p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="lead">Отзывы с указанием автора появятся здесь, когда они будут в материалах выпуска.</p>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .review-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .review-list li {
+    margin: 0;
+    padding: 1.15rem 1.2rem 1.2rem;
+    border-radius: var(--radius-ui);
+    background: var(--bg);
+  }
+
+  blockquote {
+    margin: 0;
+  }
+
+  blockquote p {
+    margin: 0;
+    font-size: clamp(1.2rem, 2vw, 1.45rem);
+    line-height: 1.35;
+    color: var(--text-strong);
+  }
+
+  .review-author {
+    margin: 1rem 0 0;
+    font-weight: 700;
+    color: var(--text-strong);
+  }
+
+  .review-author span,
+  .review-source {
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .review-source {
+    margin: 0.2rem 0 0;
+  }
+</style>

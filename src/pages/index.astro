@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../sections/hero/Hero.astro";
+import Essence from "../sections/audience/Essence.astro";
+import Audience from "../sections/audience/Audience.astro";
+import Method from "../sections/method/Method.astro";
+import PastHosts from "../sections/hosts/PastHosts.astro";
+import Edition from "../sections/edition/Edition.astro";
+import Participants from "../sections/participants/Participants.astro";
+import HistoryTeaser from "../sections/history/HistoryTeaser.astro";
+import Reviews from "../sections/reviews/Reviews.astro";
+import HostOffer from "../sections/hosts/HostOffer.astro";
+import Team from "../sections/team/Team.astro";
+import Conditions from "../sections/contacts/Conditions.astro";
+import { warnIfFeaturedNeedsEditorialSwitch } from "../content/catalog";
+
+warnIfFeaturedNeedsEditorialSwitch();
+---
+
+<Layout>
+  <Hero />
+  <Essence />
+  <Audience />
+  <Method />
+  <PastHosts />
+  <Edition />
+  <Participants />
+  <HistoryTeaser />
+  <Reviews />
+  <HostOffer />
+  <Team />
+  <Conditions />
+</Layout>

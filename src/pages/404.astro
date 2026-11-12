@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { productName } from "../content/brand";
+---
+
+<Layout title={`Страница не найдена — ${productName}`} description="Такой страницы на сайте нет." canonicalPath="/404.html">
+  <section class="section">
+    <div class="container">
+      <h1>Страница не найдена</h1>
+      <p><a href="/">На главную</a></p>
+    </div>
+  </section>
+</Layout>

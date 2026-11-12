@@ -1,0 +1,81 @@
+---
+export type PhotoStripItem = {
+  src: string;
+  alt: string;
+};
+
+interface Props {
+  photos: readonly PhotoStripItem[];
+  label: string;
+  galleryLabel?: string;
+  manualMobile?: boolean;
+}
+
+const { photos, label, galleryLabel = "Фотографии", manualMobile = false } = Astro.props;
+---
+
+<div
+  class:list={["photo-strip", manualMobile && "photo-strip--manual-mobile"]}
+  data-photo-strip
+  aria-roledescription="карусель"
+  aria-label={label}
+>
+  <div class="photo-strip__viewport" data-strip-viewport tabindex="0" aria-label={galleryLabel}>
+    <ul class="photo-strip__track" data-strip-track>
+      {
+        photos.map((photo) => (
+          <li class="photo-strip__slide" data-strip-slide>
+            <img
+              class="adn-photo"
+              src={photo.src}
+              alt={photo.alt}
+              width="720"
+              height="540"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class="photo-strip__controls" data-strip-controls>
+    <button type="button" class="photo-strip__btn" data-strip-prev aria-label="Предыдущее фото">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M14.5 5.5 8 12l6.5 6.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <button
+      type="button"
+      class="photo-strip__btn"
+      data-strip-toggle
+      aria-label="Остановить автоматическую смену"
+      aria-pressed="false"
+    >
+      <svg class="photo-strip__icon-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M8 6.5h2.5v11H8zm5.5 0H16v11h-2.5z" fill="currentColor"></path>
+      </svg>
+      <svg class="photo-strip__icon-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M9 6.5v11l9-5.5z" fill="currentColor"></path>
+      </svg>
+    </button>
+    <button type="button" class="photo-strip__btn" data-strip-next aria-label="Следующее фото">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M9.5 5.5 16 12l-6.5 6.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </div>
+</div>

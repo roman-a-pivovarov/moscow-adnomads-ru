@@ -1,0 +1,90 @@
+---
+import PolaroidStack from "../../components/PolaroidStack.astro";
+import { completedEditions, coverOf, moscowOrdinal } from "../../content/catalog";
+
+const cards = completedEditions()
+  .map((edition) => {
+    const cover = coverOf(edition.id);
+    if (!cover) {
+      return null;
+    }
+    return {
+      src: cover.src,
+      alt: cover.alt,
+      caption: `${edition.dateLabel} · №${edition.adnomadsNumber}`,
+    };
+  })
+  .filter((item) => item !== null);
+
+const editions = completedEditions();
+---
+
+<section class="section" id="history">
+  <div class="container">
+    <h2>Московские выпуски</h2>
+    <p class="lead">
+      Пять прошедших программ. У каждого выпуска своя страница: даты, известные хосты и ссылка на опубликованный рассказ, если он есть.
+    </p>
+    {cards.length > 0 ? <PolaroidStack items={cards} label="Обложки прошедших выпусков" /> : null}
+    <ul class="history-list">
+      {
+        editions.map((edition) => (
+          <li>
+            <a href={`/history/${edition.slug}/`}>
+              <span>{edition.dateLabel}</span>
+              <strong>Как это было</strong>
+            </a>
+            <p>
+              {moscowOrdinal(edition.moscowNumber)} московский выпуск · ADNOMADS №{edition.adnomadsNumber}
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      <a href="/history/">Все выпуски</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .lead {
+    margin-bottom: 1.25rem;
+  }
+
+  .history-list {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.75rem 0 1.25rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .history-list a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.35rem 1rem;
+    color: var(--text-strong);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .history-list a strong {
+    color: var(--accent-strong);
+    font-weight: 700;
+  }
+
+  .history-list p {
+    margin: 0.2rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  @media (min-width: 800px) {
+    .history-list {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.1rem 2rem;
+    }
+  }
+</style>

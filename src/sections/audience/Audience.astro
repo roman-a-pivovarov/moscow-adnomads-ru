@@ -1,0 +1,59 @@
+---
+import { audience } from "./copy";
+---
+
+<section class="section" id="audience">
+  <div class="container">
+    <h2>{audience.title}</h2>
+    <p class="lead">{audience.lead}</p>
+    <ul class="audience-grid">
+      {
+        audience.groups.map((group) => (
+          <li>
+            <h3>{group.title}</h3>
+            <p>{group.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <h3>{audience.tasksTitle}</h3>
+    <ul class="task-list">
+      {audience.tasks.map((task) => <li>{task}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .audience-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1.75rem 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .audience-grid li {
+    margin: 0;
+    padding: 1.1rem 1.15rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-ui);
+    background: var(--bg);
+  }
+
+  .audience-grid p {
+    margin: 0;
+  }
+
+  .task-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  @media (min-width: 800px) {
+    .audience-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

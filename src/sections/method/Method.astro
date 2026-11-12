@@ -1,0 +1,73 @@
+---
+import PhotoStrip from "../../components/PhotoStrip.astro";
+import { method } from "./copy";
+import { reportage } from "../../content/catalog";
+---
+
+<section class="section section--muted" id="method">
+  <div class="container">
+    <h2>{method.title}</h2>
+    <p class="lead">{method.lead}</p>
+    <ol class="phase-grid">
+      {
+        method.phases.map((phase) => (
+          <li>
+            <h3>{phase.title}</h3>
+            <ul>
+              {phase.points.map((point) => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ol>
+    <div class="strip-wrap">
+      <PhotoStrip
+        photos={reportage()}
+        label="Кадры прошедших московских встреч"
+        galleryLabel="Репортаж прошлых выпусков"
+        manualMobile
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .lead {
+    margin-bottom: 1.75rem;
+  }
+
+  .phase-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .phase-grid > li {
+    margin: 0;
+    padding: 1.1rem 1.15rem 1.25rem;
+    border-radius: var(--radius-ui);
+    background: var(--bg);
+  }
+
+  .phase-grid ul {
+    margin: 0;
+    padding-left: 1.15rem;
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .strip-wrap {
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 900px) {
+    .phase-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
+    }
+  }
+</style>

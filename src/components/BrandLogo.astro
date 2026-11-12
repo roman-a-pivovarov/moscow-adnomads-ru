@@ -1,0 +1,26 @@
+---
+interface Props {
+  class?: string;
+  href?: string;
+  label?: string;
+}
+
+const { class: className, href = "/#top", label = "ADNOMADS" } = Astro.props;
+---
+
+<a class:list={["brand-logo", className]} href={href} aria-label={label}>
+  <svg
+    class="brand-logo__mark"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="32"
+    height="32"
+    fill="none"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <circle cx="16" cy="16" r="14.25" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+    <circle cx="16" cy="16" r="4" fill="currentColor"></circle>
+  </svg>
+  <span class="brand-logo__wordmark" aria-hidden="true">ADNOMADS</span>
+</a>

@@ -1,0 +1,58 @@
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #f7f3ec;
+  --text: #3f3030;
+  --text-strong: #1a1a1a;
+  --muted: #6b5b52;
+  --accent: #b78a53;
+  --accent-strong: #a87d24;
+  --cta: #b78a53;
+  --cta-hover: #a67d4a;
+  --cta-active: #967019;
+  --cta-text: #ffffff;
+  --border: #e6ddcf;
+  --border-hover: #d8c6ad;
+
+  --font-sans: "Raleway", system-ui, sans-serif;
+  --font-body-weight: 400;
+  --font-heading-weight: 700;
+  --font-display-weight: 800;
+  --line-height-body: 1.4;
+  --line-height-heading: 1.25;
+  --size-body: clamp(1.125rem, 0.5vw + 0.9375rem, 1.375rem);
+  --size-h2: clamp(1.85rem, 7.5vw, 2.4rem);
+  --size-h3: clamp(1.25rem, 0.45vw + 1.05rem, 1.5rem);
+  --size-h1-max: 5.125rem;
+  --size-eyebrow: 1rem;
+  --maxw: 1080px;
+  --space-section: 3.5rem;
+  --space-landing-rhythm: 7.5rem;
+  --container-pad: 1.25rem;
+  --header-h: 4.5rem;
+  /* Shared UI corner radius — change only here */
+  --radius-ui: 10px;
+  --radius-card: var(--radius-ui);
+  --radius-img: var(--radius-ui);
+
+  /* Shared disclose / spoiler plus icon — change only here */
+  --disclose-icon-size: 2rem;
+  --disclose-icon-arm: 1.5rem;
+  --disclose-icon-thickness: 2px;
+  --disclose-duration: 220ms;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --space-landing-rhythm: 4.5rem;
+    --header-h: 3.75rem;
+    --size-eyebrow: 0.8125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --size-h2: 4.125rem;
+    --size-h3: 1.875rem;
+  }
+}

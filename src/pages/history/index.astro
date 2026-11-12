@@ -1,0 +1,85 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { completedEditions, featuredEdition, moscowOrdinal } from "../../content/catalog";
+import { productName } from "../../content/brand";
+
+const past = [...completedEditions()].sort((a, b) => a.moscowNumber - b.moscowNumber);
+const featured = featuredEdition();
+---
+
+<Layout
+  title={`История московских выпусков — ${productName}`}
+  description="Пять прошедших московских программ ADNOMADS и ближайший выпуск."
+  canonicalPath="/history/"
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Архив</p>
+      <h1>Московские выпуски</h1>
+      <p class="lead">
+        Здесь только московские программы. Номер выпуска в Москве и номер в общей последовательности ADNOMADS — разные вещи.
+      </p>
+      <ul class="archive-list">
+        {
+          past.map((edition) => (
+            <li>
+              <a href={`/history/${edition.slug}/`}>
+                <span>{moscowOrdinal(edition.moscowNumber)}</span>
+                <strong>{edition.dateLabel}</strong>
+              </a>
+              <p>ADNOMADS №{edition.adnomadsNumber}</p>
+            </li>
+          ))
+        }
+      </ul>
+      {
+        featured ? (
+          <p>
+            Ближайший выпуск — {featured.dateLabel}, ADNOMADS №{featured.adnomadsNumber}.{" "}
+            <a href="/#edition">Смотреть программу</a>
+          </p>
+        ) : (
+          <p>
+            Даты следующей программы ещё не опубликованы. <a href="/#participate">Написать команде</a>
+          </p>
+        )
+      }
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .lead {
+    max-width: 40rem;
+  }
+
+  .archive-list {
+    display: grid;
+    gap: 1rem;
+    margin: 1.75rem 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .archive-list a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: var(--text-strong);
+    text-decoration: none;
+  }
+
+  .archive-list span {
+    color: var(--accent-strong);
+    font-weight: 700;
+  }
+
+  .archive-list strong {
+    font-size: var(--size-h3);
+  }
+
+  .archive-list p {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+  }
+</style>

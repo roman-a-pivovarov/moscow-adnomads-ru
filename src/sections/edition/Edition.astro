@@ -1,0 +1,88 @@
+---
+import { featuredEdition, hostsOf, moscowOrdinal } from "../../content/catalog";
+import { nextEditionMissing } from "./copy";
+
+const featured = featuredEdition();
+const hosts = featured ? hostsOf(featured.id) : [];
+---
+
+<section class="section" id="edition">
+  <div class="container">
+    {
+      featured ? (
+        <>
+          <p class="eyebrow">ADNOMADS №{featured.adnomadsNumber}</p>
+          <h2>
+            {moscowOrdinal(featured.moscowNumber)} московский выпуск
+          </h2>
+          <p class="edition-date">{featured.dateLabel}</p>
+          <p class="lead">{featured.summary}</p>
+          {featured.days ? (
+            <ol class="day-list">
+              {featured.days.map((day) => (
+                <li>
+                  <h3>{day.label}</h3>
+                  <p>{day.focus}</p>
+                </li>
+              ))}
+            </ol>
+          ) : null}
+          <h3>Подтверждённые хосты</h3>
+          {hosts.length > 0 ? (
+            <ul class="chip-list">
+              {hosts.map((host) => (
+                <li class="chip">{host.name}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>Пока нет ни одной подтверждённой встречи. Прошлые хосты собраны отдельно и в этот список не входят.</p>
+          )}
+        </>
+      ) : (
+        <>
+          <h2>{nextEditionMissing.title}</h2>
+          <p class="lead">{nextEditionMissing.text}</p>
+          <p>
+            <a class="btn" href="#participate">
+              Узнать о следующей программе
+            </a>
+          </p>
+        </>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .edition-date {
+    margin: -0.5rem 0 1rem;
+    color: var(--accent-strong);
+    font-size: var(--size-h3);
+    font-weight: 700;
+  }
+
+  .day-list {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .day-list li {
+    margin: 0;
+    padding: 1rem 1.05rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-ui);
+  }
+
+  .day-list p {
+    margin: 0;
+  }
+
+  @media (min-width: 800px) {
+    .day-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

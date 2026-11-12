@@ -1,0 +1,97 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { editionBySlug, hostsOf, coverOf, moscowOrdinal } from "../../content/catalog";
+import { editions } from "../../content/editions";
+import { productName } from "../../content/brand";
+import type { Edition } from "../../content/types";
+
+export function getStaticPaths() {
+  return editions
+    .filter((edition) => edition.status === "completed")
+    .map((edition) => ({
+      params: { slug: edition.slug },
+      props: { edition },
+    }));
+}
+
+interface Props {
+  edition: Edition;
+}
+
+const { edition } = Astro.props;
+const current = edition ?? editionBySlug(Astro.params.slug ?? "");
+if (!current) {
+  throw new Error(`Нет выпуска ${Astro.params.slug}`);
+}
+
+const hosts = hostsOf(current.id);
+const cover = coverOf(current.id);
+const title = `${current.dateLabel} — ${productName}`;
+---
+
+<Layout title={title} description={current.summary} canonicalPath={`/history/${current.slug}/`}>
+  <article class="section">
+    <div class="container edition-page">
+      <p class="eyebrow">
+        {moscowOrdinal(current.moscowNumber)} московский выпуск · ADNOMADS №{current.adnomadsNumber}
+      </p>
+      <h1>{current.dateLabel}</h1>
+      <p class="lead">{current.summary}</p>
+      {
+        cover ? (
+          <figure class="edition-cover">
+            <img src={cover.src} alt={cover.alt} width="960" height="720" />
+          </figure>
+        ) : null
+      }
+      <h2>Кто принимал</h2>
+      {
+        hosts.length === 0 ? (
+          <p>Список хостов этого выпуска на сайте пока не опубликован.</p>
+        ) : (
+          <>
+            {current.hostListStatus === "partial" ? (
+              <p>На публичной карточке названы эти команды. Это не полный маршрут.</p>
+            ) : (
+              <p>Команды, которые принимали группу.</p>
+            )}
+            <ul class="chip-list">
+              {hosts.map((host) => (
+                <li class="chip">{host.name}</li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+      <div class="btn-row edition-links">
+        {
+          current.historyPageUrl ? (
+            <a class="btn" href={current.historyPageUrl}>
+              Опубликованный рассказ
+            </a>
+          ) : null
+        }
+        <a class="btn btn--ghost" href="/history/">Все выпуски</a>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .edition-page h2 {
+    margin-top: 2rem;
+  }
+
+  .edition-cover {
+    margin: 1.5rem 0 0;
+  }
+
+  .edition-cover img {
+    width: min(100%, 42rem);
+    border-radius: var(--radius-ui);
+  }
+
+  .edition-links {
+    margin-top: 1.75rem;
+  }
+</style>

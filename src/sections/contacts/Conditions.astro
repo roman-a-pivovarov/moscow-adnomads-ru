@@ -1,0 +1,60 @@
+---
+import { conditions } from "./copy";
+import { contacts } from "../../content/contacts";
+---
+
+<section class="section section--muted" id="contacts">
+  <div class="container">
+    <h2>{conditions.title}</h2>
+    {conditions.paragraphs.map((paragraph) => <p class="lead">{paragraph}</p>)}
+    <div class="contact-grid">
+      <article id="participate">
+        <h3>Участнику</h3>
+        <p>Обсудим задачи и условия участия в ближайшем выпуске.</p>
+        <div class="btn-row">
+          <a class="btn" href={contacts.participate.telegramHref}>Telegram</a>
+          <a class="btn btn--ghost" href={contacts.participate.href}>Письмо</a>
+        </div>
+      </article>
+      <article id="host">
+        <h3>Хосту</h3>
+        <p>Расскажем о составе группы и формате встречи. Заявка не включает агентство в программу автоматически.</p>
+        <div class="btn-row">
+          <a class="btn" href={contacts.host.telegramHref}>Telegram</a>
+          <a class="btn btn--ghost" href={contacts.host.href}>Письмо</a>
+        </div>
+      </article>
+    </div>
+    <p class="hello">
+      Общая почта: <a href={contacts.hello.href}>{contacts.hello.label}</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .lead + .lead {
+    margin-top: 0.85rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.75rem;
+  }
+
+  .contact-grid article {
+    padding: 1.15rem 1.2rem 1.3rem;
+    border-radius: var(--radius-ui);
+    background: var(--bg);
+  }
+
+  .hello {
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 800px) {
+    .contact-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

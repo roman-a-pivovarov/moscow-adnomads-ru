@@ -1,0 +1,32 @@
+---
+import { hostOffer } from "./copy";
+import { contacts } from "../../content/contacts";
+---
+
+<section class="section section--muted" id="hosts">
+  <div class="container">
+    <h2>{hostOffer.title}</h2>
+    {hostOffer.paragraphs.map((paragraph) => <p class="lead">{paragraph}</p>)}
+    <div class="btn-row" style="margin: 1.25rem 0 1.75rem">
+      <a class="btn" href="#host">{contacts.host.label}</a>
+    </div>
+    <div data-exclusive-details>
+      {
+        hostOffer.faq.map((item) => (
+          <details class="disclose host-faq">
+            <summary>{item.q}</summary>
+            <div class="disclose__body">
+              <p>{item.a}</p>
+            </div>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .lead + .lead {
+    margin-top: 0.85rem;
+  }
+</style>

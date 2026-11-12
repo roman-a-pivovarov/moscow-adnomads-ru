@@ -1,0 +1,19 @@
+---
+import { essence } from "./copy";
+---
+
+<section class="section section--muted" id="essence">
+  <div class="container">
+    <h2>{essence.title}</h2>
+    {essence.paragraphs.map((paragraph) => <p class="lead">{paragraph}</p>)}
+    <p class="lead">
+      Большой проект — <a href="https://adnomads.org">adnomads.org</a>. Здесь только московские программы.
+    </p>
+  </div>
+</section>
+
+<style>
+  .lead + .lead {
+    margin-top: 0.85rem;
+  }
+</style>

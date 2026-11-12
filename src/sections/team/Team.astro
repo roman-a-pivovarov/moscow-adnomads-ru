@@ -1,0 +1,86 @@
+---
+import { teamMembers } from "../../content/catalog";
+import { contacts } from "../../content/contacts";
+
+const members = teamMembers();
+const channels = {
+  "person-roman": contacts.roman,
+  "person-irina": contacts.irina,
+} as const;
+---
+
+<section class="section" id="team">
+  <div class="container">
+    <h2>Команда</h2>
+    <p class="lead">
+      Программу модерирует Роман Пивоваров. Организацией выпуска занимается Ирина Генералова.
+    </p>
+    <ul class="team-grid">
+      {
+        members.map((person) => {
+          const channel = channels[person.id as keyof typeof channels];
+          return (
+            <li>
+              <h3>{person.name}</h3>
+              {person.publicRole ? <p class="role">{person.publicRole}</p> : null}
+              {channel ? (
+                <ul class="team-links">
+                  <li>
+                    <a href={channel.emailHref}>{channel.email}</a>
+                  </li>
+                  <li>
+                    <a href={channel.telegramHref}>Telegram</a>
+                  </li>
+                  <li>
+                    <a href={channel.whatsappHref}>WhatsApp</a>
+                  </li>
+                </ul>
+              ) : null}
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .lead {
+    margin-bottom: 1.5rem;
+  }
+
+  .team-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .team-grid li {
+    margin: 0;
+    padding: 1.15rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-ui);
+  }
+
+  .role {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .team-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    margin: 0.9rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: 800px) {
+    .team-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

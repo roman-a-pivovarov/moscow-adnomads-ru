@@ -1,8 +1,9 @@
-# Статический сайт: сборки нет, на FTP уходит корень репозитория.
-# Секреты — как в new-romanpivovarov-ru, school-adconsult-ru и adnomads-org:
+# Статический сайт на Astro: сборка, на FTP уходит только dist/.
+# Секреты не менялись:
 #   FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, REG_PATH
 # FTP-пользователь привязан к каталогу сайта www/moscow.adnomads.ru.
 # REG_PATH для него: ./
+# Пуш в main публикует сайт. dangerous-clean-slate не включён.
 name: Deploy moscow.adnomads.ru to REG.RU
 
 on:
@@ -24,6 +25,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
       - name: Upload website to REG.RU
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -32,7 +45,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
-          local-dir: ./
+          local-dir: ./dist/
           server-dir: ${{ secrets.REG_PATH }}
           state-name: .ftp-deploy-sync-state.json
           exclude: |
