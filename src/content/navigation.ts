@@ -1,4 +1,5 @@
 import { goals, type AnalyticsGoal } from "./analytics";
+import { contacts } from "./contacts";
 
 export type NavLink = {
   href: string;
@@ -16,21 +17,11 @@ export const nav: NavLink[] = [
 ];
 
 export const footerNavColumns: NavLink[][] = [
+  nav,
   [
-    { href: "/#essence", label: "Проект" },
-    { href: "/#audience", label: "Для кого" },
-    { href: "/#method", label: "Программа", goal: goals.interestProgram },
-    { href: "/#past-hosts", label: "Кто принимал" },
-    { href: "/#confirmed-hosts", label: "Хосты выпуска" },
-    { href: "/#edition", label: "Ближайший выпуск", goal: goals.interestProgram },
-  ],
-  [
-    { href: "/#participants", label: "Участники" },
-    { href: "/#history", label: "История", goal: goals.interestHistory },
-    { href: "/#reviews", label: "Отзывы" },
-    { href: "/#hosts", label: "Хостам" },
-    { href: "/#team", label: "Команда" },
-    { href: "/#contacts", label: "Контакты" },
+    { href: contacts.hello.href, label: contacts.hello.label },
+    { href: contacts.participate.telegramHref, label: "Telegram" },
+    { href: contacts.historyHome.href, label: contacts.historyHome.label },
   ],
 ];
 

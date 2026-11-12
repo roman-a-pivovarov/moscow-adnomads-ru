@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { editions } from "../../content/editions";
-import { editionBySlug } from "../../content/catalog";
+import { editionByHistorySlug, historyHref, historySlug } from "../../content/catalog";
 import type { Edition } from "../../content/types";
 import HistoryEdition from "../../sections/history/HistoryEdition.astro";
 import { historyStory } from "../../sections/history/copy";
@@ -10,7 +10,7 @@ export function getStaticPaths() {
   return editions
     .filter((edition) => edition.status === "completed")
     .map((edition) => ({
-      params: { slug: edition.slug },
+      params: { slug: historySlug(edition) },
       props: { edition },
     }));
 }
@@ -20,7 +20,7 @@ interface Props {
 }
 
 const { edition } = Astro.props;
-const current = edition ?? editionBySlug(Astro.params.slug ?? "");
+const current = edition ?? editionByHistorySlug(Astro.params.slug ?? "");
 if (!current) {
   throw new Error(`Нет выпуска ${Astro.params.slug}`);
 }
@@ -32,6 +32,6 @@ const title = story
 const description = story?.description ?? `${current.dateLabel}, ADNOMADS №${current.adnomadsNumber}`;
 ---
 
-<Layout title={title} description={description} canonicalPath={`/history/${current.slug}/`}>
+<Layout title={title} description={description} canonicalPath={historyHref(current)}>
   <HistoryEdition edition={current} />
 </Layout>

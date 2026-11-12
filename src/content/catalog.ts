@@ -38,6 +38,19 @@ export function editionBySlug(slug: string): Edition | undefined {
   return editions.find((edition) => edition.slug === slug);
 }
 
+/** Адрес страницы. Не совпадает с id выпуска и не используется в фотобанке. */
+export function historySlug(edition: Pick<Edition, "year" | "month">): string {
+  return `${edition.year}-${String(edition.month ?? 0).padStart(2, "0")}`;
+}
+
+export function historyHref(edition: Pick<Edition, "year" | "month">): string {
+  return `/history/${historySlug(edition)}/`;
+}
+
+export function editionByHistorySlug(slug: string): Edition | undefined {
+  return editions.find((edition) => historySlug(edition) === slug);
+}
+
 export function organizationById(id: string): Organization | undefined {
   return organizations.find((organization) => organization.id === id);
 }

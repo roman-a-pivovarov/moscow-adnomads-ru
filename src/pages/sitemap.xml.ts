@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { historyHref } from "../content/catalog";
 import { editions } from "../content/editions";
 import { siteUrl } from "../content/seo";
 
@@ -8,7 +9,7 @@ export const GET: APIRoute = () => {
     "/history/",
     ...editions
       .filter((edition) => edition.status === "completed")
-      .map((edition) => `/history/${edition.slug}/`),
+      .map((edition) => historyHref(edition)),
   ];
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

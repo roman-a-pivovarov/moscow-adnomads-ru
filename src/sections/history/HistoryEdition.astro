@@ -1,6 +1,6 @@
 ---
 import { goals } from "../../content/analytics";
-import { completedEditions, hostsOf, moscowOrdinal, participantsOf, publicReviews } from "../../content/catalog";
+import { completedEditions, historyHref, hostsOf, moscowOrdinal, participantsOf, publicReviews } from "../../content/catalog";
 import { imagesFor } from "../../content/images";
 import type { Edition } from "../../content/types";
 import { historyStory, historyUi } from "./copy";
@@ -170,7 +170,7 @@ const headline = story?.headline ?? edition.dateLabel;
       {
         others.map((item) => (
           <li>
-            <a href={`/history/${item.slug}/`} data-goal={goals.interestHistory}>
+            <a href={historyHref(item)} data-goal={goals.interestHistory}>
               <span>{item.dateLabel}</span>
               {historyUi.howItWas}
             </a>

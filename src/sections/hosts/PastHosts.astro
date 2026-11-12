@@ -1,5 +1,5 @@
 ---
-import { pastHostEditions } from "../../content/catalog";
+import { historyHref, pastHostEditions } from "../../content/catalog";
 import { pastHosts } from "./copy";
 
 const groups = pastHostEditions();
@@ -51,7 +51,7 @@ const groups = pastHostEditions();
               ) : null
             }
             <p class="edition-link">
-              <a href={`/history/${edition.slug}/`}>{pastHosts.editionLink}</a>
+              <a href={historyHref(edition)}>{pastHosts.editionLink}</a>
             </p>
           </div>
         ))

@@ -1,6 +1,6 @@
 ---
 import { goals } from "../../content/analytics";
-import { completedEditions, coverOf, moscowOrdinal } from "../../content/catalog";
+import { completedEditions, coverOf, historyHref, moscowOrdinal } from "../../content/catalog";
 import { historyStory, historyUi } from "./copy";
 
 const editions = completedEditions();
@@ -24,7 +24,7 @@ const editions = completedEditions();
             {moscowOrdinal(edition.moscowNumber)} московский выпуск · ADNOMADS №{edition.adnomadsNumber}
           </p>
           {story ? <p class="history-card__text">{story.card}</p> : null}
-          <a href={`/history/${edition.slug}/`} data-goal={goals.interestHistory}>
+          <a href={historyHref(edition)} data-goal={goals.interestHistory}>
             {historyUi.howItWas}
             <span class="visually-hidden">, {edition.dateLabel}</span>
           </a>
