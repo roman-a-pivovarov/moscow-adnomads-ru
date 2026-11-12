@@ -1,4 +1,5 @@
 import { editions } from "./editions";
+import { imagesFor } from "./images";
 import { media } from "./media";
 import { organizations } from "./organizations";
 import { participations } from "./participations";
@@ -48,6 +49,11 @@ export function hostsOf(editionId: string): Organization[] {
     .filter((item): item is Organization => Boolean(item));
 }
 
+export function featuredHasConfirmedHosts(): boolean {
+  const featured = featuredEdition();
+  return Boolean(featured && hostsOf(featured.id).length > 0);
+}
+
 export function pastHostEditions(): Array<{ edition: Edition; hosts: Organization[] }> {
   return editions
     .filter((edition) => edition.status === "completed" && edition.hostListStatus !== "none")
@@ -56,9 +62,23 @@ export function pastHostEditions(): Array<{ edition: Edition; hosts: Organizatio
 }
 
 export function coverOf(editionId: string): MediaItem | undefined {
-  return media.find((item) => item.editionId === editionId && item.kind === "cover");
+  const fromBank = imagesFor("history", editionId)[0];
+  if (fromBank) {
+    return {
+      id: fromBank.asset_id,
+      editionId: fromBank.edition_id,
+      src: fromBank.src,
+      alt: fromBank.alt,
+      kind: "cover",
+      caption: fromBank.caption,
+      sourcePath: fromBank.source_path ?? fromBank.asset_id,
+      sourceIds: fromBank.source_ids ?? ["photobank"],
+    };
+  }
+  return undefined;
 }
 
+/** Временные кадры публичной выборки. Не использовать как hero, портрет или состав будущего выпуска. */
 export function reportage(): MediaItem[] {
   return media.filter((item) => item.kind === "reportage");
 }

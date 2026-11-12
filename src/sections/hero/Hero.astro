@@ -1,22 +1,27 @@
 ---
+import { goals } from "../../content/analytics";
 import { productName } from "../../content/brand";
 import { contacts } from "../../content/contacts";
-import { featuredEdition, moscowOrdinal, reportage } from "../../content/catalog";
+import { featuredEdition, moscowOrdinal } from "../../content/catalog";
+import { imagesFor } from "../../content/images";
+import { heroCopy } from "./copy";
 
 const featured = featuredEdition();
 const [titleMain, titleRest] = productName.includes(" by ")
   ? productName.split(" by ")
   : [productName, ""];
-const slides = reportage().slice(0, 3);
+const slides = featured ? imagesFor("hero", featured.id) : [];
+const programLabel =
+  featured?.days?.length === 4 ? heroCopy.programLinkFour : heroCopy.programLink;
 ---
 
 <section class="section" id="top">
-  <div class="container hero">
+  <div class:list={["container", "hero", { "hero--plain": slides.length === 0 }]}>
     <h1 class="hero-headline">
       <span class="hero-title-line">{titleMain}</span>
       {
         titleRest ? (
-          <span class="hero-title-line">
+          <span class="hero-title-brand">
             <span class="hero-title-accent">by</span> {titleRest}
           </span>
         ) : null
@@ -24,46 +29,192 @@ const slides = reportage().slice(0, 3);
     </h1>
     <div class="hero-copy">
       <div class="hero-leads">
-        <p>Встречи и обмен управленческим опытом между владельцами и руководителями агентского, маркетингового и медиабизнеса.</p>
-        <p>Московская программа ADNOMADS: подготовленные разговоры с коллегами, а не конференция и не экскурсия.</p>
+        {heroCopy.leads.map((paragraph) => <p>{paragraph}</p>)}
       </div>
-      {
-        featured ? (
-          <div class="hero-announce">
-            <p class="eyebrow">Ближайший выпуск</p>
-            <p class="hero-announce__date">{featured.dateLabel}</p>
-            <p>
-              {moscowOrdinal(featured.moscowNumber)} московский выпуск · ADNOMADS №{featured.adnomadsNumber}
-            </p>
-            <p>
-              <a href="#edition">Программа четырёх дней</a>
-            </p>
-          </div>
-        ) : (
-          <div class="hero-announce">
-            <p class="eyebrow">Следующая программа</p>
-            <p>Даты ещё не опубликованы. Напишите команде — расскажем, когда откроется следующий выпуск.</p>
-          </div>
-        )
-      }
-      <div class="btn-row" style="margin-top: 1.25rem">
-        <a class="btn" href="#participate">{contacts.participate.label}</a>
-        <a class="btn btn--ghost" href="#host">{contacts.host.label}</a>
-      </div>
+      <aside class="hero-announce hero-aside" aria-label={featured ? heroCopy.announceEyebrow : heroCopy.missingEyebrow}>
+        {
+          featured ? (
+            <>
+              <p class="eyebrow">{heroCopy.announceEyebrow}</p>
+              <p class="hero-announce__date">{featured.dateLabel}</p>
+              <p class="hero-announce__meta">
+                <span>{moscowOrdinal(featured.moscowNumber)} московский выпуск</span>
+                <span>ADNOMADS №{featured.adnomadsNumber}</span>
+              </p>
+              {
+                featured.days?.length ? (
+                  <p class="hero-announce__more">
+                    <a href="#edition" data-goal={goals.interestProgram}>{programLabel}</a>
+                  </p>
+                ) : null
+              }
+            </>
+          ) : (
+            <>
+              <p class="eyebrow">{heroCopy.missingEyebrow}</p>
+              <p>{heroCopy.missingText}</p>
+            </>
+          )
+        }
+        <div class="btn-row">
+          <a class="btn" href="#participate">{contacts.participate.label}</a>
+          <a class="btn btn--ghost" href="#host">{contacts.host.label}</a>
+        </div>
+      </aside>
     </div>
-    <div class="hero-media" aria-hidden={slides.length ? undefined : "true"}>
-      {
-        slides.map((slide, index) => (
-          <img
-            class:list={["hero-slide", "adn-photo", index === 0 && "is-active"]}
-            src={slide.src}
-            alt={index === 0 ? slide.alt : ""}
-            data-hero-slide
-            width="960"
-            height="720"
-          />
-        ))
-      }
-    </div>
+    {
+      slides.length > 0 ? (
+        <div class="hero-media">
+          {slides.map((slide, index) => (
+            <img
+              class:list={["hero-slide", "adn-photo", index === 0 && "is-active"]}
+              src={slide.src}
+              alt={index === 0 ? slide.alt : ""}
+              data-hero-slide
+              width="960"
+              height="720"
+            />
+          ))}
+        </div>
+      ) : null
+    }
   </div>
 </section>
+
+<style>
+  .hero-headline {
+    max-width: 100%;
+    margin: 0;
+    font-size: clamp(2.65rem, 12.2vw, 3.2rem);
+    line-height: 0.96;
+    letter-spacing: -0.035em;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: manual;
+  }
+
+  .hero-title-line,
+  .hero-title-brand {
+    display: block;
+    max-width: 100%;
+  }
+
+  .hero-title-brand {
+    margin-top: 0.28em;
+    font-size: 0.62em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    color: var(--text-strong);
+  }
+
+  .hero-leads {
+    margin-bottom: 0;
+  }
+
+  .hero-leads p {
+    font-size: clamp(1.2rem, 2.5vw, 1.45rem);
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text);
+  }
+
+  .hero-aside {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin-top: 1.5rem;
+    padding: 1.2rem 1.15rem 1.25rem;
+    border-top: 3px solid var(--accent);
+  }
+
+  .hero-aside .eyebrow {
+    margin-bottom: 0.55rem;
+  }
+
+  .hero-announce__date {
+    margin-top: 0;
+    font-size: clamp(2.15rem, 7.4vw, 2.55rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    text-wrap: balance;
+    overflow-wrap: normal;
+    color: var(--text-strong);
+  }
+
+  .hero-announce__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .hero-announce__more {
+    margin-top: 0.85rem;
+  }
+
+  .hero-aside .btn-row {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: auto;
+    padding-top: 1.25rem;
+  }
+
+  .hero-aside .btn {
+    width: 100%;
+    white-space: normal;
+  }
+
+  @media (min-width: 900px) {
+    .hero-headline {
+      font-size: clamp(3.2rem, 4.7vw, 4.25rem);
+      line-height: 0.98;
+    }
+
+    .hero--plain {
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      column-gap: 2.75rem;
+      row-gap: 1.85rem;
+      align-items: stretch;
+    }
+
+    .hero--plain .hero-copy {
+      display: contents;
+    }
+
+    .hero--plain .hero-leads {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: start;
+    }
+
+    .hero--plain .hero-aside {
+      grid-column: 2;
+      grid-row: 2;
+      align-self: stretch;
+      margin-top: 0;
+    }
+
+    .hero-announce__date {
+      font-size: clamp(2.35rem, 2.5vw, 2.7rem);
+    }
+
+    .hero-announce__meta {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.2rem 0.55rem;
+    }
+
+    .hero-announce__meta span + span::before {
+      content: "·";
+      margin-right: 0.55rem;
+      color: var(--accent);
+    }
+  }
+</style>

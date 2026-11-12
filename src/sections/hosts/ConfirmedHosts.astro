@@ -1,0 +1,54 @@
+---
+import { featuredEdition, hostsOf } from "../../content/catalog";
+import { confirmedHosts } from "./copy";
+
+const featured = featuredEdition();
+const hosts = featured ? hostsOf(featured.id) : [];
+const note =
+  !featured
+    ? confirmedHosts.noEdition
+    : hosts.length === 0
+      ? confirmedHosts.empty
+      : featured.hostListStatus === "partial"
+        ? confirmedHosts.partial
+        : confirmedHosts.lead;
+---
+
+{
+  hosts.length > 0 ? (
+<section class="section" id="confirmed-hosts">
+  <div class="container">
+    <h2>{confirmedHosts.title}</h2>
+    <p class="host-note">{note}</p>
+    {
+      hosts.length > 0 ? (
+        <ul class="chip-list">
+          {hosts.map((host) => (
+            <li class="chip">{host.name}</li>
+          ))}
+        </ul>
+      ) : null
+    }
+  </div>
+</section>
+  ) : null
+}
+
+<style>
+  .host-note {
+    max-width: 42rem;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .chip-list {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .chip-list .chip {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+</style>

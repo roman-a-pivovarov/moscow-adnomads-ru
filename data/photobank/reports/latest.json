@@ -1,0 +1,1037 @@
+{
+  "generated_at": "2026-11-12T20:06:11.124Z",
+  "command": "import",
+  "dry_run": false,
+  "missing_batches": [],
+  "unknown": [],
+  "batches": [
+    {
+      "key": "2021-11",
+      "edition_id": "2021-moscow",
+      "canonical_tour_id": "ADNOMADS-32",
+      "kind": "folder",
+      "seen": 44,
+      "new_assets": 44,
+      "known": 0,
+      "processed": 44,
+      "errors": 0
+    },
+    {
+      "key": "2026-05",
+      "edition_id": "2026-moscow-may",
+      "canonical_tour_id": "ADNOMADS-51",
+      "kind": "folder",
+      "seen": 53,
+      "new_assets": 52,
+      "known": 1,
+      "processed": 53,
+      "errors": 0
+    },
+    {
+      "key": "team-roman",
+      "edition_id": "",
+      "canonical_tour_id": "",
+      "kind": "folder",
+      "seen": 1,
+      "new_assets": 1,
+      "known": 0,
+      "processed": 1,
+      "errors": 0
+    },
+    {
+      "key": "team-irina",
+      "edition_id": "",
+      "canonical_tour_id": "",
+      "kind": "folder",
+      "seen": 1,
+      "new_assets": 1,
+      "known": 0,
+      "processed": 1,
+      "errors": 0
+    },
+    {
+      "key": "shared",
+      "edition_id": "",
+      "canonical_tour_id": "",
+      "kind": "folder",
+      "seen": 150,
+      "new_assets": 146,
+      "known": 4,
+      "processed": 150,
+      "errors": 0
+    }
+  ],
+  "errors": [
+    {
+      "batch": "2026-02",
+      "file": "IMG_0828.HEIC",
+      "asset_id": "msk-000109",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0839.HEIC",
+      "asset_id": "msk-000110",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0877.HEIC",
+      "asset_id": "msk-000111",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0902.HEIC",
+      "asset_id": "msk-000112",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0941.HEIC",
+      "asset_id": "msk-000114",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0953.HEIC",
+      "asset_id": "msk-000115",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0962.HEIC",
+      "asset_id": "msk-000116",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0976.HEIC",
+      "asset_id": "msk-000117",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_0982.HEIC",
+      "asset_id": "msk-000118",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1033.HEIC",
+      "asset_id": "msk-000119",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1036.HEIC",
+      "asset_id": "msk-000120",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1042.HEIC",
+      "asset_id": "msk-000121",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1053.HEIC",
+      "asset_id": "msk-000122",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1078.HEIC",
+      "asset_id": "msk-000123",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1081.HEIC",
+      "asset_id": "msk-000124",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1087.HEIC",
+      "asset_id": "msk-000125",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1113.HEIC",
+      "asset_id": "msk-000126",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1119.HEIC",
+      "asset_id": "msk-000127",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1135.HEIC",
+      "asset_id": "msk-000128",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1172.HEIC",
+      "asset_id": "msk-000129",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1180.HEIC",
+      "asset_id": "msk-000130",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1191.HEIC",
+      "asset_id": "msk-000131",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1194.HEIC",
+      "asset_id": "msk-000132",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1206.HEIC",
+      "asset_id": "msk-000133",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1211.HEIC",
+      "asset_id": "msk-000134",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1226.HEIC",
+      "asset_id": "msk-000135",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1238.HEIC",
+      "asset_id": "msk-000136",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1241.HEIC",
+      "asset_id": "msk-000137",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1253.HEIC",
+      "asset_id": "msk-000138",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1262.HEIC",
+      "asset_id": "msk-000139",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1266.HEIC",
+      "asset_id": "msk-000140",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1269.HEIC",
+      "asset_id": "msk-000141",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1281.HEIC",
+      "asset_id": "msk-000142",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1293.HEIC",
+      "asset_id": "msk-000143",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1318.HEIC",
+      "asset_id": "msk-000144",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1320.HEIC",
+      "asset_id": "msk-000145",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1383.HEIC",
+      "asset_id": "msk-000146",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1385.HEIC",
+      "asset_id": "msk-000147",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1397.HEIC",
+      "asset_id": "msk-000148",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1469.heic",
+      "asset_id": "msk-000149",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1480.HEIC",
+      "asset_id": "msk-000150",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1481.HEIC",
+      "asset_id": "msk-000151",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1488.HEIC",
+      "asset_id": "msk-000152",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-02",
+      "file": "IMG_1507.HEIC",
+      "asset_id": "msk-000153",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9077.HEIC",
+      "asset_id": "msk-000154",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9079.HEIC",
+      "asset_id": "msk-000155",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9084.HEIC",
+      "asset_id": "msk-000156",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9092.HEIC",
+      "asset_id": "msk-000157",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9099.HEIC",
+      "asset_id": "msk-000158",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9101.HEIC",
+      "asset_id": "msk-000159",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9104.HEIC",
+      "asset_id": "msk-000160",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9110.HEIC",
+      "asset_id": "msk-000161",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9120.HEIC",
+      "asset_id": "msk-000162",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9135.HEIC",
+      "asset_id": "msk-000163",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9137.HEIC",
+      "asset_id": "msk-000164",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9147.HEIC",
+      "asset_id": "msk-000165",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9154.HEIC",
+      "asset_id": "msk-000166",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9159.HEIC",
+      "asset_id": "msk-000167",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9164.HEIC",
+      "asset_id": "msk-000168",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9165.HEIC",
+      "asset_id": "msk-000169",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9176.HEIC",
+      "asset_id": "msk-000170",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9180.HEIC",
+      "asset_id": "msk-000171",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9183.HEIC",
+      "asset_id": "msk-000172",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9187.HEIC",
+      "asset_id": "msk-000173",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9191.HEIC",
+      "asset_id": "msk-000174",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9194.HEIC",
+      "asset_id": "msk-000175",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9197.HEIC",
+      "asset_id": "msk-000176",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9206.HEIC",
+      "asset_id": "msk-000177",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9212.HEIC",
+      "asset_id": "msk-000178",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9217.HEIC",
+      "asset_id": "msk-000179",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9220.HEIC",
+      "asset_id": "msk-000180",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9222.HEIC",
+      "asset_id": "msk-000181",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9229.HEIC",
+      "asset_id": "msk-000182",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9234.HEIC",
+      "asset_id": "msk-000183",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9237.HEIC",
+      "asset_id": "msk-000184",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9241.HEIC",
+      "asset_id": "msk-000185",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9247.heic",
+      "asset_id": "msk-000186",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9255.HEIC",
+      "asset_id": "msk-000187",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9263.HEIC",
+      "asset_id": "msk-000188",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9268.HEIC",
+      "asset_id": "msk-000189",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9274.HEIC",
+      "asset_id": "msk-000190",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9281.HEIC",
+      "asset_id": "msk-000191",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9289.HEIC",
+      "asset_id": "msk-000192",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9300.HEIC",
+      "asset_id": "msk-000193",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9306.HEIC",
+      "asset_id": "msk-000194",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9326.HEIC",
+      "asset_id": "msk-000195",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9332.HEIC",
+      "asset_id": "msk-000196",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9345.heic",
+      "asset_id": "msk-000197",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9372.HEIC",
+      "asset_id": "msk-000198",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9376.HEIC",
+      "asset_id": "msk-000199",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9401.HEIC",
+      "asset_id": "msk-000200",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9405.HEIC",
+      "asset_id": "msk-000201",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9407.HEIC",
+      "asset_id": "msk-000202",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9409.HEIC",
+      "asset_id": "msk-000203",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9411.HEIC",
+      "asset_id": "msk-000204",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9415.HEIC",
+      "asset_id": "msk-000205",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9421.HEIC",
+      "asset_id": "msk-000206",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9427.HEIC",
+      "asset_id": "msk-000207",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9432.HEIC",
+      "asset_id": "msk-000208",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9439.HEIC",
+      "asset_id": "msk-000209",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9450.HEIC",
+      "asset_id": "msk-000210",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9455.HEIC",
+      "asset_id": "msk-000211",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9461.HEIC",
+      "asset_id": "msk-000212",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9468.HEIC",
+      "asset_id": "msk-000213",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9478.HEIC",
+      "asset_id": "msk-000214",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9479.HEIC",
+      "asset_id": "msk-000215",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9491.HEIC",
+      "asset_id": "msk-000216",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9535.HEIC",
+      "asset_id": "msk-000217",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9546.HEIC",
+      "asset_id": "msk-000218",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9558.HEIC",
+      "asset_id": "msk-000219",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9561.HEIC",
+      "asset_id": "msk-000220",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9572.HEIC",
+      "asset_id": "msk-000221",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9576.HEIC",
+      "asset_id": "msk-000222",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9583.HEIC",
+      "asset_id": "msk-000223",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9594.HEIC",
+      "asset_id": "msk-000224",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9609.HEIC",
+      "asset_id": "msk-000225",
+      "message": "heic_unsupported"
+    },
+    {
+      "batch": "2026-09",
+      "file": "IMG_9613.HEIC",
+      "asset_id": "msk-000226",
+      "message": "heic_unsupported"
+    }
+  ],
+  "source_conflicts": [
+    {
+      "asset_id": "msk-000059",
+      "kept_edition_id": "2019-moscow-practices",
+      "kept_category": "edition",
+      "also_seen_in": "2026-05",
+      "file": "tild3639-3638-4634-a237-663633373536__img_20190925_104933.jpg"
+    }
+  ],
+  "over_budget": [
+    {
+      "asset_id": "msk-000266",
+      "bytes": 164444,
+      "width": 960,
+      "height": 960,
+      "file": "IMG_20211201_104648.jpg"
+    }
+  ],
+  "non_photos": [],
+  "duplicates": [
+    {
+      "asset_id": "msk-000059",
+      "sha256": "398f941e08c15e312175340250294c5378bf38d5ee99d563f7f6c93aac73f2a0",
+      "sources": [
+        "2019-09:tild3639-3638-4634-a237-663633373536__img_20190925_104933.jpg",
+        "2026-05:tild3639-3638-4634-a237-663633373536__img_20190925_104933.jpg"
+      ]
+    },
+    {
+      "asset_id": "msk-000456",
+      "sha256": "0108c91c90928209eb2c86ec624208209be4d586e5d051f3c6f04be4dd1b7529",
+      "sources": [
+        "shared:adn-asset-001040.webp",
+        "shared:adn-asset-001090.webp"
+      ]
+    },
+    {
+      "asset_id": "msk-000432",
+      "sha256": "eac9c35e20023a54f7dcfa53ed0451cf6d1a083fe823f45dc82585e99f050193",
+      "sources": [
+        "shared:adn-asset-000866.webp",
+        "shared:group-conversation.webp"
+      ]
+    },
+    {
+      "asset_id": "msk-000437",
+      "sha256": "a895110ee272a9dcc45b607150fa12a540fb629f0628056f76dbc6239f295dbd",
+      "sources": [
+        "shared:adn-asset-000874.webp",
+        "shared:office-discussion.webp"
+      ]
+    },
+    {
+      "asset_id": "msk-000369",
+      "sha256": "565570349359e81a3403128053914a76f2ada43a661f6d511b2ec8667825b427",
+      "sources": [
+        "shared:adn-asset-000685.webp",
+        "shared:visit-agency-meeting.webp"
+      ]
+    }
+  ],
+  "summary": {
+    "assets": 472,
+    "processed": 355,
+    "errors": 117,
+    "conflicts": 1,
+    "over_budget": 1,
+    "original_bytes": 476279343,
+    "web_bytes": 34230580,
+    "web_median_bytes": 96106,
+    "web_max_bytes": 164444,
+    "by_edition": {
+      "2019-moscow-practices": {
+        "assets": 83,
+        "processed": 83,
+        "errors": 0,
+        "original_bytes": 25607147,
+        "web_bytes": 7230816
+      },
+      "2026-moscow-february": {
+        "assets": 70,
+        "processed": 26,
+        "errors": 44,
+        "original_bytes": 137232833,
+        "web_bytes": 2483030
+      },
+      "2026-moscow-september": {
+        "assets": 75,
+        "processed": 2,
+        "errors": 73,
+        "original_bytes": 193924570,
+        "web_bytes": 230396
+      },
+      "2021-moscow": {
+        "assets": 44,
+        "processed": 44,
+        "errors": 0,
+        "original_bytes": 28950977,
+        "web_bytes": 5673998
+      },
+      "2026-moscow-may": {
+        "assets": 52,
+        "processed": 52,
+        "errors": 0,
+        "original_bytes": 75264644,
+        "web_bytes": 4432232
+      },
+      "team": {
+        "assets": 2,
+        "processed": 2,
+        "errors": 0,
+        "original_bytes": 113968,
+        "web_bytes": 109004
+      },
+      "shared": {
+        "assets": 146,
+        "processed": 146,
+        "errors": 0,
+        "original_bytes": 15185204,
+        "web_bytes": 14071104
+      }
+    }
+  },
+  "similar_hints": [
+    {
+      "asset_ids": [
+        "msk-000002",
+        "msk-000067"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000004",
+        "msk-000054"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000011",
+        "msk-000073"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000092",
+        "msk-000374"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000095",
+        "msk-000375"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000098",
+        "msk-000376"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000105",
+        "msk-000378"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000106",
+        "msk-000379"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000257",
+        "msk-000372"
+      ],
+      "distance": 0,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000005",
+        "msk-000365"
+      ],
+      "distance": 1,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000020",
+        "msk-000048"
+      ],
+      "distance": 1,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000032",
+        "msk-000369"
+      ],
+      "distance": 1,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000060",
+        "msk-000366"
+      ],
+      "distance": 1,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000253",
+        "msk-000371"
+      ],
+      "distance": 1,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000263",
+        "msk-000264"
+      ],
+      "distance": 2,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000305",
+        "msk-000307"
+      ],
+      "distance": 4,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000236",
+        "msk-000370"
+      ],
+      "distance": 5,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    },
+    {
+      "asset_ids": [
+        "msk-000107",
+        "msk-000380"
+      ],
+      "distance": 7,
+      "note": "Подсказка похожести, не основание удалять кадр."
+    }
+  ]
+}

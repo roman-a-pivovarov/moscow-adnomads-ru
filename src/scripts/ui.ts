@@ -1,3 +1,6 @@
+import { goals } from "../content/analytics";
+import { initAnalytics, reachGoal } from "./analytics";
+
 const menuToggle = document.querySelector<HTMLButtonElement>("[data-menu-toggle]");
 const mobileNav = document.querySelector<HTMLElement>("[data-mobile-nav]");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -318,6 +321,7 @@ function initPhotoStrip(root: HTMLElement): void {
       userPaused = true;
       syncToggleUi();
       stopAutoplay();
+      reachGoal(goals.interestPhoto);
     }
     index += delta;
     if (reduceMotion.matches) {
@@ -444,3 +448,4 @@ function initPhotoStrip(root: HTMLElement): void {
 }
 
 document.querySelectorAll<HTMLElement>("[data-photo-strip]").forEach((root) => initPhotoStrip(root));
+initAnalytics();

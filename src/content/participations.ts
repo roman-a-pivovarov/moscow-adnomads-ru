@@ -82,4 +82,20 @@ export const participations: Participation[] = [
     ],
     "src-live-2026-may",
   ),
+  ...hosts(
+    "2026-moscow-september",
+    [
+      "org-yandex-ads",
+      "org-avito-ads",
+      "org-d-innovative",
+      "org-realweb",
+      "org-creative-family",
+      "org-nectarine",
+      "org-genius",
+      "org-red-keds",
+      "org-usilitel",
+      "org-roden",
+    ],
+    "src-live-2026-september",
+  ),
 ];

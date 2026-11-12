@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+import { metrikaCounterId } from "../content/analytics";
 import { seoDefaults, siteUrl } from "../content/seo";
 
 interface Props {
@@ -37,6 +38,39 @@ const canonical = new URL(canonicalPath, siteUrl).toString();
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={seoDefaults.ogLocale} />
     <meta name="twitter:card" content="summary" />
+    <script is:inline define:vars={{ metrikaCounterId }}>
+      (function () {
+        if (window.__moscowMetrika) return;
+        window.__moscowMetrika = metrikaCounterId;
+        (function (m, e, t, r, i, k, a) {
+          m[i] =
+            m[i] ||
+            function () {
+              (m[i].a = m[i].a || []).push(arguments);
+            };
+          m[i].l = 1 * new Date();
+          for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) return;
+          }
+          (k = e.createElement(t)),
+            (a = e.getElementsByTagName(t)[0]),
+            (k.async = 1),
+            (k.src = r),
+            a.parentNode.insertBefore(k, a);
+        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(metrikaCounterId, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true,
+        });
+      })();
+    </script>
+    <noscript>
+      <div>
+        <img src={`https://mc.yandex.ru/watch/${metrikaCounterId}`} style="position:absolute; left:-9999px;" alt="" />
+      </div>
+    </noscript>
   </head>
   <body>
     <Header />

@@ -1,0 +1,28 @@
+---
+import { goals } from "../../content/analytics";
+import { featuredEdition } from "../../content/catalog";
+import { historyUi } from "./copy";
+
+const featured = featuredEdition();
+---
+
+{
+  featured ? (
+    <p class="history-next">
+      Ближайший выпуск — {featured.dateLabel}, ADNOMADS №{featured.adnomadsNumber}.{" "}
+      <a href="/#edition" data-goal={goals.interestProgram}>{historyUi.nearestProgram}</a>
+    </p>
+  ) : (
+    <p class="history-next">
+      <a href="/#participate">{historyUi.writeTeam}</a>
+    </p>
+  )
+}
+
+<style>
+  .history-next {
+    max-width: 40rem;
+    margin: 1.75rem 0 0;
+    overflow-wrap: anywhere;
+  }
+</style>

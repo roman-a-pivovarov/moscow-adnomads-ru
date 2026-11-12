@@ -1,10 +1,12 @@
 ---
 import BrandLogo from "./BrandLogo.astro";
-import { footerNavColumns } from "../content/navigation";
+import { featuredHasConfirmedHosts } from "../content/catalog";
+import { footerColumns } from "../content/navigation";
 import { productName } from "../content/brand";
 import { contacts } from "../content/contacts";
 
 const year = new Date().getFullYear();
+const columns = footerColumns(featuredHasConfirmedHosts());
 ---
 
 <footer class="site-footer">
@@ -21,11 +23,13 @@ const year = new Date().getFullYear();
       </div>
       <nav class="footer-nav" aria-label="Подвал">
         {
-          footerNavColumns.map((column) => (
+          columns.map((column) => (
             <ul class="footer-nav__col">
               {column.map((item) => (
                 <li>
-                  <a href={item.href}>{item.label}</a>
+                  <a href={item.href} data-goal={item.goal}>
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>

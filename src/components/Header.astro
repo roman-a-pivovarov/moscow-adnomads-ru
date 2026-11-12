@@ -1,6 +1,9 @@
 ---
 import BrandLogo from "./BrandLogo.astro";
-import { mobileNav, nav } from "../content/navigation";
+import { featuredHasConfirmedHosts } from "../content/catalog";
+import { footerColumns, nav } from "../content/navigation";
+
+const mobileNav = footerColumns(featuredHasConfirmedHosts()).flat();
 ---
 
 <header class="site-header" data-site-header>
@@ -16,7 +19,11 @@ import { mobileNav, nav } from "../content/navigation";
     </a>
     <BrandLogo class="brand brand--vector" />
     <nav class="site-nav" aria-label="Разделы страницы">
-      {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+      {nav.map((item) => (
+        <a href={item.href} data-goal={item.goal}>
+          {item.label}
+        </a>
+      ))}
     </nav>
     <button
       class="menu-toggle"
@@ -52,7 +59,11 @@ import { mobileNav, nav } from "../content/navigation";
   </div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Меню" aria-hidden="true" data-mobile-nav>
     <div class="mobile-nav__inner">
-      {mobileNav.map((item) => <a href={item.href}>{item.label}</a>)}
+      {mobileNav.map((item) => (
+        <a href={item.href} data-goal={item.goal}>
+          {item.label}
+        </a>
+      ))}
     </div>
   </nav>
 </header>

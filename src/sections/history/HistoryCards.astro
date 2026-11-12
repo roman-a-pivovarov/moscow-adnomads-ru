@@ -1,0 +1,115 @@
+---
+import { goals } from "../../content/analytics";
+import { completedEditions, coverOf, moscowOrdinal } from "../../content/catalog";
+import { historyStory, historyUi } from "./copy";
+
+const editions = completedEditions();
+---
+
+<ul class="history-cards">
+  {
+    editions.map((edition) => {
+      const story = historyStory(edition.id);
+      const cover = coverOf(edition.id);
+      return (
+        <li class:list={["history-card", cover ? "history-card--photo" : "history-card--text"]}>
+          {cover ? (
+            <figure>
+              <img src={cover.src} alt={cover.alt} width="960" height="720" loading="lazy" decoding="async" />
+              {cover.caption ? <figcaption>{cover.caption}</figcaption> : null}
+            </figure>
+          ) : null}
+          <p class="history-card__date">{edition.dateLabel}</p>
+          <p class="history-card__meta">
+            {moscowOrdinal(edition.moscowNumber)} московский выпуск · ADNOMADS №{edition.adnomadsNumber}
+          </p>
+          {story ? <p class="history-card__text">{story.card}</p> : null}
+          <a href={`/history/${edition.slug}/`} data-goal={goals.interestHistory}>
+            {historyUi.howItWas}
+            <span class="visually-hidden">, {edition.dateLabel}</span>
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  .history-cards {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .history-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0.95rem 1rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-ui);
+    background: var(--bg);
+  }
+
+  .history-card figure {
+    width: 100%;
+    margin: 0 0 0.45rem;
+  }
+
+  .history-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-ui);
+    background: var(--surface-muted);
+  }
+
+  .history-card figcaption,
+  .history-card__meta,
+  .history-card__text {
+    overflow-wrap: anywhere;
+  }
+
+  .history-card figcaption,
+  .history-card__meta {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .history-card__date {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: var(--size-h3);
+    font-weight: 700;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .history-card__text {
+    margin: 0.35rem 0 0.15rem;
+  }
+
+  .history-card a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    margin-top: auto;
+    padding-top: 0.35rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  @media (min-width: 800px) {
+    .history-cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.15rem 1.25rem;
+    }
+  }
+</style>

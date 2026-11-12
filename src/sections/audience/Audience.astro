@@ -1,59 +1,90 @@
 ---
 import { audience } from "./copy";
+
+const tasks = audience.tasks.filter((task) => task.trim().length > 0);
 ---
 
 <section class="section" id="audience">
-  <div class="container">
+  <div class="container audience">
     <h2>{audience.title}</h2>
-    <p class="lead">{audience.lead}</p>
-    <ul class="audience-grid">
-      {
-        audience.groups.map((group) => (
-          <li>
-            <h3>{group.title}</h3>
-            <p>{group.text}</p>
-          </li>
-        ))
-      }
-    </ul>
-    <h3>{audience.tasksTitle}</h3>
-    <ul class="task-list">
-      {audience.tasks.map((task) => <li>{task}</li>)}
-    </ul>
+    {audience.lead.trim() ? <p class="lead">{audience.lead}</p> : null}
+    {audience.exchange.trim() ? <p class="exchange">{audience.exchange}</p> : null}
+    {
+      tasks.length > 0 ? (
+        <div class="questions">
+          <h3>{audience.tasksTitle}</h3>
+          {audience.tasksNote.trim() ? <p class="questions-note">{audience.tasksNote}</p> : null}
+          <ul>
+            {tasks.map((task) => (
+              <li>{task}</li>
+            ))}
+          </ul>
+        </div>
+      ) : null
+    }
   </div>
 </section>
 
 <style>
-  .audience-grid {
-    display: grid;
-    gap: 1rem;
-    margin: 1.75rem 0 2rem;
+  .audience {
+    min-width: 0;
+  }
+
+  .audience > .lead {
+    margin-bottom: 0.75rem;
+  }
+
+  .exchange {
+    max-width: 40rem;
+    margin: 0;
+  }
+
+  .questions {
+    margin-top: 1.75rem;
+    padding-top: 1.35rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .questions h3 {
+    margin-bottom: 0.65rem;
+  }
+
+  .questions-note {
+    max-width: 40rem;
+    margin: 0 0 1rem;
+  }
+
+  .questions ul {
+    margin: 0;
     padding: 0;
     list-style: none;
-  }
-
-  .audience-grid li {
-    margin: 0;
-    padding: 1.1rem 1.15rem 1.2rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-ui);
-    background: var(--bg);
-  }
-
-  .audience-grid p {
-    margin: 0;
-  }
-
-  .task-list {
-    margin: 0;
-    padding-left: 1.2rem;
     display: grid;
-    gap: 0.7rem;
+    gap: 0.65rem 2rem;
   }
 
-  @media (min-width: 800px) {
-    .audience-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+  .questions li {
+    min-width: 0;
+    margin: 0;
+    padding-left: 0.95rem;
+    position: relative;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+  }
+
+  .questions li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 0.4rem;
+    height: 2px;
+    background: var(--accent);
+  }
+
+  @media (min-width: 900px) {
+    .questions ul {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 2.5rem;
     }
   }
 </style>

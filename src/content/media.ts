@@ -1,5 +1,11 @@
 import type { MediaItem } from "./types";
 
+/**
+ * Временные обложки прошедших выпусков из публичной выборки.
+ * Новый кадр сюда не копировать: его публикует фотобанк в data/photobank/published.json.
+ * Эти файлы не портреты и не состав ближайшего выпуска.
+ */
+
 export const media: MediaItem[] = [
   {
     id: "media-2019-cover",

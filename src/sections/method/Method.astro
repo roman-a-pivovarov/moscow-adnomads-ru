@@ -1,7 +1,10 @@
 ---
 import PhotoStrip from "../../components/PhotoStrip.astro";
+import { goals } from "../../content/analytics";
+import { imagesFor } from "../../content/images";
 import { method } from "./copy";
-import { reportage } from "../../content/catalog";
+
+const photos = imagesFor("program").map((photo) => ({ src: photo.src, alt: photo.alt }));
 ---
 
 <section class="section section--muted" id="method">
@@ -10,64 +13,162 @@ import { reportage } from "../../content/catalog";
     <p class="lead">{method.lead}</p>
     <ol class="phase-grid">
       {
-        method.phases.map((phase) => (
-          <li>
+        method.phases.map((phase, index) => (
+          <li class="phase">
+            <p class="phase__index">
+              <span class="phase__num">{String(index + 1).padStart(2, "0")}</span>
+              <span class="phase__name">{phase.name}</span>
+            </p>
             <h3>{phase.title}</h3>
-            <ul>
-              {phase.points.map((point) => (
-                <li>{point}</li>
-              ))}
-            </ul>
+            <p class="phase__summary">{phase.summary}</p>
+            <details class="disclose phase__more">
+              <summary data-goal={goals.interestProgram}>
+                <span>{phase.detailsLabel}</span>
+              </summary>
+              <div class="disclose__body">
+                <ul>
+                  {phase.steps.map((step) => (
+                    <li>{step}</li>
+                  ))}
+                </ul>
+              </div>
+            </details>
           </li>
         ))
       }
     </ol>
-    <div class="strip-wrap">
-      <PhotoStrip
-        photos={reportage()}
-        label="Кадры прошедших московских встреч"
-        galleryLabel="Репортаж прошлых выпусков"
-        manualMobile
-      />
-    </div>
+    <p class="method-note">
+      {method.scope} <a href={method.scheduleHref} data-goal={goals.interestProgram}>{method.scheduleLabel}</a>.
+    </p>
+    {
+      photos.length > 0 ? (
+        <div class="strip-wrap">
+          <p class="strip-label">{method.stripLabel}</p>
+          <PhotoStrip
+            photos={photos}
+            label={method.stripLabel}
+            galleryLabel={method.stripLabel}
+            manualMobile
+          />
+        </div>
+      ) : null
+    }
   </div>
 </section>
 
 <style>
-  .lead {
-    margin-bottom: 1.75rem;
-  }
-
   .phase-grid {
     display: grid;
     gap: 1rem;
-    margin: 0 0 2rem;
+    margin: 0 0 1.35rem;
     padding: 0;
     list-style: none;
   }
 
-  .phase-grid > li {
+  .phase {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
     margin: 0;
-    padding: 1.1rem 1.15rem 1.25rem;
+    padding: 1.15rem 1.1rem 0.35rem;
     border-radius: var(--radius-ui);
     background: var(--bg);
+    border-top: 3px solid var(--accent);
   }
 
-  .phase-grid ul {
+  .phase__index {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin: 0 0 0.7rem;
+    color: var(--accent-strong);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    line-height: 1.2;
+  }
+
+  .phase__num {
+    font-size: 1.35rem;
+    letter-spacing: 0;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+  }
+
+  .phase h3 {
+    font-size: clamp(1.2rem, 0.4vw + 1.05rem, 1.45rem);
+    line-height: 1.25;
+    margin: 0 0 0.65rem;
+    text-wrap: pretty;
+    overflow-wrap: anywhere;
+  }
+
+  .phase__summary {
+    margin: 0;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  .phase__more {
+    margin-top: 0.85rem;
+  }
+
+  .phase__more > summary {
+    align-items: flex-start;
+    padding: 0.75rem 0 0.7rem;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .phase__more > summary span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .phase__more .disclose__body {
+    padding-top: 0.15rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .phase__more ul {
     margin: 0;
     padding-left: 1.15rem;
     display: grid;
-    gap: 0.55rem;
+    gap: 0.5rem;
+  }
+
+  .phase__more li {
+    margin: 0;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .method-note {
+    margin: 0 0 1.75rem;
+    max-width: 40rem;
+    color: var(--muted);
+  }
+
+  .strip-label {
+    margin: 0 0 0.75rem;
+    color: var(--muted);
+    font-size: 1rem;
   }
 
   .strip-wrap {
-    margin-top: 0.5rem;
+    min-width: 0;
+    max-width: 100%;
   }
 
   @media (min-width: 900px) {
     .phase-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
       align-items: stretch;
+    }
+
+    .phase__more {
+      margin-top: auto;
     }
   }
 </style>

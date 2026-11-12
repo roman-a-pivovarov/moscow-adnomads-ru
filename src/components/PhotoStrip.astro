@@ -14,6 +14,7 @@ interface Props {
 const { photos, label, galleryLabel = "Фотографии", manualMobile = false } = Astro.props;
 ---
 
+{photos.length > 0 && (
 <div
   class:list={["photo-strip", manualMobile && "photo-strip--manual-mobile"]}
   data-photo-strip
@@ -79,3 +80,4 @@ const { photos, label, galleryLabel = "Фотографии", manualMobile = fal
     </button>
   </div>
 </div>
+)}

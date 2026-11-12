@@ -14,6 +14,7 @@ const { items, label } = Astro.props;
 const tilts = ["-7deg", "4deg", "-3deg", "6deg", "-5deg"];
 ---
 
+{items.length > 0 && (
 <ul class="polaroid-stack" aria-label={label}>
   {
     items.map((item, index) => (
@@ -26,3 +27,4 @@ const tilts = ["-7deg", "4deg", "-3deg", "6deg", "-5deg"];
     ))
   }
 </ul>
+)}

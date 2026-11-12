@@ -17,5 +17,7 @@ dist/
 !/assets-raw/**/
 !/assets-raw/**/.gitkeep
 /assets-work/
+/scripts/photobank/.venv/
+/scripts/photobank/**/__pycache__/
 /docs/photo-review/**
 !/docs/photo-review/README.md

@@ -1,4 +1,5 @@
 ---
+import { goals } from "../../content/analytics";
 import { conditions } from "./copy";
 import { contacts } from "../../content/contacts";
 ---
@@ -11,17 +12,27 @@ import { contacts } from "../../content/contacts";
       <article id="participate">
         <h3>Участнику</h3>
         <p>Обсудим задачи и условия участия в ближайшем выпуске.</p>
+        <p>{contacts.participate.opener}</p>
         <div class="btn-row">
-          <a class="btn" href={contacts.participate.telegramHref}>Telegram</a>
-          <a class="btn btn--ghost" href={contacts.participate.href}>Письмо</a>
+          <a class="btn" href={contacts.participate.telegramHref} data-goal={goals.leadParticipant}>
+            {contacts.participate.messengerLabel}
+          </a>
+          <a class="btn btn--ghost" href={contacts.participate.href} data-goal={goals.leadParticipantEmail}>
+            Письмо
+          </a>
         </div>
       </article>
       <article id="host">
         <h3>Хосту</h3>
         <p>Расскажем о составе группы и формате встречи. Заявка не включает агентство в программу автоматически.</p>
+        <p>{contacts.host.opener}</p>
         <div class="btn-row">
-          <a class="btn" href={contacts.host.telegramHref}>Telegram</a>
-          <a class="btn btn--ghost" href={contacts.host.href}>Письмо</a>
+          <a class="btn" href={contacts.host.telegramHref} data-goal={goals.leadHost}>
+            {contacts.host.messengerLabel}
+          </a>
+          <a class="btn btn--ghost" href={contacts.host.href} data-goal={goals.leadHostEmail}>
+            Письмо
+          </a>
         </div>
       </article>
     </div>

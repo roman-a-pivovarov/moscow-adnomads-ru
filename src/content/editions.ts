@@ -103,8 +103,9 @@ export const editions: Edition[] = [
     datePrecision: "day-range",
     summary:
       "Пятый московский выпуск. Проект ADNOMADS №53, обычная московская программа 23–26 сентября 2026. Отменённый международный формат 9–12 сентября 2026 к этому выпуску не относится.",
-    hostListStatus: "none",
-    sourceIds: ["src-go-csv", "src-dec-089", "src-dec-090", "src-go-moscow-53", "src-org-trips"],
+    hostListStatus: "complete",
+    historyPageUrl: "https://adnomads.ru/history/sz0debeso1-53-moskva-rossiya",
+    sourceIds: ["src-go-csv", "src-dec-089", "src-dec-090", "src-go-moscow-53", "src-org-trips", "src-live-2026-september"],
   },
   {
     id: "2027-moscow-february",
@@ -122,13 +123,13 @@ export const editions: Edition[] = [
     dateLabel: "17–20 февраля 2027",
     datePrecision: "day-range",
     summary:
-      "Шестой московский выпуск. Проект ADNOMADS №55. Четыре дня: встреча группы и три дня разговоров с хостами, затем обязательный итоговый воркшоп. Состав хостов публикуется по мере подтверждения.",
+      "Шестой московский выпуск. Проект ADNOMADS №55. Три дня встреч, со среды по пятницу, и обязательный субботний воркшоп. В среду установочная сессия открывает день и не заменяет встречи.",
     hostListStatus: "none",
     days: [
       {
         date: "2027-02-17",
         label: "17 февраля, среда",
-        focus: "Установочная сессия и обсуждение вопросов группы.",
+        focus: "Установочная сессия и встречи этого дня. Сессия не занимает всю среду.",
       },
       {
         date: "2027-02-18",
@@ -144,7 +145,7 @@ export const editions: Edition[] = [
       {
         date: "2027-02-20",
         label: "20 февраля, суббота",
-        focus: "Обязательный четвёртый день: итоговый воркшоп.",
+        focus: "Обязательный итоговый воркшоп.",
       },
     ],
     sourceIds: ["src-dec-089"],

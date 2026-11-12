@@ -1,20 +1,20 @@
 ---
 import { hostOffer } from "./copy";
-import { contacts } from "../../content/contacts";
 ---
 
 <section class="section section--muted" id="hosts">
   <div class="container">
     <h2>{hostOffer.title}</h2>
-    {hostOffer.paragraphs.map((paragraph) => <p class="lead">{paragraph}</p>)}
-    <div class="btn-row" style="margin: 1.25rem 0 1.75rem">
-      <a class="btn" href="#host">{contacts.host.label}</a>
+    <div class="host-copy">
+      {hostOffer.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
     </div>
-    <div data-exclusive-details>
+    <div class="host-faq-grid" data-exclusive-details>
       {
         hostOffer.faq.map((item) => (
           <details class="disclose host-faq">
-            <summary>{item.q}</summary>
+            <summary>
+              <span>{item.q}</span>
+            </summary>
             <div class="disclose__body">
               <p>{item.a}</p>
             </div>
@@ -22,11 +22,37 @@ import { contacts } from "../../content/contacts";
         ))
       }
     </div>
+    <div class="btn-row">
+      <a class="btn" href="#host">{hostOffer.cta}</a>
+    </div>
   </div>
 </section>
 
 <style>
-  .lead + .lead {
-    margin-top: 0.85rem;
+  .host-copy {
+    display: grid;
+    gap: 0.85rem;
+    max-width: 42rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .host-copy p {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .host-faq-grid {
+    margin-bottom: 1.75rem;
+    border-top: 1px solid var(--border-hover);
+  }
+
+  .host-faq-grid > .disclose.host-faq > summary span {
+    min-width: 0;
+    flex: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .host-faq-grid .disclose__body p {
+    overflow-wrap: anywhere;
   }
 </style>

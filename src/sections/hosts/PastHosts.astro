@@ -1,56 +1,78 @@
 ---
 import { pastHostEditions } from "../../content/catalog";
+import { pastHosts } from "./copy";
 
 const groups = pastHostEditions();
 ---
 
 <section class="section" id="past-hosts">
   <div class="container">
-    <h2>Кто уже принимал группы</h2>
-    <p class="lead">
-      Ниже — агентства прошлых московских выпусков. Это не список хостов ближайшей программы: его публикуем отдельно, когда встречи подтверждены.
-    </p>
+    <h2>{pastHosts.title}</h2>
+    <div class="host-intro">
+      {pastHosts.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
     {
-      groups.map(({ edition, hosts }) => (
-        <div class="host-group">
-          <h3>
-            {edition.dateLabel}
-            <span>
-              {" "}
-              · №{edition.adnomadsNumber}
-            </span>
-          </h3>
-          {edition.hostListStatus === "partial" ? (
-            <p>На публичной карточке выпуска названы эти команды. Полный маршрут там не приведён.</p>
-          ) : (
-            <p>Принимали группу.</p>
-          )}
-          <ul class="chip-list" data-show-more>
-            {hosts.map((host) => (
-              <li class="chip">{host.name}</li>
-            ))}
-          </ul>
-          {hosts.length > 8 ? (
-            <button
-              class="btn btn--ghost"
-              type="button"
-              data-show-more-toggle
-              data-label-more="Показать ещё"
-              data-label-less="Свернуть"
-              aria-expanded="false"
-            >
-              Показать ещё
-            </button>
-          ) : null}
-        </div>
-      ))
+      groups.length === 0 ? (
+        <p>{pastHosts.empty}</p>
+      ) : (
+        groups.map(({ edition, hosts }) => (
+          <div class="host-group">
+            <h3>
+              {edition.dateLabel}
+              <span>
+                {" "}
+                · №{edition.adnomadsNumber}
+              </span>
+            </h3>
+            <p class="host-note">
+              {edition.hostListStatus === "partial" ? pastHosts.partial : pastHosts.complete}
+            </p>
+            {
+              hosts.length > 0 ? (
+                <ul class="chip-list" data-show-more>
+                  {hosts.map((host) => (
+                    <li class="chip">{host.name}</li>
+                  ))}
+                </ul>
+              ) : null
+            }
+            {
+              hosts.length > 8 ? (
+                <button
+                  class="btn btn--ghost"
+                  type="button"
+                  data-show-more-toggle
+                  data-label-more={pastHosts.showMore}
+                  data-label-less={pastHosts.showLess}
+                  aria-expanded="false"
+                >
+                  {pastHosts.showMore}
+                </button>
+              ) : null
+            }
+            <p class="edition-link">
+              <a href={`/history/${edition.slug}/`}>{pastHosts.editionLink}</a>
+            </p>
+          </div>
+        ))
+      )
     }
   </div>
 </section>
 
 <style>
-  .lead {
-    margin-bottom: 1.5rem;
+  .host-intro {
+    display: grid;
+    gap: 0.85rem;
+    max-width: 42rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .host-intro p,
+  .host-note,
+  .edition-link {
+    margin: 0;
+    overflow-wrap: anywhere;
   }
 
   .host-group + .host-group {
@@ -62,7 +84,25 @@ const groups = pastHostEditions();
     font-weight: 600;
   }
 
+  .host-note {
+    margin-bottom: 0.85rem;
+  }
+
+  .chip-list {
+    width: 100%;
+  }
+
+  .chip-list .chip {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
   .host-group .btn {
+    margin-top: 0.85rem;
+  }
+
+  .edition-link {
     margin-top: 0.85rem;
   }
 </style>

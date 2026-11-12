@@ -1,0 +1,23 @@
+{
+  "name": "moscow-photobank",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Импорт и каталог фотобанка «Московские практики». Не участвует в сборке сайта.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "check": "node check-inbox.mjs",
+    "import": "node import.mjs",
+    "catalog": "node catalog.mjs",
+    "apply": "node apply-decisions.mjs",
+    "derive": "node derive.mjs",
+    "verify": "node verify.mjs",
+    "self-check": "node self-check.mjs",
+    "query": "node query.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.4"
+  }
+}

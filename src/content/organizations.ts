@@ -2,7 +2,7 @@ import type { Organization } from "./types";
 
 export const organizations: Organization[] = [
   { id: "org-voshod", name: "Восход", sourceIds: ["src-live-2019", "src-live-2026-february"] },
-  { id: "org-red-keds", name: "Red Keds", sourceIds: ["src-live-2019"] },
+  { id: "org-red-keds", name: "Red Keds", sourceIds: ["src-live-2019", "src-live-2026-september"] },
   { id: "org-total-view", name: "Total View", sourceIds: ["src-live-2019"] },
   { id: "org-justnow", name: "JustNow", sourceIds: ["src-live-2019"] },
   { id: "org-segmento", name: "Segmento", sourceIds: ["src-live-2019"] },
@@ -44,4 +44,13 @@ export const organizations: Organization[] = [
   { id: "org-twiga", name: "TWIGA", sourceIds: ["src-live-2026-may"] },
   { id: "org-depot", name: "Depot", sourceIds: ["src-live-2026-may"] },
   { id: "org-completo", name: "Completo", sourceIds: ["src-live-2026-may"] },
+  { id: "org-yandex-ads", name: "Яндекс Реклама", sourceIds: ["src-live-2026-september"] },
+  { id: "org-avito-ads", name: "Авито Реклама", sourceIds: ["src-live-2026-september"] },
+  { id: "org-d-innovative", name: "D Innovative Group", sourceIds: ["src-live-2026-september"] },
+  { id: "org-realweb", name: "Realweb", sourceIds: ["src-live-2026-september"] },
+  { id: "org-creative-family", name: "Creative Family", sourceIds: ["src-live-2026-september"] },
+  { id: "org-nectarine", name: "Nectarine", sourceIds: ["src-live-2026-september"] },
+  { id: "org-genius", name: "Genius Group", sourceIds: ["src-live-2026-september"] },
+  { id: "org-usilitel", name: "Усилитель вкуса", sourceIds: ["src-live-2026-september"] },
+  { id: "org-roden", name: "RODEN media", sourceIds: ["src-live-2026-september"] },
 ];

@@ -76,8 +76,14 @@ export const sources = {
   },
   liveMay: {
     id: "src-live-2026-may",
-    title: "Публичная страница мая 2026",
+    title: "Подробный репортаж мая 2026. Краткая статья 2026-moscow-may список хостов не задаёт: он совпадает с февральским",
     url: "https://adnomads.ru/history/2026-may-moscow",
+    retrieved: "2026-11-12",
+  },
+  liveSeptember: {
+    id: "src-live-2026-september",
+    title: "Статья №53. Видимый текст и список хостов; SEO-метаданные статьи ошибочно взяты от мая и в данные не входят",
+    url: "https://adnomads.ru/history/sz0debeso1-53-moskva-rossiya",
     retrieved: "2026-11-12",
   },
   publicAssets: {
