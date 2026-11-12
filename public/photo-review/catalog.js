@@ -44,8 +44,6 @@
     if (event.key === "ArrowRight") step(1);
   });
 
-  render();
-
   function restoreDraft() {
     try {
       const saved = JSON.parse(localStorage.getItem(draftKey) || "null");
@@ -106,13 +104,19 @@
   function undo() {
     const prev = undoStack.pop();
     if (!prev) return;
+    const y = window.scrollY;
     for (const [id, value] of Object.entries(prev)) {
       if (state.has(id)) state.set(id, value);
     }
     dirty.clear();
     for (const id of state.keys()) if (!sameAsEmbedded(id)) dirty.add(id);
-    render();
-    if (openIndex >= 0) paintLightbox();
+    for (const article of grid.querySelectorAll("[data-asset-id]")) {
+      const asset = byId.get(article.dataset.assetId);
+      if (asset) paintCardChrome(article, asset);
+    }
+    if (openIndex >= 0 && filtered[openIndex]) refreshVisible([filtered[openIndex].asset_id]);
+    else saveDraft();
+    window.scrollTo(0, y);
   }
 
   function rememberFilters() {
@@ -174,18 +178,28 @@
     const placement = document.querySelector("[data-bulk-placement]")?.value || "";
     const priority = document.querySelector("[data-bulk-priority]")?.value || "normal";
     if (!status && !placement) return;
+    const y = window.scrollY;
     pushUndo();
     for (const id of picked) {
       const editorial = state.get(id);
-      if (!editorial) continue;
-      if (status) editorial.status = status;
-      if (placement) {
+      const asset = byId.get(id);
+      if (!editorial || !asset) continue;
+      if (status === "do_not_use" || status === "unsorted") {
+        editorial.status = status;
+        editorial.placements = [];
+        editorial.priorities = {};
+      } else if (status) editorial.status = status;
+      if (placement && status !== "do_not_use" && status !== "unsorted" && !(placement === "history" && !asset.edition_id)) {
         if (!editorial.placements.includes(placement)) editorial.placements.push(placement);
-        editorial.priorities[placement] = priority;
+        if (!editorial.priorities[placement] || priority) editorial.priorities[placement] = priority || "normal";
+        if (!status) editorial.status = "selected";
+        if (placement === "history" && editorial.priorities.history === "primary") otherCoverIds(asset);
       }
+      markManual(editorial);
       dirty.add(id);
     }
     render();
+    window.scrollTo(0, y);
   }
 
   function forgetDraft() {
@@ -237,7 +251,203 @@
     return true;
   }
 
+  const ACTIONS = [
+    { id: "home", label: "Главная", title: "Фотолента главной" },
+    { id: "hero", label: "Hero", title: "Слайдер первого экрана" },
+    { id: "history", label: "Галерея тура", title: "История этого выпуска", needsEdition: true },
+    { id: "cover", label: "Обложка тура", title: "Основная обложка этого выпуска. Прежняя обложка теряет только этот признак.", cover: true, needsEdition: true },
+    { id: "program", label: "Программа", title: "Как проходит программа" },
+    { id: "hosts", label: "Хосты", title: "Блок хостов" },
+    { id: "team", label: "Команда", title: "Блок команды" },
+  ];
+
+  function markManual(editorial) {
+    editorial.proposed_by = "";
+  }
+
+  function isCover(editorial) {
+    return editorial.placements.includes("history") && editorial.priorities.history === "primary";
+  }
+
+  function otherCoverIds(asset) {
+    if (!asset.edition_id) return [];
+    const changed = [];
+    for (const other of assets) {
+      if (other.asset_id === asset.asset_id || other.edition_id !== asset.edition_id) continue;
+      const editorial = state.get(other.asset_id);
+      if (!isCover(editorial)) continue;
+      editorial.priorities.history = "normal";
+      markManual(editorial);
+      dirty.add(other.asset_id);
+      changed.push(other.asset_id);
+    }
+    return changed;
+  }
+
+  function togglePlacement(assetId, placementId) {
+    const asset = byId.get(assetId);
+    if (!asset || (placementId === "history" && !asset.edition_id)) return;
+    pushUndo();
+    const editorial = state.get(assetId);
+    if (editorial.placements.includes(placementId)) {
+      editorial.placements = editorial.placements.filter((id) => id !== placementId);
+      delete editorial.priorities[placementId];
+      if (!editorial.placements.length && editorial.status !== "do_not_use") editorial.status = "unsorted";
+    } else {
+      editorial.placements = [...editorial.placements, placementId];
+      if (!editorial.priorities[placementId]) editorial.priorities[placementId] = "normal";
+      editorial.status = "selected";
+    }
+    markManual(editorial);
+    dirty.add(assetId);
+    refreshVisible([assetId]);
+  }
+
+  function toggleCover(assetId) {
+    const asset = byId.get(assetId);
+    if (!asset?.edition_id) return;
+    pushUndo();
+    const editorial = state.get(assetId);
+    const affected = [assetId];
+    if (isCover(editorial)) {
+      editorial.priorities.history = "normal";
+    } else {
+      if (!editorial.placements.includes("history")) editorial.placements = [...editorial.placements, "history"];
+      editorial.priorities.history = "primary";
+      editorial.status = "selected";
+      affected.push(...otherCoverIds(asset));
+    }
+    markManual(editorial);
+    dirty.add(assetId);
+    refreshVisible(affected);
+  }
+
+  function toggleStar(assetId, placementId, event) {
+    event.stopPropagation();
+    const editorial = state.get(assetId);
+    if (!editorial?.placements.includes(placementId)) return;
+    pushUndo();
+    const next = (editorial.priorities[placementId] || "normal") === "primary" ? "normal" : "primary";
+    editorial.priorities[placementId] = next;
+    markManual(editorial);
+    dirty.add(assetId);
+    const affected = [assetId];
+    if (placementId === "history" && next === "primary") affected.push(...otherCoverIds(byId.get(assetId)));
+    refreshVisible(affected);
+  }
+
+  function rejectAsset(assetId) {
+    pushUndo();
+    const editorial = state.get(assetId);
+    if (editorial.status === "do_not_use") editorial.status = "unsorted";
+    else {
+      editorial.status = "do_not_use";
+      editorial.placements = [];
+      editorial.priorities = {};
+    }
+    markManual(editorial);
+    dirty.add(assetId);
+    refreshVisible([assetId]);
+  }
+
+  function assignBar(asset) {
+    const editorial = state.get(asset.asset_id);
+    const bar = document.createElement("div");
+    bar.className = "assign";
+    for (const action of ACTIONS) {
+      const disabled = Boolean(action.needsEdition && !asset.edition_id);
+      const title = disabled ? "У этого кадра нет выпуска." : action.title;
+      if (action.cover) {
+        const on = isCover(editorial);
+        bar.append(assignButton(action.label, on, disabled, title, (event) => {
+          event.stopPropagation();
+          if (!disabled) toggleCover(asset.asset_id);
+        }));
+        continue;
+      }
+      const on = editorial.placements.includes(action.id);
+      const pair = document.createElement("div");
+      pair.className = "assign-pair";
+      pair.append(assignButton(action.label, on, disabled, title, (event) => {
+        event.stopPropagation();
+        if (!disabled) togglePlacement(asset.asset_id, action.id);
+      }));
+      if (on) {
+        const priority = editorial.priorities[action.id] || "normal";
+        const star = document.createElement("button");
+        star.type = "button";
+        star.className = "star";
+        star.setAttribute("aria-pressed", String(priority === "primary"));
+        star.textContent = priority === "primary" ? "★" : priority === "reserve" ? "Р" : "☆";
+        star.title = priority === "primary"
+          ? "Основной. Повторный клик вернёт обычный приоритет."
+          : priority === "reserve"
+            ? "Сейчас резерв. Клик сделает основным."
+            : "Сделать основным для этого назначения.";
+        star.addEventListener("click", (event) => toggleStar(asset.asset_id, action.id, event));
+        pair.append(star);
+      }
+      bar.append(pair);
+    }
+    const reject = assignButton("Не использовать", editorial.status === "do_not_use", false, "Снимает назначения и исключает кадр из подборок.", (event) => {
+      event.stopPropagation();
+      rejectAsset(asset.asset_id);
+    });
+    reject.classList.add("reject");
+    bar.append(reject);
+    return bar;
+  }
+
+  function assignButton(label, on, disabled, title, onClick) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "assign-btn";
+    button.disabled = disabled;
+    button.title = title;
+    button.setAttribute("aria-pressed", String(on));
+    button.textContent = on ? `✓ ${label}` : label;
+    button.addEventListener("click", onClick);
+    return button;
+  }
+
+  function paintCardChrome(article, asset) {
+    const editorial = state.get(asset.asset_id);
+    article.className = `card status-${editorial.status}${picked.has(asset.asset_id) ? " picked" : ""}`;
+    const statusLine = article.querySelector("[data-status-line]");
+    if (statusLine) {
+      statusLine.textContent = [asset.edition_label || asset.category, editorialLabel(editorial.status)].filter(Boolean).join(" · ");
+    }
+    const slot = article.querySelector("[data-assign]");
+    if (slot) {
+      slot.replaceChildren();
+      slot.append(assignBar(asset));
+    }
+  }
+
+  function refreshVisible(ids) {
+    const wanted = new Set(ids);
+    for (const article of grid.querySelectorAll("[data-asset-id]")) {
+      if (!wanted.has(article.dataset.assetId)) continue;
+      const asset = byId.get(article.dataset.assetId);
+      if (asset) paintCardChrome(article, asset);
+    }
+    if (openIndex >= 0 && filtered[openIndex] && wanted.has(filtered[openIndex].asset_id)) {
+      const asset = filtered[openIndex];
+      const editorial = state.get(asset.asset_id);
+      const slot = lightbox.querySelector("[data-assign]");
+      if (slot) {
+        slot.replaceChildren();
+        slot.append(assignBar(asset));
+      }
+      for (const button of lightbox.querySelectorAll("[data-status]")) {
+        button.setAttribute("aria-pressed", String(button.dataset.status === editorial.status));
+      }
+    }
+    saveDraft();
+  }
+
   function render() {
+    const y = window.scrollY;
     rememberFilters();
     const pickedNote = document.querySelector("[data-picked]");
     if (pickedNote) pickedNote.textContent = picked.size ? `Отмечено: ${picked.size}` : "";
@@ -251,6 +461,7 @@
     for (const asset of filtered) grid.append(card(asset));
     count.textContent = `${filtered.length} из ${assets.length}`;
     saveDraft();
+    window.scrollTo(0, y);
   }
 
   function card(asset) {
@@ -270,7 +481,7 @@
       const pickedNote = document.querySelector("[data-picked]");
       if (pickedNote) pickedNote.textContent = picked.size ? `Отмечено: ${picked.size}` : "";
     });
-    pick.append(box, document.createTextNode(" В подборку"));
+    pick.append(box, document.createTextNode(" Для массового действия"));
     const frame = document.createElement("div");
     frame.className = "frame";
     frame.tabIndex = 0;
@@ -285,10 +496,15 @@
       frame.style.color = "#f3efe8";
     }
     frame.addEventListener("click", () => open(asset.asset_id));
+    const assignSlot = document.createElement("div");
+    assignSlot.dataset.assign = "1";
+    assignSlot.append(assignBar(asset));
     const body = document.createElement("div");
     body.className = "body";
     body.append(line("id", asset.asset_id));
-    body.append(line("meta", [asset.edition_label || asset.category, editorialLabel(editorial.status)].filter(Boolean).join(" · ")));
+    const statusLine = line("meta", [asset.edition_label || asset.category, editorialLabel(editorial.status)].filter(Boolean).join(" · "));
+    statusLine.dataset.statusLine = "1";
+    body.append(statusLine);
     const size = asset.width ? `${asset.width}×${asset.height} · ${kb(asset.bytes)}` : "веб-версии нет";
     body.append(line("meta", size));
     body.append(line("file", asset.filename || ""));
@@ -298,7 +514,7 @@
     if (asset.source_conflict) badges.append(badge("конфликт источников", "bad"));
     if (asset.source_count > 1) badges.append(badge(`точное совпадение: ${asset.source_count}`, "warn"));
     body.append(badges);
-    article.append(pick, frame, body);
+    article.append(pick, frame, assignSlot, body);
     return article;
   }
 
@@ -384,19 +600,29 @@
       button.setAttribute("aria-pressed", String(editorial.status === status.id));
       button.addEventListener("click", () => {
         pushUndo();
+        if (status.id === "do_not_use" || status.id === "unsorted") {
+          editorial.placements = [];
+          editorial.priorities = {};
+        }
         editorial.status = status.id;
+        markManual(editorial);
         dirty.add(asset.asset_id);
-        paintLightbox();
-        render();
-        openIndex = filtered.findIndex((item) => item.asset_id === asset.asset_id);
+        refreshVisible([asset.asset_id]);
       });
       statusBox.append(button);
     }
     panel.append(heading("Статус"), statusBox);
-    panel.append(heading("Где использовать"));
-    panel.append(paragraph("Обложка выпуска — основной кадр назначения «В историю». Полароид рисует сайт, это не отдельный тип фотографии."));
-    panel.append(checks(data.placements, editorial.placements, asset.asset_id, "placements"));
-    panel.append(priorityFields(asset.asset_id));
+    const assignSlot = document.createElement("div");
+    assignSlot.dataset.assign = "1";
+    assignSlot.append(assignBar(asset));
+    panel.append(assignSlot);
+    panel.append(paragraph("Обложка тура — основной кадр истории этого выпуска. Полароид рисует сайт."));
+    const extra = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.textContent = "Редкий приоритет";
+    extra.append(summary, paragraph("Резерв показывается после основных и обычных кадров. Для обычной разметки он не нужен."));
+    extra.append(priorityFields(asset.asset_id));
+    panel.append(extra);
     panel.append(heading("Содержание кадра"));
     panel.append(checks(data.sceneTags, editorial.scene_tags, asset.asset_id, "scene_tags"));
     panel.append(field("Подпись", editorial, "caption", asset.asset_id));
@@ -439,9 +665,13 @@
         editorial[key] = [...set];
         if (key === "placements" && !input.checked) delete editorial.priorities[option.id];
         if (key === "placements" && input.checked && !editorial.priorities[option.id]) editorial.priorities[option.id] = "normal";
+        if (key === "placements") {
+          if (editorial.placements.length) editorial.status = "selected";
+          else if (editorial.status !== "do_not_use") editorial.status = "unsorted";
+        }
+        markManual(editorial);
         dirty.add(assetId);
-        saveDraft();
-        if (key === "placements") paintLightbox();
+        refreshVisible([assetId]);
       });
       label.append(input, document.createTextNode(option.label));
       box.append(label);
@@ -469,8 +699,11 @@
       select.addEventListener("change", () => {
         pushUndo();
         editorial.priorities[placementId] = select.value;
+        markManual(editorial);
         dirty.add(assetId);
-        saveDraft();
+        const affected = [assetId];
+        if (placementId === "history" && select.value === "primary") affected.push(...otherCoverIds(byId.get(assetId)));
+        refreshVisible(affected);
       });
       label.append(select);
       box.append(label);
@@ -490,6 +723,7 @@
         area.dataset.undoArmed = "1";
       }
       editorial[key] = area.value;
+      markManual(editorial);
       dirty.add(assetId);
       saveDraft();
     });
@@ -514,8 +748,10 @@
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
     link.download = "photobank-decisions.json";
+    document.body.append(link);
     link.click();
-    URL.revokeObjectURL(link.href);
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
     saveDraft();
   }
 
@@ -630,6 +866,8 @@
       button.textContent = "Скопировано";
     }
   }
+
+  render();
 
   window.MOSCOW_PHOTOBANK = {
     getState: () => exportList(),
