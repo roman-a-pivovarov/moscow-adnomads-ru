@@ -133,7 +133,7 @@ fs.copyFileSync(path.join(batch, "a", "dup.jpg"), path.join(batch, "c", "dup.jpg
 fs.copyFileSync(path.join(batch, "landscape.jpg"), path.join(inbox, "2021-11", "from-2019.jpg"));
 fs.writeFileSync(path.join(batch, "broken.jpg"), Buffer.from("this is not a jpeg"));
 fs.writeFileSync(path.join(batch, "frame.heic"), Buffer.from("not a real heic"));
-fs.copyFileSync(path.join(batch, "landscape.jpg"), path.join(batch, "frame-jpeg.HEIC"));
+await solid(320, 200, { r: 12, g: 80, b: 40 }, path.join(batch, "frame-jpeg.HEIC"));
 await solid(300, 200, { r: 0, g: 0, b: 0 }, path.join(batch, "dark.jpg"));
 await noiseJpeg(1400, 1000, path.join(batch, "noise.jpg"));
 await solid(800, 600, { r: 90, g: 140, b: 90 }, path.join(batch, "captioned.jpg"));

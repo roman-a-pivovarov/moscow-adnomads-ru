@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Отбор фотографий — фотобанк</title>
+  <link rel="stylesheet" href="/photo-review/catalog.css">
+</head>
+<body>
+  <header>
+    <h1>Отбор фотографий</h1>
+    <p class="lead">Отбор кадров Московских практик. Страницы нет в меню и в sitemap.</p>
+    <ol class="steps">
+      <li>Отметьте статус, назначения и комментарий.</li>
+      <li>Нажмите «Экспортировать решения» и сохраните JSON.</li>
+      <li>Примените файл: <code>node scripts/photobank/apply-decisions.mjs путь\к\photobank-decisions.json</code></li>
+    </ol>
+    <p class="note">Эта страница не записывает файлы проекта. localStorage хранит только черновик браузера.</p>
+    <p data-draft hidden></p>
+    <p data-export-state hidden></p>
+    <nav><a href="/photo-review/">Все кадры</a></nav>
+  </header>
+  <div class="toolbar">
+    <input data-search type="search" placeholder="Поиск по asset_id">
+    <select data-edition><option value="">Все выпуски</option><option value="2019-moscow-practices">№26 · Москва · сентябрь 2019</option><option value="2021-moscow">№32 · Москва · ноябрь 2021</option><option value="2026-moscow-february">№49 · Москва · февраль 2026</option><option value="2026-moscow-may">№51 · Москва · май 2026</option><option value="2026-moscow-september">№53 · Москва · сентябрь 2026</option></select>
+    <select data-orientation>
+      <option value="">Любая ориентация</option>
+      <option value="landscape">Горизонтальные</option>
+      <option value="portrait">Вертикальные</option>
+      <option value="square">Квадратные</option>
+    </select>
+    <select data-status>
+      <option value="">Любой статус</option>
+      <option value="unsorted">Не разобрано</option><option value="selected">Выбрано</option><option value="do_not_use">Не использовать</option>
+    </select>
+    <select data-placement>
+      <option value="">Любое назначение</option>
+      <option value="home">На главную</option><option value="history">В историю выпуска</option><option value="program">Программа</option><option value="hosts">Хосты</option><option value="team">Команда</option><option value="hero">Hero</option>
+    </select>
+    <select data-priority>
+      <option value="">Любой приоритет</option>
+      <option value="primary">Основной</option><option value="normal">Обычный</option><option value="reserve">Резерв</option>
+    </select>
+    <select data-group>
+      <option value="">Выпуски, команда и общие</option>
+      <option value="edition">Только выпуски</option>
+      <option value="team">Команда</option>
+      <option value="shared">Общие</option>
+    </select>
+    <select data-proposed>
+      <option value="">Любое происхождение</option>
+      <option value="bild-editor">Предложено бильд-редактором</option>
+      <option value="manual">Без этой пометки</option>
+    </select>
+    <span data-count></span>
+    <button type="button" data-undo>Отменить</button>
+    <button class="primary" type="button" data-export>Экспортировать решения</button>
+    <label>Загрузить JSON <input data-import type="file" accept="application/json,.json"></label>
+    <button type="button" data-forget>Забыть черновик браузера</button>
+  </div>
+  <div class="bulk">
+    <label class="check"><input data-pick-visible type="checkbox"> Отметить показанные</label>
+    <select data-bulk-status>
+      <option value="">Статус для отмеченных</option>
+      <option value="unsorted">Не разобрано</option><option value="selected">Выбрано</option><option value="do_not_use">Не использовать</option>
+    </select>
+    <select data-bulk-placement>
+      <option value="">Добавить назначение</option>
+      <option value="home">На главную</option><option value="history">В историю выпуска</option><option value="program">Программа</option><option value="hosts">Хосты</option><option value="team">Команда</option><option value="hero">Hero</option>
+    </select>
+    <select data-bulk-priority>
+      <option value="normal">Обычный</option>
+      <option value="primary">Основной</option><option value="reserve">Резерв</option>
+    </select>
+    <button type="button" data-bulk-apply>Применить к отмеченным</button>
+    <span data-picked></span>
+  </div>
+  <main><div class="grid" data-grid></div></main>
+  <div class="lightbox" data-lightbox>
+    <div class="stage" data-stage></div>
+    <div class="panel" data-panel></div>
+    <div class="row" style="grid-column: 1 / -1">
+      <button type="button" data-prev>Предыдущий</button>
+      <button type="button" data-next>Следующий</button>
+      <button type="button" data-close>Закрыть</button>
+    </div>
+  </div>
+  <footer>Полароидные рамки и чёрно-белые эффекты — оформление сайта, в файлы фотографий они не встраиваются.</footer>
+  <script>window.PHOTOBANK_PAGE = {"view":"all","title":"Отбор","public":true}; window.PHOTOBANK_ROOT = "";</script>
+  <script src="/photo-review/catalog-data.js"></script>
+  <script src="/photo-review/catalog.js"></script>
+</body>
+</html>

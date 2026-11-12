@@ -22,6 +22,8 @@ export function resolvePaths(root = REPO_ROOT) {
     reports: path.join(abs, "data", "photobank", "reports"),
     decisions: path.join(abs, "data", "photobank", "decisions"),
     catalog: path.join(abs, "docs", "photo-review"),
+    publicMedia: path.join(abs, "public", "media", "photobank"),
+    publicReview: path.join(abs, "public", "photo-review"),
   };
 }
 

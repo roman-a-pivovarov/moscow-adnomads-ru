@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { BATCHES, PLACEMENTS, SCENE_TAGS, SIMILAR_DISTANCE, STATUSES } from "../config.mjs";
+import { BATCHES, PLACEMENTS, PRIORITIES, SCENE_TAGS, SIMILAR_DISTANCE, STATUSES } from "../config.mjs";
 import { similarPairs } from "./image.mjs";
 import { ensureDir } from "./paths.mjs";
 import { summarizeRegistry } from "./summary.mjs";
@@ -32,8 +32,9 @@ export function catalogPayload(registry, pairs) {
   return {
     generated_at: new Date().toISOString(),
     summary: summarizeRegistry(registry),
-    statuses: STATUSES,
+    statuses: STATUSES.filter((status) => status.id !== "reserve"),
     placements: PLACEMENTS,
+    priorities: PRIORITIES,
     sceneTags: SCENE_TAGS,
     similar,
     assets: registry.assets.map((asset) => ({
@@ -53,11 +54,14 @@ export function catalogPayload(registry, pairs) {
       orientation: asset.technical?.orientation || "",
       status: asset.editorial?.status || "unsorted",
       placements: asset.editorial?.placements || [],
+      priorities: asset.editorial?.priorities || {},
       scene_tags: asset.editorial?.scene_tags || [],
       caption: asset.editorial?.caption || "",
       alt: asset.editorial?.alt || "",
       comment: asset.editorial?.comment || "",
       photographer: asset.editorial?.photographer || "",
+      proposed_by: asset.editorial?.proposed_by || "",
+      updated_at: asset.editorial?.updated_at || "",
       warnings: asset.technical?.warnings || [],
       process_error: asset.technical?.process_error || "",
       source_conflict: Boolean(asset.source_conflict),
@@ -68,9 +72,9 @@ export function catalogPayload(registry, pairs) {
   };
 }
 
-function pageHtml({ title, depth, page, nav }) {
-  const prefix = `${"../".repeat(depth)}`.replace(/\/$/, "") || ".";
-  const root = `${"../".repeat(depth + 2)}`.replace(/\/$/, "");
+function pageHtml({ title, depth, page, nav, site = false }) {
+  const prefix = site ? "/photo-review" : (`${"../".repeat(depth)}`.replace(/\/$/, "") || ".");
+  const root = site ? "" : (`${"../".repeat(depth + 2)}`.replace(/\/$/, ""));
   return `<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -83,7 +87,7 @@ function pageHtml({ title, depth, page, nav }) {
 <body>
   <header>
     <h1>${esc(title)}</h1>
-    <p class="lead">Внутренний каталог отбора. В меню сайта и в публикацию не входит.</p>
+    <p class="lead">${site ? "Отбор кадров Московских практик. Страницы нет в меню и в sitemap." : "Внутренний каталог отбора. В меню сайта и в публикацию не входит."}</p>
     <ol class="steps">
       <li>Отметьте статус, назначения и комментарий.</li>
       <li>Нажмите «Экспортировать решения» и сохраните JSON.</li>
@@ -91,10 +95,11 @@ function pageHtml({ title, depth, page, nav }) {
     </ol>
     <p class="note">Эта страница не записывает файлы проекта. localStorage хранит только черновик браузера.</p>
     <p data-draft hidden></p>
+    <p data-export-state hidden></p>
     <nav>${nav}</nav>
   </header>
   <div class="toolbar">
-    <input data-search type="search" placeholder="ID или имя файла">
+    <input data-search type="search" placeholder="${site ? "Поиск по asset_id" : "ID или имя файла"}">
     ${page.view === "all" ? `<select data-edition><option value="">Все выпуски</option>${BATCHES.filter((batch) => batch.edition_id).map((batch) => `<option value="${esc(batch.edition_id)}">${esc(batch.title)}</option>`).join("")}</select>` : ""}
     <select data-orientation>
       <option value="">Любая ориентация</option>
@@ -104,12 +109,49 @@ function pageHtml({ title, depth, page, nav }) {
     </select>
     <select data-status>
       <option value="">Любой статус</option>
-      ${STATUSES.map((status) => `<option value="${esc(status.id)}">${esc(status.label)}</option>`).join("")}
+      ${STATUSES.filter((status) => status.id !== "reserve").map((status) => `<option value="${esc(status.id)}">${esc(status.label)}</option>`).join("")}
+    </select>
+    <select data-placement>
+      <option value="">Любое назначение</option>
+      ${PLACEMENTS.map((item) => `<option value="${esc(item.id)}">${esc(item.label)}</option>`).join("")}
+    </select>
+    <select data-priority>
+      <option value="">Любой приоритет</option>
+      ${PRIORITIES.map((item) => `<option value="${esc(item.id)}">${esc(item.label)}</option>`).join("")}
+    </select>
+    <select data-group>
+      <option value="">Выпуски, команда и общие</option>
+      <option value="edition">Только выпуски</option>
+      <option value="team">Команда</option>
+      <option value="shared">Общие</option>
+    </select>
+    <select data-proposed>
+      <option value="">Любое происхождение</option>
+      <option value="bild-editor">Предложено бильд-редактором</option>
+      <option value="manual">Без этой пометки</option>
     </select>
     <span data-count></span>
+    <button type="button" data-undo>Отменить</button>
     <button class="primary" type="button" data-export>Экспортировать решения</button>
     <label>Загрузить JSON <input data-import type="file" accept="application/json,.json"></label>
     <button type="button" data-forget>Забыть черновик браузера</button>
+  </div>
+  <div class="bulk">
+    <label class="check"><input data-pick-visible type="checkbox"> Отметить показанные</label>
+    <select data-bulk-status>
+      <option value="">Статус для отмеченных</option>
+      ${STATUSES.filter((status) => status.id !== "reserve").map((status) => `<option value="${esc(status.id)}">${esc(status.label)}</option>`).join("")}
+    </select>
+    <select data-bulk-placement>
+      <option value="">Добавить назначение</option>
+      ${PLACEMENTS.map((item) => `<option value="${esc(item.id)}">${esc(item.label)}</option>`).join("")}
+    </select>
+    <select data-bulk-priority>
+      <option value="normal">Обычный</option>
+      ${PRIORITIES.filter((item) => item.id !== "normal").map((item) => `<option value="${esc(item.id)}">${esc(item.label)}</option>`).join("")}
+    </select>
+    <button type="button" data-bulk-apply>Применить к отмеченным</button>
+    <span data-picked></span>
   </div>
   <main><div class="grid" data-grid></div></main>
   <div class="lightbox" data-lightbox>
@@ -193,5 +235,49 @@ export function buildCatalog(paths, registry, pairs) {
     page: { view: "similar", title: "Похожие кадры" },
     nav: `<a href="index.html">Весь фотобанк</a>`,
   }));
+  writePublicReview(paths, registry);
   return payload.summary;
+}
+
+export function writePublicReview(paths, registry) {
+  const payload = catalogPayload(registry);
+  payload.assets = payload.assets.map((asset) => ({
+    asset_id: asset.asset_id,
+    edition_id: asset.edition_id,
+    category: asset.category,
+    person_id: asset.person_id,
+    edition_label: asset.edition_label,
+    thumb: `/media/photobank/${asset.asset_id}/thumb.webp`,
+    web: `/media/photobank/${asset.asset_id}/web.webp`,
+    width: asset.width,
+    height: asset.height,
+    bytes: asset.bytes,
+    orientation: asset.orientation,
+    status: asset.status,
+    placements: asset.placements,
+    priorities: asset.priorities,
+    scene_tags: asset.scene_tags,
+    caption: asset.caption,
+    alt: asset.alt,
+    comment: asset.comment,
+    photographer: asset.photographer,
+    proposed_by: asset.proposed_by,
+    updated_at: asset.updated_at,
+  }));
+  payload.similar = [];
+  ensureDir(paths.publicReview);
+  fs.copyFileSync(path.join(uiDir, "catalog.css"), path.join(paths.publicReview, "catalog.css"));
+  fs.copyFileSync(path.join(uiDir, "catalog.js"), path.join(paths.publicReview, "catalog.js"));
+  fs.writeFileSync(
+    path.join(paths.publicReview, "catalog-data.js"),
+    `window.PHOTOBANK_DATA = ${scriptJson(payload)};\n`,
+    "utf8",
+  );
+  writePage(paths.publicReview, "index.html", pageHtml({
+    title: "Отбор фотографий",
+    depth: 0,
+    site: true,
+    page: { view: "all", title: "Отбор", public: true },
+    nav: `<a href="/photo-review/">Все кадры</a>`,
+  }));
 }

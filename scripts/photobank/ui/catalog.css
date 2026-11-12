@@ -113,6 +113,10 @@ textarea { width: 100%; min-height: 68px; }
 .hint { color: #d9d0c6; font-size: 13px; }
 .pairs { display: grid; gap: 16px; }
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: var(--paper); padding: 10px; border-radius: 12px; }
+.bulk, .pick { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.bulk { padding: 8px 20px; background: var(--paper); border-bottom: 1px solid var(--line); }
+.pick { padding: 8px 12px 0; font-size: 13px; color: var(--muted); }
+.card.picked { box-shadow: inset 0 0 0 2px var(--accent); }
 footer { color: var(--muted); }
 @media (max-width: 860px) {
   .lightbox { grid-template-columns: 1fr; overflow: auto; }

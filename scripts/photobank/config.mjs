@@ -10,9 +10,16 @@ export const REPO_ROOT = path.resolve(here, "../..");
 
 export const STATUSES = [
   { id: "unsorted", label: "Не разобрано" },
-  { id: "selected", label: "Отобрано" },
+  { id: "selected", label: "Выбрано" },
   { id: "reserve", label: "Резерв" },
   { id: "do_not_use", label: "Не использовать" },
+];
+
+/** Приоритет относится к одному назначению, а не ко всему кадру. */
+export const PRIORITIES = [
+  { id: "primary", label: "Основной" },
+  { id: "normal", label: "Обычный" },
+  { id: "reserve", label: "Резерв" },
 ];
 
 /** Куда можно поставить кадр. Это решение об использовании, не содержание снимка. */

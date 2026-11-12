@@ -11,6 +11,8 @@ export function emptyEditorial() {
     alt: "",
     comment: "",
     photographer: "",
+    priorities: {},
+    proposed_by: "",
     updated_at: "",
   };
 }
