@@ -1,5 +1,6 @@
 import { goals } from "../content/analytics";
 import { initAnalytics, reachGoal } from "./analytics";
+import "./request-form";
 
 const menuToggle = document.querySelector<HTMLButtonElement>("[data-menu-toggle]");
 const mobileNav = document.querySelector<HTMLElement>("[data-mobile-nav]");

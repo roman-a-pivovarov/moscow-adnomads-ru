@@ -1,7 +1,8 @@
 ---
 import { goals } from "../../content/analytics";
-import { conditions } from "./copy";
 import { contacts } from "../../content/contacts";
+import ParticipateForm from "./ParticipateForm.astro";
+import { conditions } from "./copy";
 ---
 
 <section class="section section--muted" id="contacts">
@@ -12,6 +13,7 @@ import { contacts } from "../../content/contacts";
       <article id="participate">
         <h3>Участнику</h3>
         <p>Обсудим задачи и условия участия в ближайшем выпуске.</p>
+        <ParticipateForm />
         <p>{contacts.participate.opener}</p>
         <div class="btn-row">
           <a class="btn" href={contacts.participate.telegramHref} data-goal={goals.leadParticipant}>

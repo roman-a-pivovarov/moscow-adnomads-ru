@@ -2,6 +2,7 @@
 export const metrikaCounterId = 98574202;
 
 export const goals = {
+  leadApplication: "lead_application",
   leadParticipant: "lead_participant",
   leadHost: "lead_host",
   leadParticipantEmail: "lead_participant_email",

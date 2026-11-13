@@ -1,0 +1,311 @@
+---
+import { featuredEdition } from "../../content/catalog";
+
+const edition = featuredEdition();
+const channels = [
+  {
+    value: "telegram",
+    label: "Telegram",
+    fieldLabel: "Telegram",
+    placeholder: "Имя пользователя или ссылка",
+    autocomplete: "username",
+    inputMode: "text",
+  },
+  {
+    value: "max",
+    label: "MAX",
+    fieldLabel: "MAX",
+    placeholder: "Ссылка на профиль или телефон",
+    autocomplete: "off",
+    inputMode: "text",
+  },
+  {
+    value: "phone",
+    label: "Телефон",
+    fieldLabel: "Телефон",
+    placeholder: "+7 900 000-00-00",
+    autocomplete: "tel",
+    inputMode: "tel",
+  },
+  {
+    value: "email",
+    label: "Email",
+    fieldLabel: "Email",
+    placeholder: "name@example.com",
+    autocomplete: "email",
+    inputMode: "email",
+  },
+];
+const first = channels[0];
+---
+
+<form
+  class="form form-card"
+  id="moscow-request"
+  action="https://adnomads.org/api/request.php"
+  method="post"
+  novalidate
+  data-success="Заявка сохранена. Мы свяжемся выбранным способом."
+  data-error="Не удалось сохранить заявку. Напишите на hello@adnomads.ru."
+  data-network="Не удалось связаться с сервером. Напишите на hello@adnomads.ru."
+  data-sending="Отправляем…"
+  data-submit-label="Отправить заявку"
+  data-invalid="Проверьте отмеченные поля."
+  data-channels={JSON.stringify(
+    Object.fromEntries(
+      channels.map((channel) => [
+        channel.value,
+        {
+          fieldLabel: channel.fieldLabel,
+          placeholder: channel.placeholder,
+          autocomplete: channel.autocomplete,
+          inputMode: channel.inputMode,
+        },
+      ]),
+    ),
+  )}
+>
+  <p class="form-intro">Заявка на участие в московской программе.</p>
+  {edition ? <p class="form-intro">Ближайший выпуск: {edition.dateLabel}.</p> : null}
+  <input type="hidden" name="attempt_id" id="moscow-attempt-id" value="" />
+  <input type="hidden" name="trip" value="moscow" />
+  <label class="honeypot" aria-hidden="true">
+    <span>Сайт компании</span>
+    <input type="text" name="website" tabindex="-1" autocomplete="off" />
+  </label>
+
+  <label class="field" for="moscow-request-name">
+    <span>Имя</span>
+    <input id="moscow-request-name" type="text" name="name" autocomplete="name" maxlength="120" required />
+    <span class="field-error" data-error-for="name" hidden></span>
+  </label>
+
+  <fieldset class="field field--choices">
+    <legend id="moscow-channel-legend">Как с вами связаться</legend>
+    <div class="choice-group" role="radiogroup" aria-labelledby="moscow-channel-legend">
+      {
+        channels.map((channel, index) => (
+          <label class="choice">
+            <input type="radio" name="channel" value={channel.value} checked={index === 0} />
+            <span class="choice__label">{channel.label}</span>
+          </label>
+        ))
+      }
+    </div>
+    <span class="field-error" data-error-for="channel" hidden></span>
+  </fieldset>
+
+  <div class="field">
+    <label class="visually-hidden" for="moscow-request-contact" id="moscow-contact-label">{first.fieldLabel}</label>
+    <input
+      id="moscow-request-contact"
+      type="text"
+      name="contact"
+      autocomplete={first.autocomplete}
+      inputmode={first.inputMode}
+      maxlength="500"
+      placeholder={first.placeholder}
+      aria-label={first.fieldLabel}
+      required
+    />
+    <span class="field-error" data-error-for="contact" hidden></span>
+  </div>
+
+  <details class="form-comment" id="moscow-form-comment">
+    <summary class="form-comment__summary">
+      <span>Комментарий, если нужно</span>
+      <span class="disclose-icon" aria-hidden="true"></span>
+    </summary>
+    <div class="form-comment__body">
+      <label class="field" for="moscow-request-notes">
+        <span class="visually-hidden">Комментарий</span>
+        <textarea id="moscow-request-notes" name="notes" maxlength="4000" rows="4" placeholder="Коротко о задаче"></textarea>
+        <span class="field-error" data-error-for="notes" hidden></span>
+      </label>
+    </div>
+  </details>
+
+  <div class="form-actions">
+    <button class="btn form-submit" type="submit" id="moscow-request-submit">Отправить заявку</button>
+    <p class="form-footnote">Заявка не включает в программу автоматически.</p>
+    <p class="form-status" id="moscow-form-status" role="status" aria-live="polite"></p>
+  </div>
+</form>
+
+<style>
+  .form {
+    display: grid;
+    gap: 1rem;
+    margin: 0 0 1.15rem;
+  }
+
+  .form-card {
+    max-width: none;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .form-intro {
+    margin: 0;
+    max-width: none;
+  }
+
+  .form-intro + .form-intro {
+    margin-top: -0.65rem;
+  }
+
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .field {
+    display: grid;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+  }
+
+  .field span,
+  .field legend {
+    font-weight: 600;
+  }
+
+  .field legend {
+    padding: 0;
+  }
+
+  .field input,
+  .field textarea {
+    font: inherit;
+    color: var(--text);
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid var(--border-hover);
+    border-radius: var(--radius-ui);
+    background: var(--bg);
+  }
+
+  .field textarea {
+    min-height: 6.5rem;
+    resize: vertical;
+  }
+
+  .field input:focus-visible,
+  .field textarea:focus-visible {
+    border-color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .field.is-invalid input,
+  .field.is-invalid textarea {
+    border-color: var(--text-strong);
+  }
+
+  .field-error {
+    font-weight: 500;
+  }
+
+  .choice-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .choice {
+    position: relative;
+    display: inline-flex;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .choice input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .choice__label {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.5rem;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-ui);
+    background: var(--bg);
+    font-weight: 600;
+  }
+
+  .choice input:checked + .choice__label {
+    border-color: var(--accent);
+    color: var(--accent-strong);
+    box-shadow: inset 0 0 0 1px var(--accent);
+  }
+
+  .choice input:focus-visible + .choice__label {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .form-comment {
+    margin: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .form-comment__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    min-height: 2.75rem;
+    padding: 0.35rem 0;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+  }
+
+  .form-comment__summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .form-actions {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .form-submit {
+    width: 100%;
+  }
+
+  .form-footnote,
+  .form-status {
+    margin: 0;
+  }
+
+  .form-status--error {
+    font-weight: 600;
+  }
+
+  .btn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+  }
+
+  @media (min-width: 720px) {
+    .form-submit {
+      width: auto;
+      justify-self: start;
+    }
+  }
+</style>
