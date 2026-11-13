@@ -1,0 +1,46 @@
+{
+  "candidates": [
+    {
+      "organization_id": "org-ony",
+      "source_page": "https://ony.ru/",
+      "file_path": "C:\\Users\\ADCONSULT\\Downloads\\moscow-adnomads-ru\\assets-logos\\_probe\\org-ony-1.svg",
+      "file_url": "",
+      "source_type": "official-site",
+      "variant": "horizontal",
+      "description": "Словесный знак ONY, извлечённый из HTML шапки ony.ru. Отдельного URL файла на странице не было.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-2sharp",
+      "source_page": "https://2sharp.ru/",
+      "file_path": "C:\\Users\\ADCONSULT\\Downloads\\moscow-adnomads-ru\\assets-logos\\_probe\\org-2sharp-1.svg",
+      "file_url": "",
+      "source_type": "official-site",
+      "variant": "horizontal",
+      "description": "Знак из навигации 2sharp.ru, класс navbar__logotip-logo.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-red-keds",
+      "source_page": "https://redkeds.com/",
+      "file_path": "C:\\Users\\ADCONSULT\\Downloads\\moscow-adnomads-ru\\assets-logos\\_probe\\org-red-keds-2.svg",
+      "file_url": "",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Красный вектор из HTML redkeds.com.",
+      "presumed_current": true,
+      "ambiguity": "На сайте отдельно описан герб. Рядом в HTML есть второй вектор. Нужно глазами выбрать, какой из них знак агентства."
+    },
+    {
+      "organization_id": "org-red-keds",
+      "source_page": "https://redkeds.com/",
+      "file_path": "C:\\Users\\ADCONSULT\\Downloads\\moscow-adnomads-ru\\assets-logos\\_probe\\org-red-keds-1.svg",
+      "file_url": "",
+      "source_type": "official-site",
+      "variant": "other",
+      "description": "Второй вектор из HTML redkeds.com, без отдельного URL файла.",
+      "presumed_current": null,
+      "ambiguity": "Может быть гербом, описанным на странице /brn8, или декоративным элементом. Год герба на странице — 2013, к этому файлу он не привязан, пока не видно, что это тот самый герб."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "organization_id": "org-yandex",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yandex_logo_2021_Russian.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yandex_logo_2021_Russian.svg",
+      "source_type": "other",
+      "variant": "horizontal",
+      "description": "Кириллический знак «Яндекс» из файла Wikimedia Yandex_logo_2021_Russian.svg. Официальный PDF лежит на странице правил: https://yandex.ru/company/rules/logotype. PDF в каталог не встроен.",
+      "presumed_current": null,
+      "ambiguity": "Это корпоративный знак Яндекса, не знак «Яндекс Реклама». Год в имени файла не принимается за период без страницы файла."
+    },
+    {
+      "organization_id": "org-yandex",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yandex_logo_ru.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yandex_logo_ru.svg",
+      "source_type": "other",
+      "variant": "other",
+      "description": "Другой файл Wikimedia, Yandex_logo_ru.svg. Период использования по этой странице не зафиксирован.",
+      "presumed_current": null,
+      "ambiguity": "Может совпадать с текущим знаком или быть более ранним. Дату по рисунку не ставить."
+    }
+  ]
+}

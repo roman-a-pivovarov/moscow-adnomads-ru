@@ -1,0 +1,302 @@
+{
+  "schema": "moscow-logos-decisions/v1",
+  "applied_at": "2026-11-12T22:29:22.811Z",
+  "source_file": "C:\\Users\\ADCONSULT\\Downloads\\logos-decisions.json",
+  "decisions": [
+    {
+      "organization_id": "org-2gis",
+      "primary_candidate_id": "logo-2gis-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-akar",
+      "primary_candidate_id": "logo-akar-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-illan",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-illan-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-yandex",
+      "primary_candidate_id": "logo-yandex-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-adventum",
+      "primary_candidate_id": "logo-adventum-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-agima",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-completo",
+      "primary_candidate_id": "logo-completo-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "normal",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-depot",
+      "primary_candidate_id": "logo-depot-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-dpg",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-dpg-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-friends",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-friends-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-mailru",
+      "primary_candidate_id": "logo-mailru-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-media-nation",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-medianation-2026-001"
+      ],
+      "needs_other": false,
+      "priority": "normal",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-okkam",
+      "primary_candidate_id": "logo-okkam-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-ony",
+      "primary_candidate_id": "logo-ony-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-red-keds",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-red-keds-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-roden",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-roden-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-rore",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-rore-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-segmento",
+      "primary_candidate_id": "logo-segmento-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-socialist",
+      "primary_candidate_id": "logo-socialist-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "first",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-twiga",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-twiga-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-vk",
+      "primary_candidate_id": "",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [
+        "logo-vk-001"
+      ],
+      "needs_other": false,
+      "priority": "",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-zebra",
+      "primary_candidate_id": "logo-zebra-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "normal",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    },
+    {
+      "organization_id": "org-zeytz",
+      "primary_candidate_id": "logo-zeytz-001",
+      "dark_candidate_id": "",
+      "historical": [],
+      "rejected_candidate_ids": [],
+      "needs_other": false,
+      "priority": "normal",
+      "sort_order": null,
+      "comment": "",
+      "base_updated_at": ""
+    }
+  ],
+  "conflicts": []
+}

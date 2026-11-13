@@ -1,0 +1,1475 @@
+{
+  "schema": "moscow-logos-selected/v1",
+  "generated_at": "2026-11-12T22:29:22.865Z",
+  "registry_version": 10,
+  "note": "Рабочий набор выбранных файлов лежит в assets-logos/selected и не публикуется, пока архитектор не подтвердит путь. Наличие записи не подтверждает хоста ближайшего выпуска и не делает организацию спонсором. Пустой primary означает текстовое название.",
+  "items": [
+    {
+      "organization_id": "org-2gis",
+      "name": "2ГИС",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-2gis-001",
+        "src": "assets-logos/selected/org-2gis/primary.svg",
+        "format": "svg",
+        "width": 478,
+        "height": 155,
+        "plate": "light",
+        "variant": "horizontal",
+        "presumed_current": null,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "2ГИС",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-akar",
+      "name": "АКАР",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-akar-001",
+        "src": "assets-logos/selected/org-akar/primary.svg",
+        "format": "svg",
+        "width": 101,
+        "height": 28,
+        "plate": "light",
+        "variant": "primary",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "АКАР",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-yandex",
+      "name": "Яндекс",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "Яндекс Реклама",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-yandex-001",
+        "src": "assets-logos/selected/org-yandex/primary.svg",
+        "format": "svg",
+        "width": 367,
+        "height": 106,
+        "plate": "light",
+        "variant": "horizontal",
+        "presumed_current": null,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Яндекс",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-adventum",
+      "name": "Adventum",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-adventum-001",
+        "src": "assets-logos/selected/org-adventum/primary.svg",
+        "format": "svg",
+        "width": 222,
+        "height": 32,
+        "plate": "dark",
+        "variant": "horizontal",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Adventum",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-agima",
+      "name": "AGIMA",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "AGIMA",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-depot",
+      "name": "Depot",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-depot-001",
+        "src": "assets-logos/selected/org-depot/primary.svg",
+        "format": "svg",
+        "width": 260,
+        "height": 40,
+        "plate": "light",
+        "variant": "primary",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Depot",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-mailru",
+      "name": "Mail.Ru Group",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-mailru-001",
+        "src": "assets-logos/selected/org-mailru/primary.svg",
+        "format": "svg",
+        "width": 342,
+        "height": 121,
+        "plate": "dark",
+        "variant": "historical",
+        "presumed_current": false,
+        "historical_period": "до 11 октября 2021"
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Mail.Ru Group",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-okkam",
+      "name": "Okkam",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-okkam-001",
+        "src": "assets-logos/selected/org-okkam/primary.svg",
+        "format": "svg",
+        "width": 915,
+        "height": 145,
+        "plate": "dark",
+        "variant": "primary",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Okkam",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-ony",
+      "name": "ONY",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-ony-001",
+        "src": "assets-logos/selected/org-ony/primary.svg",
+        "format": "svg",
+        "width": 105,
+        "height": 32,
+        "plate": "checker",
+        "variant": "horizontal",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "ONY",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-segmento",
+      "name": "Segmento",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-segmento-001",
+        "src": "assets-logos/selected/org-segmento/primary.svg",
+        "format": "svg",
+        "width": 7713,
+        "height": 2131,
+        "plate": "checker",
+        "variant": "primary",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Segmento",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-socialist",
+      "name": "Socialist",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "first",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-socialist-001",
+        "src": "assets-logos/selected/org-socialist/primary.svg",
+        "format": "svg",
+        "width": 1101,
+        "height": 157,
+        "plate": "light",
+        "variant": "primary",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Socialist",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-completo",
+      "name": "Completo",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "normal",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-completo-001",
+        "src": "assets-logos/selected/org-completo/primary.png",
+        "format": "png",
+        "width": 129,
+        "height": 45,
+        "plate": "light",
+        "variant": "on-light",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Completo",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-media-nation",
+      "name": "Media Nation",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "normal",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Media Nation",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-zebra",
+      "name": "Zebra Hero",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "normal",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-zebra-001",
+        "src": "assets-logos/selected/org-zebra/primary.svg",
+        "format": "svg",
+        "width": 64,
+        "height": 64,
+        "plate": "light",
+        "variant": "compact",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Zebra Hero",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-zeytz",
+      "name": "Zeytz",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "normal",
+      "sort_order": null,
+      "primary": {
+        "candidate_id": "logo-zeytz-001",
+        "src": "assets-logos/selected/org-zeytz/primary.png",
+        "format": "png",
+        "width": 167,
+        "height": 50,
+        "plate": "light",
+        "variant": "primary",
+        "presumed_current": true,
+        "historical_period": ""
+      },
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Zeytz",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-1994lab",
+      "name": "1994Lab",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "1994Lab",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-2sharp",
+      "name": "2Sharp",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "2Sharp",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-avito-ads",
+      "name": "Авито Реклама",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Авито Реклама",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-voshod",
+      "name": "Восход",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Восход",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-illan",
+      "name": "Иллан",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Иллан",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-usilitel",
+      "name": "Усилитель вкуса",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Усилитель вкуса",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-actis-wunderman",
+      "name": "Actis Wunderman",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Actis Wunderman",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-andriyashkin",
+      "name": "Andriyashkin & Partners",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Andriyashkin & Partners",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-aori",
+      "name": "Aori",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Aori",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-banana-trends",
+      "name": "Banana Trends",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Banana Trends",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-cms-magazine",
+      "name": "CMS Magazine",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "CMS Magazine",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-creative-family",
+      "name": "Creative Family",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Creative Family",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-cros",
+      "name": "Cros Digital",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Cros Digital",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-d-innovative",
+      "name": "D Innovative Group",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "D Innovative Group",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-ddvb",
+      "name": "DDVB",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "DDVB",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-didenok",
+      "name": "DIDENOK team",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "DIDENOK team",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-digital-audio",
+      "name": "Digital Audio",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Digital Audio",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-dpg",
+      "name": "DPG Russia",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "DPG Russia",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-friends",
+      "name": "Friends",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Friends",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-genius",
+      "name": "Genius Group",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Genius Group",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-getresponse-russia",
+      "name": "GetResponse Russia",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "GetResponse Russia",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-hybrid",
+      "name": "Hybrid",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Hybrid",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-justnow",
+      "name": "JustNow",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "JustNow",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-kb-12",
+      "name": "KB—12",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "KB—12",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-leo-burnett",
+      "name": "Leo Burnett",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Leo Burnett",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-like",
+      "name": "Like Retail Media",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Like Retail Media",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-marylin",
+      "name": "Marylin",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Marylin",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-nectarine",
+      "name": "Nectarine",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Nectarine",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-npf",
+      "name": "NPF Creative Group",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "NPF Creative Group",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-possible",
+      "name": "Possible Group",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Possible Group",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-rta",
+      "name": "R:TA",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "R:TA",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-realweb",
+      "name": "Realweb",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Realweb",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-red-keds",
+      "name": "Red Keds",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Red Keds",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-redday",
+      "name": "Redday",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Redday",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-roden",
+      "name": "RODEN media",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "date_label": "23–26 сентября 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "RODEN media",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-rodnya",
+      "name": "Rodnya",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Rodnya",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-rore",
+      "name": "RORE Group",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        },
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "RORE Group",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-salt",
+      "name": "Salt",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Salt",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-setters",
+      "name": "Setters",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Setters",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-sinners",
+      "name": "Sinners",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "date_label": "ноябрь 2021",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Sinners",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-sunlight",
+      "name": "SUNLIGHT",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "SUNLIGHT",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-total-view",
+      "name": "Total View",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Total View",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-trendfox",
+      "name": "TRENDFOX",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "date_label": "февраль 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "TRENDFOX",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-twiga",
+      "name": "TWIGA",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "TWIGA",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-vk",
+      "name": "VK",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "date_label": "27–30 мая 2026",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "VK",
+      "comment": "",
+      "needs_other": false
+    },
+    {
+      "organization_id": "org-wonderfull",
+      "name": "Wonderfull",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "date_label": "23–27 сентября 2019",
+          "label": "",
+          "role": "host"
+        }
+      ],
+      "priority": "",
+      "sort_order": null,
+      "primary": null,
+      "dark": null,
+      "historical": [],
+      "text_fallback": "Wonderfull",
+      "comment": "",
+      "needs_other": false
+    }
+  ]
+}

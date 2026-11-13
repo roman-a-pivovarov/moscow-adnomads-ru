@@ -1,0 +1,666 @@
+[
+  {
+    "organization_id": "org-red-keds",
+    "url": "https://redkeds.com/",
+    "final_url": "https://redkeds.com/",
+    "status": 200,
+    "title": "REDKEDS CREATIVE AGENCY",
+    "found": []
+  },
+  {
+    "organization_id": "org-voshod",
+    "url": "https://voskhod.agency/",
+    "final_url": "https://voskhod.agency/",
+    "status": 200,
+    "title": "РА «ВОСХОД»",
+    "found": [
+      {
+        "url": "https://voskhod.agency/icon.svg?7779a6dc3134dbe7",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-agima",
+    "url": "https://www.agima.ru/",
+    "final_url": "https://www.agima.ru/",
+    "status": 200,
+    "title": "AGIMA — Создаём и поддерживаем продукты крупнейших компаний страны",
+    "found": [
+      {
+        "url": "https://www.agima.ru/_astro/agima-logo.CTuloxRy.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/rusagro-logo.CEUEQP0j_1RgvJz.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/globus-logo.DQ5_poXT_Z1rrj6E.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/homepage-alfastrahovanie-logo.BKtEMCyh_2aQd5d.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/finuslugi-logo-9a91b7c8.DTUtFa0y_Z2vLt2e.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/homepage-case-x5tech-logo.C2loRKpn_1IncDq.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/homepage-case-sleeptery-logo.Ak2eTqt4_1Qi33p.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/homepage-case-ostin-logo.DERsKOzk_1ygi3H.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/homepage-case-lemanapro-logo.CCIY5UjD_Z6hIyD.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/homepage-case-petstory-logo.sxjBwYUy_Z1ajOye.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/_astro/homepage-case-sberspasibo-logo.1oR03mUd_2umIiz.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://www.agima.ru/icon.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-okkam",
+    "url": "https://okkam.group/",
+    "final_url": "https://okkam.group/",
+    "status": 200,
+    "title": "Okkam | Помогаем создавать ценность для потребителей и бизнеса",
+    "found": [
+      {
+        "url": "https://static.tildacdn.com/tild6135-3236-4035-b862-666266643935/Group.svg",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-vk",
+    "url": "https://vk.company/",
+    "final_url": "https://vk.company/ru/",
+    "status": 200,
+    "title": "VK / Главная",
+    "found": [
+      {
+        "url": "https://corp.vkcdn.ru/media_s3/corp-site-prod/projects/logos/VK_Tech-blue-black.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://corp.vkcdn.ru/media_s3/corp-site-prod/projects/logos/projects-logo-1_OFwexq4.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://corp.vkcdn.ru/media_s3/corp-site-prod/projects/logos/Sferum_Logo_Compact_ColorBlack_nl7GqU3.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://corp.vkcdn.ru/media_s3/corp-site-prod/projects/logos/projects-logo-1_n45DzLY.svg",
+        "why": "svg-url"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-2gis",
+    "url": "https://2gis.ru/",
+    "final_url": "https://2gis.ru/museum?return_url=https%3A%2F%2F2gis.ru%2F",
+    "status": 200,
+    "title": "2ГИС",
+    "found": []
+  },
+  {
+    "organization_id": "org-setters",
+    "url": "https://www.setters.agency/",
+    "final_url": "https://www.setters.agency/",
+    "status": 200,
+    "title": "((SETTERS)Agency) — рекламное агентство",
+    "found": []
+  },
+  {
+    "organization_id": "org-yandex",
+    "url": "https://yandex.ru/",
+    "final_url": "https://sso.passport.yandex.ru/push?uuid=5437b10e-67f2-4a2b-88db-5687bbd09f91&retpath=https%3A%2F%2Fdzen.ru%2F%3Fyredirect%3Dtrue%26is_autologin_ya%3Dtrue",
+    "status": 200,
+    "title": "",
+    "found": []
+  },
+  {
+    "organization_id": "org-avito-ads",
+    "url": "https://www.avito.ru/",
+    "blocked": true,
+    "status": 429,
+    "found": []
+  },
+  {
+    "organization_id": "org-yandex-ads",
+    "url": "https://yandex.ru/adv/",
+    "final_url": "https://b2b.yandex.ru/adv",
+    "status": 200,
+    "title": "Яндекс Реклама — продвижение бизнеса и реклама в интернете",
+    "found": []
+  },
+  {
+    "organization_id": "org-depot",
+    "url": "https://www.depotwpf.com/",
+    "final_url": "https://www.depotwpf.com/",
+    "status": 200,
+    "title": "Depot",
+    "found": [
+      {
+        "url": "https://www.depotwpf.com/local/templates/main/img/logo_green.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/resize_cache/iblock/f10/1920_1080_1/f103698d65da508a1cc534622dc10eeb.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/resize_cache/iblock/c93/1920_1080_1/c93d752dea30c7953af881174e8f9398.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/resize_cache/iblock/713/1920_1080_1/713938bb74a081d74758feab04e5d563.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/resize_cache/iblock/3b6/1920_1080_1/3b6d5ff20be0a3ef690db5c537d601dc.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/epda.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.depotwpf.com/favicon.svg",
+        "why": "svg-icon"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/nheader/us.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/nheader/ru.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/nheader/kz.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/nheader/uz.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/nheader/am.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/nheader/arrow.svg",
+        "why": "svg-url"
+      },
+      {
+        "url": "https://www.depotwpf.com/upload/nheader/arrowup.svg",
+        "why": "svg-url"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-ony",
+    "url": "https://ony.ru/",
+    "final_url": "https://ony.ru/",
+    "status": 200,
+    "title": "Агентство ONY",
+    "found": [
+      {
+        "url": "https://ony.ru/assets/home/awards/branding-goda.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://ony.ru/assets/favicon/favicon.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-hybrid",
+    "url": "https://hybrid.ai/",
+    "final_url": "https://hybrid.ai/",
+    "status": 200,
+    "title": "",
+    "found": [
+      {
+        "url": "https://hybrid.ai/images/template/popup/hybrid-training-hub.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://hybrid.ai/images/template/popup/logo_vox.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://hybrid.ai/safari-pinned-tab.svg?v=2",
+        "why": "svg-icon"
+      },
+      {
+        "url": "https://hybrid.ai/images/template/sprites.svg?v=2#logo",
+        "why": "svg-url"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-adventum",
+    "url": "https://www.adventum.ru/",
+    "final_url": "https://www.adventum.ru/",
+    "status": 200,
+    "title": "Digital-агентство полного цикла Adventum",
+    "found": [
+      {
+        "url": "https://www.adventum.ru/logo/adventum/default.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.adventum.ru/logo/adventum/micro.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.adventum.ru/logo/sk.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.adventum.ru/logo/atwinta.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.adventum.ru/favicon.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-didenok",
+    "url": "https://didenokteam.com/",
+    "final_url": "https://didenokteam.com/",
+    "status": 200,
+    "title": "Коммуникационное агентство Didenok Team",
+    "found": []
+  },
+  {
+    "organization_id": "org-twiga",
+    "url": "https://twiga.ru/",
+    "final_url": "https://twiga.ru/",
+    "status": 200,
+    "title": "TWIGA — Коммуникации. Технологии. Рост.",
+    "found": [
+      {
+        "url": "https://twiga.ru/favicon.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-friends",
+    "url": "https://friends.moscow/",
+    "final_url": "https://friends.moscow/",
+    "status": 200,
+    "title": "Friends Moscow",
+    "found": [
+      {
+        "url": "https://friends.moscow/icon.svg?09ae2e0669e5e7e3",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-akar",
+    "url": "https://akarussia.ru/",
+    "final_url": "https://akarussia.ru/",
+    "status": 200,
+    "title": "Ассоциация Коммуникационных Агентств России | АКАР",
+    "found": [
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2024/08/logo.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2024/10/logo-gruppy-chernoe-1.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2024/10/realweb-logo-aktualnyj-e1741780541988.png",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2024/10/elama_logo-1.png",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2024/10/adpass_logo.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2026/07/logo-nrf10_chernyj_svg.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2024/10/npbk_logo.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2025/05/logo_mixx_10_round.png",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2026/04/logo_nrf_2023_montazhnaja-oblast-1-kopija-3.png",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2026/04/perviy_logo_black.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://akarussia.ru/wp-content/uploads/2024/10/512h512.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-completo",
+    "url": "https://www.completo.ru/",
+    "final_url": "https://www.completo.ru/",
+    "status": 200,
+    "title": "Маркетинговое агентство в Москве. Digital агентство полного цикла – Комплето",
+    "found": [
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo-completo-dark.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/Completo_logoNEW_white_08-10-2018.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/534/fj2evsw7034jy6e4r67l2dw6e60vz16y.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/65d/65d9b7225be369ed29a50aa789d820e9.jpeg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/1a1/3swv64uy2a1g5ob0axjs0ihpxx5f9aec.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/25f/25f8bf3338693165a173a363ec24df45.jpeg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/25f/25f6f2c4cf505a56a54003b37b50d5bb.gif",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/7c9/7c9584898614881c5d29a7c85441be50.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/d9e/d9e17b5c70be487e7a5c5fe6ca82fadc.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/a01/a0196dbf3bfba87892b642e14ba4e3a0.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/coderwall-logo.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/625/625a439f536da0e4d08a1449d87ba15c.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/e1b/e1b7697a88c62967b29b1070230b394a.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/a70/a70f564d88942c997d1abf92190bfc42.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/0b8/0b830b3320c6daab20ca66ec81692c8c.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/6ed/6ed53a1b73bf736b5bee789b30d21214.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/5d6/5d622a9440177557c65ebd1e1d13ea22.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/123/jc2q3atoshpstzvkhtug2e3t7c54wubj.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/925/92549a3d5d35e0eafb335b4c5a1484bd.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/73f/73fc697de9a8924b8a5fce0309d3f8ea.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/f8a/f8a73bdbb041e56910c6e409e451ac1f.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/f7c/f7c2e1bdaf0e5693141750ebf202d0c8.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/b33/b33643c3eff0de7a7eb95b332c521ccf.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/39e/39e4b8546191b807680523d94282880a.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/42d/42dc03136808118258a24565b92ad2ec.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/bfe/bfef5abe2f2ba614b6f0cb680ca20c6c.jpeg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/f1b/f1bae494ca47a4682884d52dee82b0bb.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/upload/iblock/71e/71ee0f3881cf9cfd6cdccbe2253bd257.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo_maed.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo-cybermarketing.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/MYAcademy_logo_green_horizontal.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/Skillbox_Logo.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo-b2b-new-1.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo-nima.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo-b2b-new-3.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/picture/upload/Completo_logoNEW_white_08-10-2018.png",
+        "why": "img"
+      },
+      {
+        "url": "https://www.completo.ru/favicon.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-rore",
+    "url": "https://rore.group/",
+    "final_url": "https://rore.group/",
+    "status": 200,
+    "title": "RoRe Group — российская группа компаний \"Родная Речь\"",
+    "found": [
+      {
+        "url": "https://static.tildacdn.com/tild3235-6137-4566-a635-313565643332/RORE-vert_w.png",
+        "why": "img"
+      },
+      {
+        "url": "https://thb.tildacdn.com/tild6632-3562-4037-a333-373537656433/-/empty/RORE-vert_w.png",
+        "why": "img"
+      },
+      {
+        "url": "https://static.tildacdn.com/tild3334-3634-4139-b237-653235663233/rore.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-medianation-2026",
+    "url": "https://medianation.ru/",
+    "final_url": "https://medianation.ru/",
+    "status": 200,
+    "title": "Digital агентство полного цикла Medianation",
+    "found": [
+      {
+        "url": "https://medianation.ru/app/.nuxt/dist/client/img/logo.bcb2f9f.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/925/of0v95rbx21j6p3kqt23nko42gxt3fr2/logo.398db5c.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/3ec/cz5ubl82lxwm9n2o1w6izc606h2j3umr/chitay-gorod-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/c0d/jt1fbzpbkaj0ntvsyycfa6895nvz6yol/okey-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/6be/nxwejonmyr0w7laumlx901cqtu12tar2/poseidon-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/3d9/45dkla5udr7zcb9211q0p8mnu515a1qd/skillfactory-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/341/vk66xlynfuxclhu18pif3rdfhfsg69ht/gulliver-logo-klienty-gl.png",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/a7f/u61ognprfz8lef4kxyu6t6ca2b1mlido/robinzon-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/ffa/k46qajptxzth7qwusk3u22q2p7tf04mv/logo_kanzler.png",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/680/jmcqz0x38jgvzbvtb5a3wek4wk7u1zr9/mario-berlucci-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/ad5/3hs7gxomn0oktkn2o6kjfkq4e905ug50/eksmo-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/9b9/ai1n1vjzn071gabgodikk9gsfogtiwr4/bukvoed-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/72e/pbtwurqyj4shk6giupa47gvwvoo31pe8/etm-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/1cd/58i1wj6grhbyaqguqad9h9hdc54gcoft/laparet-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/02b/a70lariqo1lu0p6hjh157d43z1vdhl40/la-prima-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/9c0/3duam8awks24a0zzwu860uqr5szqnsnm/melodiya-zdoroviya-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/61c/7f2jg8zfyjvu0rrym2x95trf79fylbt5/moneyman-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/4f5/1l6jt5y2celttx8z21hqr7mgohpm1mzj/adamas-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/upload/iblock/527/4glgf7gl6xdjeu0wskug5qs729txjwyo/zdorovie-ru-logo-klienty-gl.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://medianation.ru/app/.nuxt/dist/client/img/sk-logo.aeccee9.png",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-like",
+    "url": "https://like-rm.com/",
+    "final_url": "https://like-rm.com/",
+    "status": 200,
+    "title": "Like Retail Marketing — comprehensive marketing solutions for retail chains",
+    "found": [
+      {
+        "url": "https://static.tildacdn.com/tild3632-3738-4831-a636-306236396563/Like_RM_logo2-01.svg",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-realweb",
+    "url": "https://realweb.ru/",
+    "error": "fetch failed",
+    "found": []
+  }
+]

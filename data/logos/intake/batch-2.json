@@ -1,0 +1,109 @@
+{
+  "candidates": [
+    {
+      "organization_id": "org-dpg",
+      "source_page": "https://dpgrussia.com/",
+      "file_url": "https://dpgrussia.com/wp-content/themes/dpg/dist/assets/img/logo-main.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Логотип в теме сайта dpgrussia.com.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-segmento",
+      "source_page": "https://segmento.ru/",
+      "file_url": "https://segmento.ru/img/svg/logo_new.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Файл logo_new.svg на segmento.ru.",
+      "presumed_current": true,
+      "ambiguity": "Имя файла говорит о новой версии, но год смены на странице не указан."
+    },
+    {
+      "organization_id": "org-zeytz",
+      "source_page": "https://zeytz.ru/",
+      "file_url": "https://zeytz.ru/img/logo.png",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Логотип в шапке zeytz.ru.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-socialist",
+      "source_page": "https://socialist.pro/",
+      "file_url": "https://static.tildacdn.com/tild3764-3164-4133-b261-613061386630/logogo.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Графический файл со страницы socialist.pro.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-wonderfull",
+      "source_page": "https://lab-w.com/",
+      "file_url": "https://static.tildacdn.com/tild6538-3735-4633-a364-663736303133/Logo_WL02.png",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Файл Logo_WL со страницы lab-w.com.",
+      "presumed_current": true,
+      "ambiguity": "На странице также есть логотип клиента Поле.рф. Этот файл отобран по имени Logo_WL, его нужно сверить глазами."
+    },
+    {
+      "organization_id": "org-illan",
+      "source_page": "https://illan.ru/",
+      "file_url": "https://illan.ru/favicon.svg",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта illan.ru. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-zebra",
+      "source_page": "https://zebrahero.com/",
+      "file_url": "https://zebrahero.com/wp-content/themes/zebra-hero-2025/static/fav/fav.svg?38",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта zebrahero.com. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-roden",
+      "source_page": "https://roden-agency.ru/",
+      "file_url": "https://static.tildacdn.com/tild6561-6232-4161-a562-656265396365/Group_46.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Графический файл со страницы roden-agency.ru.",
+      "presumed_current": true,
+      "ambiguity": "Имя файла Group_46.svg. Нужно глазами убедиться, что это знак Roden Media."
+    },
+    {
+      "organization_id": "org-2gis",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2GIS_logo.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2GIS_logo.svg",
+      "source_type": "other",
+      "variant": "horizontal",
+      "description": "SVG со страницы Wikimedia Commons. В описании файла указан источник 2GIS и подпись «новый официальный логотип» от 25 января 2022. С сайта 2gis.ru файл в этом проходе не скачан: страница ушла на служебный адрес.",
+      "presumed_current": null
+    },
+    {
+      "organization_id": "org-mailru",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mail.Ru_Group_logo.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mail.Ru_Group_logo.svg",
+      "source_type": "other",
+      "variant": "historical",
+      "description": "Знак Mail.Ru Group. Оригинал на странице файла указан как brandbook corp.mail.ru. На карточку VK не переносится.",
+      "presumed_current": false,
+      "historical_period": "до 11 октября 2021",
+      "historical_basis": "Wikidata Q1885456: у файла Mail.Ru Group logo.svg дата окончания 11 октября 2021, далее название компании — VK."
+    },
+    {
+      "organization_id": "org-vk",
+      "source_page": "https://commons.wikimedia.org/wiki/File:VK_Compact_Logo_(2021-present).svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/VK_Compact_Logo_(2021-present).svg",
+      "source_type": "other",
+      "variant": "compact",
+      "description": "Компактный знак VK со страницы Wikimedia. На vk.company в этом проходе попались знаки продуктов, не этот файл. На карточку Mail.Ru Group не переносится.",
+      "presumed_current": true,
+      "ambiguity": "Подпись файла на Wikimedia содержит «2021-present». Это подпись файла, не отдельный брендбук VK."
+    }
+  ]
+}

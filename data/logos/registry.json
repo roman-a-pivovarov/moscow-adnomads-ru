@@ -1,0 +1,3174 @@
+{
+  "schema": "moscow-logos/v1",
+  "version": 10,
+  "updated_at": "2026-11-12T22:29:22.807Z",
+  "source_fingerprint": "7a6fd84701c6c07e",
+  "note": "Список организаций читается из принятых src/content. Исторические факты здесь не дублируются. Наличие логотипа не подтверждает хоста ближайшего выпуска и не делает организацию спонсором.",
+  "organizations": [
+    {
+      "organization_id": "org-1994lab",
+      "canonical_id": "rpkb-org-go-1994lab",
+      "name": "1994Lab",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-2gis",
+      "canonical_id": "rpkb-org-go-2gis",
+      "name": "2ГИС",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-2gis-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-2sharp",
+      "canonical_id": "rpkb-org-go-2sharp",
+      "name": "2Sharp",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-avito-ads",
+      "canonical_id": "rpkb-org-adnomads-avito_reklama",
+      "name": "Авито Реклама",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "В данных это «Авито Реклама». Если отдельного знака рекламы нет, общий знак Авито помечать как неоднозначный.",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-akar",
+      "canonical_id": "rpkb-org-go-akar",
+      "name": "АКАР",
+      "source_ids": [
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-akar-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-voshod",
+      "canonical_id": "rpkb-org-go-voskhod",
+      "name": "Восход",
+      "source_ids": [
+        "src-live-2019",
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-illan",
+      "canonical_id": "rpkb-org-go-illan",
+      "name": "Иллан",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-illan-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-usilitel",
+      "canonical_id": "rpkb-org-adnomads-usilitel_vkusa",
+      "name": "Усилитель вкуса",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-yandex",
+      "canonical_id": "rpkb-org-go-yandex",
+      "name": "Яндекс",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "Имя организации — Яндекс. В сентябре 2026 подпись участия — «Яндекс Реклама». Отдельного знака рекламы в каталоге нет.",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "Яндекс Реклама",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-yandex-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-actis-wunderman",
+      "canonical_id": "rpkb-org-go-actis_wunderman",
+      "name": "Actis Wunderman",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-adventum",
+      "canonical_id": "rpkb-org-go-adventum",
+      "name": "Adventum",
+      "source_ids": [
+        "src-live-2021",
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-adventum-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-agima",
+      "canonical_id": "rpkb-org-go-agima",
+      "name": "AGIMA",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-andriyashkin",
+      "canonical_id": "rpkb-org-go-andriyashkin_partners",
+      "name": "Andriyashkin & Partners",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-aori",
+      "canonical_id": "rpkb-org-go-aori",
+      "name": "Aori",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-banana-trends",
+      "canonical_id": "rpkb-org-go-banana_trends",
+      "name": "Banana Trends",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-cms-magazine",
+      "canonical_id": "rpkb-org-go-cms_magazine",
+      "name": "CMS Magazine",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-completo",
+      "canonical_id": "rpkb-org-go-completo",
+      "name": "Completo",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-completo-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "normal",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-creative-family",
+      "canonical_id": "rpkb-org-adnomads-creative_family",
+      "name": "Creative Family",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-cros",
+      "canonical_id": "rpkb-org-go-cros_digital",
+      "name": "Cros Digital",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-d-innovative",
+      "canonical_id": "rpkb-org-adnomads-d_innovative_group",
+      "name": "D Innovative Group",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-ddvb",
+      "canonical_id": "rpkb-org-adnomads-ddvb",
+      "name": "DDVB",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-depot",
+      "canonical_id": "rpkb-org-go-depot",
+      "name": "Depot",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-depot-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-didenok",
+      "canonical_id": "rpkb-org-go-didenok",
+      "name": "DIDENOK team",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-digital-audio",
+      "canonical_id": "rpkb-org-go-digital_audio",
+      "name": "Digital Audio",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-dpg",
+      "canonical_id": "rpkb-org-go-dpg_russia",
+      "name": "DPG Russia",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-dpg-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-friends",
+      "canonical_id": "rpkb-org-go-friends",
+      "name": "Friends",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-friends-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-genius",
+      "canonical_id": "rpkb-org-adnomads-genius",
+      "name": "Genius Group",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-getresponse-russia",
+      "canonical_id": "rpkb-org-go-getresponse_russia",
+      "name": "GetResponse Russia",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-hybrid",
+      "canonical_id": "rpkb-org-go-hybrid",
+      "name": "Hybrid",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-justnow",
+      "canonical_id": "rpkb-org-go-justnow",
+      "name": "JustNow",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-kb-12",
+      "canonical_id": "rpkb-org-go-kb_12",
+      "name": "KB—12",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-leo-burnett",
+      "canonical_id": "rpkb-org-go-leo_burnett_moscow",
+      "name": "Leo Burnett",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-like",
+      "canonical_id": "rpkb-org-go-like_retail_media",
+      "name": "Like Retail Media",
+      "source_ids": [
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-mailru",
+      "canonical_id": "rpkb-org-go-mail_ru_group",
+      "name": "Mail.Ru Group",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "Имя в данных — Mail.Ru Group. Знак VK на эту карточку не переносить.",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-mailru-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-marylin",
+      "canonical_id": "rpkb-org-go-marylin",
+      "name": "Marylin",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-media-nation",
+      "canonical_id": "rpkb-org-go-media_nation",
+      "name": "Media Nation",
+      "source_ids": [
+        "src-live-2019",
+        "src-live-2021",
+        "src-live-2026-february"
+      ],
+      "distinction": "В принятых данных это одна организация для 2019, 2021 и февраля 2026. Файл с medianation.ru лежит на этой карточке после склейки архитектора.",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-medianation-2026-001"
+        ],
+        "needs_other": false,
+        "priority": "normal",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-nectarine",
+      "canonical_id": "rpkb-org-adnomads-nektarin",
+      "name": "Nectarine",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-npf",
+      "canonical_id": "rpkb-org-go-npf_creative_group",
+      "name": "NPF Creative Group",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-okkam",
+      "canonical_id": "rpkb-org-go-okkam",
+      "name": "Okkam",
+      "source_ids": [
+        "src-live-2026-february"
+      ],
+      "distinction": "Карточка группы Okkam. Знак Okkam Creative — отдельный бренд и без пометки сюда не кладётся.",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-okkam-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-ony",
+      "canonical_id": "rpkb-org-go-ony",
+      "name": "ONY",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-ony-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-possible",
+      "canonical_id": "rpkb-org-go-possible_group",
+      "name": "Possible Group",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-rta",
+      "canonical_id": "rpkb-org-go-r_ta",
+      "name": "R:TA",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-realweb",
+      "canonical_id": "rpkb-org-adnomads-realweb",
+      "name": "Realweb",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-red-keds",
+      "canonical_id": "rpkb-org-go-red_keds",
+      "name": "Red Keds",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-red-keds-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-redday",
+      "canonical_id": "rpkb-org-go-redday",
+      "name": "Redday",
+      "source_ids": [
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-roden",
+      "canonical_id": "rpkb-org-adnomads-roden_media",
+      "name": "RODEN media",
+      "source_ids": [
+        "src-live-2026-september"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-september",
+          "adnomads_id": "ADNOMADS-53",
+          "adnomads_number": 53,
+          "moscow_number": 5,
+          "date_label": "23–26 сентября 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-roden-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-rodnya",
+      "canonical_id": "rpkb-org-go-rodnya",
+      "name": "Rodnya",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-rore",
+      "canonical_id": "rpkb-org-go-rore_group",
+      "name": "RORE Group",
+      "source_ids": [
+        "src-live-2026-february",
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-rore-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-salt",
+      "canonical_id": "rpkb-org-go-salt",
+      "name": "Salt",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-segmento",
+      "canonical_id": "rpkb-org-go-segmento",
+      "name": "Segmento",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-segmento-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-setters",
+      "canonical_id": "rpkb-org-go-setters",
+      "name": "Setters",
+      "source_ids": [
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-sinners",
+      "canonical_id": "rpkb-org-go-sinners",
+      "name": "Sinners",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-socialist",
+      "canonical_id": "rpkb-org-go-socialist",
+      "name": "Socialist",
+      "source_ids": [
+        "src-live-2019",
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        },
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-socialist-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "first",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-sunlight",
+      "canonical_id": "rpkb-org-go-sunlight",
+      "name": "SUNLIGHT",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-total-view",
+      "canonical_id": "rpkb-org-go-total_view",
+      "name": "Total View",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-trendfox",
+      "canonical_id": "rpkb-org-go-trendfox",
+      "name": "TRENDFOX",
+      "source_ids": [],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-twiga",
+      "canonical_id": "rpkb-org-go-twiga",
+      "name": "TWIGA",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-twiga-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-vk",
+      "canonical_id": "rpkb-org-go-vk_group",
+      "name": "VK",
+      "source_ids": [
+        "src-live-2026-may"
+      ],
+      "distinction": "Карточка VK. Не использовать как логотип Mail.Ru Group.",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-may",
+          "adnomads_id": "ADNOMADS-51",
+          "adnomads_number": 51,
+          "moscow_number": 4,
+          "date_label": "27–30 мая 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [
+          "logo-vk-001"
+        ],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-wonderfull",
+      "canonical_id": "rpkb-org-go-wonderfull",
+      "name": "Wonderfull",
+      "source_ids": [
+        "src-live-2019"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2019-moscow-practices",
+          "adnomads_id": "ADNOMADS-26",
+          "adnomads_number": 26,
+          "moscow_number": 1,
+          "date_label": "23–27 сентября 2019",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": ""
+      }
+    },
+    {
+      "organization_id": "org-zebra",
+      "canonical_id": "rpkb-org-go-zebra_hero",
+      "name": "Zebra Hero",
+      "source_ids": [
+        "src-live-2021"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2021-moscow",
+          "adnomads_id": "ADNOMADS-32",
+          "adnomads_number": 32,
+          "moscow_number": 2,
+          "date_label": "ноябрь 2021",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-zebra-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "normal",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    },
+    {
+      "organization_id": "org-zeytz",
+      "canonical_id": "rpkb-org-go-zeytz",
+      "name": "Zeytz",
+      "source_ids": [
+        "src-live-2026-february"
+      ],
+      "distinction": "",
+      "editions": [
+        {
+          "edition_id": "2026-moscow-february",
+          "adnomads_id": "ADNOMADS-49",
+          "adnomads_number": 49,
+          "moscow_number": 3,
+          "date_label": "февраль 2026",
+          "role": "host",
+          "label": "",
+          "host_list_status": "complete"
+        }
+      ],
+      "decision": {
+        "primary_candidate_id": "logo-zeytz-001",
+        "dark_candidate_id": "",
+        "historical": [],
+        "rejected_candidate_ids": [],
+        "needs_other": false,
+        "priority": "normal",
+        "sort_order": null,
+        "comment": "",
+        "updated_at": "2026-11-12T22:29:22.803Z"
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "logo-agima-001",
+      "organization_id": "org-agima",
+      "source_page": "https://www.agima.ru/",
+      "file_url": "https://www.agima.ru/_astro/agima-logo.CTuloxRy.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 1202,
+      "height": 261,
+      "has_alpha": true,
+      "plate": "checker",
+      "variant": "primary",
+      "description": "Логотип в шапке действующего сайта agima.ru.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "В октябре 2026 агентство сообщило о новой айдентике и коротком знаке «A.». Файл снят с действующего сайта, отдельный прежний знак здесь не приложен.",
+      "content_sha256": "f86335db7a2ee6705d54723d8c21600f12ff6c85ec2659145e82952782089835",
+      "bytes": 1450,
+      "raw_path": "assets-logos/raw/org-agima/logo-agima-001.svg",
+      "prepared_path": "assets-logos/prepared/org-agima/logo-agima-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-agima-002",
+      "organization_id": "org-agima",
+      "source_page": "https://www.agima.ru/",
+      "file_url": "https://www.agima.ru/icon.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 374,
+      "height": 374,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "compact",
+      "description": "Значок сайта agima.ru, не полный логотип.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "b5c71d7a73c5d276346a70635c0ed8b98f6643348921a25f06bc169754f0a556",
+      "bytes": 510,
+      "raw_path": "assets-logos/raw/org-agima/logo-agima-002.svg",
+      "prepared_path": "assets-logos/prepared/org-agima/logo-agima-002.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-adventum-001",
+      "organization_id": "org-adventum",
+      "source_page": "https://www.adventum.ru/",
+      "file_url": "https://www.adventum.ru/logo/adventum/default.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 222,
+      "height": 32,
+      "has_alpha": true,
+      "plate": "dark",
+      "variant": "horizontal",
+      "description": "Основной знак Adventum на официальном сайте.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "2740c36a402ec025bb6a4e94135b2aceea70db79a90d67992e4a513c41522f58",
+      "bytes": 3471,
+      "raw_path": "assets-logos/raw/org-adventum/logo-adventum-001.svg",
+      "prepared_path": "assets-logos/prepared/org-adventum/logo-adventum-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-adventum-002",
+      "organization_id": "org-adventum",
+      "source_page": "https://www.adventum.ru/",
+      "file_url": "https://www.adventum.ru/logo/adventum/micro.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 61,
+      "height": 31,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "compact",
+      "description": "Компактный знак Adventum на официальном сайте.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "784ba8c34de380effee7e9ef3d89be9f52c57e5935d20386321b25647e4d9ec7",
+      "bytes": 640,
+      "raw_path": "assets-logos/raw/org-adventum/logo-adventum-002.svg",
+      "prepared_path": "assets-logos/prepared/org-adventum/logo-adventum-002.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-akar-001",
+      "organization_id": "org-akar",
+      "source_page": "https://akarussia.ru/",
+      "file_url": "https://akarussia.ru/wp-content/uploads/2024/08/logo.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 101,
+      "height": 28,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "primary",
+      "description": "Логотип АКАР в шапке akarussia.ru.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "ed12429269735318f99216b10a3099ef4c40fbfe4d437fad0824e068d8129be0",
+      "bytes": 806,
+      "raw_path": "assets-logos/raw/org-akar/logo-akar-001.svg",
+      "prepared_path": "assets-logos/prepared/org-akar/logo-akar-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-akar-002",
+      "organization_id": "org-akar",
+      "source_page": "https://akarussia.ru/",
+      "file_url": "https://akarussia.ru/wp-content/uploads/2024/10/512h512.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 512,
+      "height": 512,
+      "has_alpha": true,
+      "plate": "dark",
+      "variant": "compact",
+      "description": "Квадратный значок сайта АКАР.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "6fd5925ba0f4d08daf5299975c50b5036a113461a1953ddb70bdf6681bf6a552",
+      "bytes": 1073,
+      "raw_path": "assets-logos/raw/org-akar/logo-akar-002.svg",
+      "prepared_path": "assets-logos/prepared/org-akar/logo-akar-002.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-completo-001",
+      "organization_id": "org-completo",
+      "source_page": "https://www.completo.ru/",
+      "file_url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo-completo-dark.png",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "png",
+      "width": 129,
+      "height": 45,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "on-light",
+      "description": "Тёмный логотип Completo в шапке официального сайта.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "bd013e7766eb4c6c8aa87eaa9525c28785cc086200638bd10016501cfb3bb676",
+      "bytes": 2328,
+      "raw_path": "assets-logos/raw/org-completo/logo-completo-001.png",
+      "prepared_path": "assets-logos/prepared/org-completo/logo-completo-001.png",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-completo-002",
+      "organization_id": "org-completo",
+      "source_page": "https://www.completo.ru/",
+      "file_url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/Completo_logoNEW_white_08-10-2018.png",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "png",
+      "width": 600,
+      "height": 212,
+      "has_alpha": false,
+      "plate": "checker",
+      "variant": "on-dark",
+      "description": "Светлая версия логотипа Completo с той же страницы. Дата в имени файла не считается периодом использования.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "f40e71e916d78bec2740cffae2c1503d5be722da1b1278e8a4039253965c022c",
+      "bytes": 4383,
+      "raw_path": "assets-logos/raw/org-completo/logo-completo-002.png",
+      "prepared_path": "assets-logos/prepared/org-completo/logo-completo-002.png",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-depot-001",
+      "organization_id": "org-depot",
+      "source_page": "https://www.depotwpf.com/",
+      "file_url": "https://www.depotwpf.com/local/templates/main/img/logo_green.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 260,
+      "height": 40,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "primary",
+      "description": "Зелёный знак в шапке depotwpf.com.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "cde647d6a20f899b964e93cfe31a3fa643d31e360ce47ce57f8ff478bfa0117e",
+      "bytes": 5974,
+      "raw_path": "assets-logos/raw/org-depot/logo-depot-001.svg",
+      "prepared_path": "assets-logos/prepared/org-depot/logo-depot-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-medianation-2026-001",
+      "organization_id": "org-media-nation",
+      "source_page": "https://medianation.ru/",
+      "file_url": "https://medianation.ru/app/.nuxt/dist/client/img/logo.bcb2f9f.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 118,
+      "height": 80,
+      "has_alpha": true,
+      "plate": "dark",
+      "variant": "primary",
+      "description": "Логотип в шапке medianation.ru.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Файл с medianation.ru. Архитектор склеил февральскую карточку с org-media-nation: в принятых данных это одна организация для 2019, 2021 и февраля 2026.",
+      "content_sha256": "0bd1f2dbba90119da9ca54c66df1429999f5d53bd119b2b17e7789733a349056",
+      "bytes": 9675,
+      "raw_path": "assets-logos/raw/org-medianation-2026/logo-medianation-2026-001.svg",
+      "prepared_path": "assets-logos/prepared/org-medianation-2026/logo-medianation-2026-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-okkam-001",
+      "organization_id": "org-okkam",
+      "source_page": "https://okkam.group/",
+      "file_url": "https://static.tildacdn.com/tild6135-3236-4035-b862-666266643935/Group.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 915,
+      "height": 145,
+      "has_alpha": true,
+      "plate": "dark",
+      "variant": "primary",
+      "description": "Графический файл из шапки okkam.group.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Белый словесный знак OKKAM со страницы группы. Знак Okkam Creative в карточку не клался.",
+      "content_sha256": "7f95129df7f817a32949c1a2bfc3a13e360887731f987321714dafe816bc82a4",
+      "bytes": 1016,
+      "raw_path": "assets-logos/raw/org-okkam/logo-okkam-001.svg",
+      "prepared_path": "assets-logos/prepared/org-okkam/logo-okkam-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-rore-001",
+      "organization_id": "org-rore",
+      "source_page": "https://rore.group/",
+      "file_url": "https://static.tildacdn.com/tild3235-6137-4566-a635-313565643332/RORE-vert_w.png",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "png",
+      "width": 1680,
+      "height": 1970,
+      "has_alpha": false,
+      "plate": "checker",
+      "variant": "on-dark",
+      "description": "Светлый вертикальный знак со страницы rore.group.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Заголовок сайта: RoRe Group — российская группа компаний «Родная Речь». Это одна карточка org-rore.",
+      "content_sha256": "ed74e4ed1d1be8693eacd4ee6b83f02a191a55255788eca6cbf0a62896fe2851",
+      "bytes": 26723,
+      "raw_path": "assets-logos/raw/org-rore/logo-rore-001.png",
+      "prepared_path": "assets-logos/prepared/org-rore/logo-rore-001.png",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-rore-002",
+      "organization_id": "org-rore",
+      "source_page": "https://rore.group/",
+      "file_url": "https://static.tildacdn.com/tild3334-3634-4139-b237-653235663233/rore.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 600,
+      "height": 600,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "compact",
+      "description": "Значок сайта rore.group.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "8ddb56d4a4fa235c36e9a55ec15e985c541dc0a700750bbbbfa01884730aad82",
+      "bytes": 1177,
+      "raw_path": "assets-logos/raw/org-rore/logo-rore-002.svg",
+      "prepared_path": "assets-logos/prepared/org-rore/logo-rore-002.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-twiga-001",
+      "organization_id": "org-twiga",
+      "source_page": "https://twiga.ru/",
+      "file_url": "https://twiga.ru/favicon.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 64,
+      "height": 64,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "compact",
+      "description": "Значок сайта twiga.ru. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "eaa922e4b0f0b0b69f7aa08be4a81cfda762f7fccf80a45a3c410b29480a18c7",
+      "bytes": 354,
+      "raw_path": "assets-logos/raw/org-twiga/logo-twiga-001.svg",
+      "prepared_path": "assets-logos/prepared/org-twiga/logo-twiga-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-friends-001",
+      "organization_id": "org-friends",
+      "source_page": "https://friends.moscow/",
+      "file_url": "https://friends.moscow/icon.svg?09ae2e0669e5e7e3",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 200,
+      "height": 200,
+      "has_alpha": true,
+      "plate": "dark",
+      "variant": "compact",
+      "description": "Значок сайта friends.moscow. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "bbb6ff0ac22d9555b4fc3548f2c66fab4fdaea386b16497d9fc8c71c369aeda7",
+      "bytes": 1553,
+      "raw_path": "assets-logos/raw/org-friends/logo-friends-001.svg",
+      "prepared_path": "assets-logos/prepared/org-friends/logo-friends-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-dpg-001",
+      "organization_id": "org-dpg",
+      "source_page": "https://dpgrussia.com/",
+      "file_url": "https://dpgrussia.com/wp-content/themes/dpg/dist/assets/img/logo-main.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 42,
+      "height": 42,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "primary",
+      "description": "Логотип в теме сайта dpgrussia.com.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "d7d93b010a87a16b9bf2ab5d1d662bbd43f2e30bea7ec71acb777ccdc87ddcf3",
+      "bytes": 663,
+      "raw_path": "assets-logos/raw/org-dpg/logo-dpg-001.svg",
+      "prepared_path": "assets-logos/prepared/org-dpg/logo-dpg-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-segmento-001",
+      "organization_id": "org-segmento",
+      "source_page": "https://segmento.ru/",
+      "file_url": "https://segmento.ru/img/svg/logo_new.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 7713,
+      "height": 2131,
+      "has_alpha": true,
+      "plate": "checker",
+      "variant": "primary",
+      "description": "Файл logo_new.svg на segmento.ru.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Имя файла говорит о новой версии, но год смены на странице не указан.",
+      "content_sha256": "8f90c6da5dd6d69c9a2b31101a818d7291dbabc5e43a1f8c90db35ce752367e2",
+      "bytes": 102348,
+      "raw_path": "assets-logos/raw/org-segmento/logo-segmento-001.svg",
+      "prepared_path": "assets-logos/prepared/org-segmento/logo-segmento-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-zeytz-001",
+      "organization_id": "org-zeytz",
+      "source_page": "https://zeytz.ru/",
+      "file_url": "https://zeytz.ru/img/logo.png",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "png",
+      "width": 167,
+      "height": 50,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "primary",
+      "description": "Логотип в шапке zeytz.ru.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "00cbf00f94be25d9e863a27fbc6d5c1b420a1f29b048c59a3e08f63b25636c09",
+      "bytes": 1786,
+      "raw_path": "assets-logos/raw/org-zeytz/logo-zeytz-001.png",
+      "prepared_path": "assets-logos/prepared/org-zeytz/logo-zeytz-001.png",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-socialist-001",
+      "organization_id": "org-socialist",
+      "source_page": "https://socialist.pro/",
+      "file_url": "https://static.tildacdn.com/tild3764-3164-4133-b261-613061386630/logogo.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 1101,
+      "height": 157,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "primary",
+      "description": "Графический файл со страницы socialist.pro.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "9e188b84dfcef3ae70d8b0c1afac8f6c4011f9a05272441ba7ce53326245d8ab",
+      "bytes": 9487,
+      "raw_path": "assets-logos/raw/org-socialist/logo-socialist-001.svg",
+      "prepared_path": "assets-logos/prepared/org-socialist/logo-socialist-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-illan-001",
+      "organization_id": "org-illan",
+      "source_page": "https://illan.ru/",
+      "file_url": "https://illan.ru/favicon.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 512,
+      "height": 512,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "compact",
+      "description": "Значок сайта illan.ru. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "db8ed9c653b2a15c496e976c7b056e980585fd57a92d4d20b921ea034c1d1f58",
+      "bytes": 321,
+      "raw_path": "assets-logos/raw/org-illan/logo-illan-001.svg",
+      "prepared_path": "assets-logos/prepared/org-illan/logo-illan-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-zebra-001",
+      "organization_id": "org-zebra",
+      "source_page": "https://zebrahero.com/",
+      "file_url": "https://zebrahero.com/wp-content/themes/zebra-hero-2025/static/fav/fav.svg?38",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 64,
+      "height": 64,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "compact",
+      "description": "Значок сайта zebrahero.com. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "93bab8688e4741975fd88fe5d461f3a6e41f743da23e498bd029953d27761366",
+      "bytes": 8382,
+      "raw_path": "assets-logos/raw/org-zebra/logo-zebra-001.svg",
+      "prepared_path": "assets-logos/prepared/org-zebra/logo-zebra-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-roden-001",
+      "organization_id": "org-roden",
+      "source_page": "https://roden-agency.ru/",
+      "file_url": "https://static.tildacdn.com/tild6561-6232-4161-a562-656265396365/Group_46.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 333,
+      "height": 92,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "primary",
+      "description": "Графический файл со страницы roden-agency.ru.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "be52d5a0390b4eab6df869b055848ee97294b2bb1e61f532a6e2ff3f6443f65d",
+      "bytes": 11085,
+      "raw_path": "assets-logos/raw/org-roden/logo-roden-001.svg",
+      "prepared_path": "assets-logos/prepared/org-roden/logo-roden-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-2gis-001",
+      "organization_id": "org-2gis",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2GIS_logo.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2GIS_logo.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "other",
+      "format": "svg",
+      "width": 478,
+      "height": 155,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "horizontal",
+      "description": "SVG со страницы Wikimedia Commons. В описании файла указан источник 2GIS и подпись «новый официальный логотип» от 25 января 2022. С сайта 2gis.ru файл в этом проходе не скачан: страница ушла на служебный адрес.",
+      "presumed_current": null,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "f70382ff235821d3f82a5d0e7cbdf76c1dc88e9ed62990d20548c64b6f71f9b1",
+      "bytes": 3172,
+      "raw_path": "assets-logos/raw/org-2gis/logo-2gis-001.svg",
+      "prepared_path": "assets-logos/prepared/org-2gis/logo-2gis-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-mailru-001",
+      "organization_id": "org-mailru",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mail.Ru_Group_logo.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mail.Ru_Group_logo.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "other",
+      "format": "svg",
+      "width": 342,
+      "height": 121,
+      "has_alpha": true,
+      "plate": "dark",
+      "variant": "historical",
+      "description": "Знак Mail.Ru Group. Оригинал на странице файла указан как brandbook corp.mail.ru. На карточку VK не переносится.",
+      "presumed_current": false,
+      "historical_period": "до 11 октября 2021",
+      "historical_basis": "Wikidata Q1885456: у файла Mail.Ru Group logo.svg дата окончания 11 октября 2021, далее название компании — VK.",
+      "ambiguity": "",
+      "content_sha256": "291313fb3f76fefef924a09519551c3246f096e94b072a9ff88d294ed27c3656",
+      "bytes": 8324,
+      "raw_path": "assets-logos/raw/org-mailru/logo-mailru-001.svg",
+      "prepared_path": "assets-logos/prepared/org-mailru/logo-mailru-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-vk-001",
+      "organization_id": "org-vk",
+      "source_page": "https://commons.wikimedia.org/wiki/File:VK_Compact_Logo_(2021-present).svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/VK_Compact_Logo_(2021-present).svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "other",
+      "format": "svg",
+      "width": 48,
+      "height": 48,
+      "has_alpha": true,
+      "plate": "dark",
+      "variant": "compact",
+      "description": "Компактный знак VK со страницы Wikimedia. На vk.company в этом проходе попались знаки продуктов, не этот файл. На карточку Mail.Ru Group не переносится.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Подпись файла на Wikimedia содержит «2021-present». Это подпись файла, не отдельный брендбук VK.",
+      "content_sha256": "2c16bcf8dd56d83e5e23fbe0690e3d6a3ef9f84a828b3530495f907187c1f1db",
+      "bytes": 847,
+      "raw_path": "assets-logos/raw/org-vk/logo-vk-001.svg",
+      "prepared_path": "assets-logos/prepared/org-vk/logo-vk-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-yandex-001",
+      "organization_id": "org-yandex",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yandex_logo_2021_Russian.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yandex_logo_2021_Russian.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "other",
+      "format": "svg",
+      "width": 367,
+      "height": 106,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "horizontal",
+      "description": "Кириллический знак «Яндекс» из файла Wikimedia Yandex_logo_2021_Russian.svg. Официальный PDF лежит на странице правил: https://yandex.ru/company/rules/logotype. PDF в каталог не встроен.",
+      "presumed_current": null,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Корпоративный знак Яндекса. Отдельного знака «Яндекс Реклама» нет: в сентябре 2026 эта подпись относится к той же карточке. Правила размещения: https://yandex.ru/company/rules/logotype. В каталоге файл Wikimedia, не PDF с той страницы.",
+      "content_sha256": "0352832fd6778a8731a36670bf3a3c05f63c196c70dfeb539e646605a21aeee3",
+      "bytes": 1427,
+      "raw_path": "assets-logos/raw/org-yandex/logo-yandex-001.svg",
+      "prepared_path": "assets-logos/prepared/org-yandex/logo-yandex-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-yandex-002",
+      "organization_id": "org-yandex",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yandex_logo_ru.svg",
+      "file_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yandex_logo_ru.svg",
+      "retrieved_at": "2026-11-12",
+      "source_type": "other",
+      "format": "svg",
+      "width": 98,
+      "height": 39,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "other",
+      "description": "Другой файл Wikimedia, Yandex_logo_ru.svg. Период использования по этой странице не зафиксирован.",
+      "presumed_current": null,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Может совпадать с текущим знаком или быть более ранним. Дату по рисунку не ставить.",
+      "content_sha256": "f1f111501842014b1dafe5e6ec666d8192cdbc291f65eaeadbe4d356b9fc246f",
+      "bytes": 3718,
+      "raw_path": "assets-logos/raw/org-yandex/logo-yandex-002.svg",
+      "prepared_path": "assets-logos/prepared/org-yandex/logo-yandex-002.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-ony-001",
+      "organization_id": "org-ony",
+      "source_page": "https://ony.ru/",
+      "file_url": "",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 105,
+      "height": 32,
+      "has_alpha": true,
+      "plate": "checker",
+      "variant": "horizontal",
+      "description": "Словесный знак ONY, извлечённый из HTML шапки ony.ru. Отдельного URL файла на странице не было.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "",
+      "content_sha256": "28d062339526647464bb8086fc2155337338e51cb172928ab1800ed3c09d131d",
+      "bytes": 741,
+      "raw_path": "assets-logos/raw/org-ony/logo-ony-001.svg",
+      "prepared_path": "assets-logos/prepared/org-ony/logo-ony-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-2sharp-001",
+      "organization_id": "org-2sharp",
+      "source_page": "https://2sharp.ru/",
+      "file_url": "",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 265,
+      "height": 120,
+      "has_alpha": true,
+      "plate": "checker",
+      "variant": "horizontal",
+      "description": "Знак из навигации 2sharp.ru, класс navbar__logotip-logo.",
+      "presumed_current": null,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Заливка задана стилем страницы. Повторный запрос 2sharp.ru не открылся, поэтому файл не показывается как готовый знак.",
+      "content_sha256": "50c11ad315df66a0a94cd5f546facdb2dff71fe0500c3e61e0eb7566c8ee9f06",
+      "bytes": 4716,
+      "raw_path": "assets-logos/raw/org-2sharp/logo-2sharp-001.svg",
+      "prepared_path": "assets-logos/prepared/org-2sharp/logo-2sharp-001.svg",
+      "svg_safe": true,
+      "usable": false,
+      "prepare_note": "Заливка задана стилем страницы. Повторный запрос 2sharp.ru не открылся, поэтому файл не показывается как готовый знак."
+    },
+    {
+      "candidate_id": "logo-red-keds-001",
+      "organization_id": "org-red-keds",
+      "source_page": "https://redkeds.com/",
+      "file_url": "",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 263,
+      "height": 145,
+      "has_alpha": true,
+      "plate": "light",
+      "variant": "primary",
+      "description": "Красный вектор из HTML redkeds.com.",
+      "presumed_current": true,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "На сайте отдельно описан герб. Рядом в HTML есть второй вектор. Нужно глазами выбрать, какой из них знак агентства.",
+      "content_sha256": "d9eaf63aec8daec65c35ab3c80b153fdf3fcee4e18055de8b686b720020e9223",
+      "bytes": 3261,
+      "raw_path": "assets-logos/raw/org-red-keds/logo-red-keds-001.svg",
+      "prepared_path": "assets-logos/prepared/org-red-keds/logo-red-keds-001.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    },
+    {
+      "candidate_id": "logo-red-keds-002",
+      "organization_id": "org-red-keds",
+      "source_page": "https://redkeds.com/",
+      "file_url": "",
+      "retrieved_at": "2026-11-12",
+      "source_type": "official-site",
+      "format": "svg",
+      "width": 187,
+      "height": 222,
+      "has_alpha": true,
+      "plate": "checker",
+      "variant": "other",
+      "description": "Второй вектор из HTML redkeds.com, без отдельного URL файла.",
+      "presumed_current": null,
+      "historical_period": "",
+      "historical_basis": "",
+      "ambiguity": "Может быть гербом, описанным на странице /brn8, или декоративным элементом. Год герба на странице — 2013, к этому файлу он не привязан, пока не видно, что это тот самый герб.",
+      "content_sha256": "0c21a661b8c3c7e9edd5a76797dc6620e23a6019ec49c53d6b2dffe31bf6af92",
+      "bytes": 2834,
+      "raw_path": "assets-logos/raw/org-red-keds/logo-red-keds-002.svg",
+      "prepared_path": "assets-logos/prepared/org-red-keds/logo-red-keds-002.svg",
+      "svg_safe": true,
+      "usable": true,
+      "prepare_note": ""
+    }
+  ],
+  "gaps": [
+    {
+      "organization_id": "org-avito-ads",
+      "kind": "blocked",
+      "note": "avito.ru ответил HTTP 429 на автоматический запрос. Обход ограничения не выполнялся.",
+      "urls": [
+        "https://www.avito.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-like",
+      "kind": "identity",
+      "note": "Сайт like-rm.com называется Like Retail Marketing. В данных карточка называется Like Retail Media. Файл не привязан, чтобы не смешать похожие имена.",
+      "urls": [
+        "https://like-rm.com/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-media-nation",
+      "kind": "identity",
+      "note": "Логотип medianation.ru оставлен только у карточки MediaNation. На карточку Media Nation он не копировался.",
+      "urls": [
+        "https://medianation.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-voshod",
+      "kind": "missing",
+      "note": "Значок voskhod.agency оказался пустым градиентом и убран из кандидатов. Полный логотип в HTML главной не найден.",
+      "urls": [
+        "https://voskhod.agency/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-wonderfull",
+      "kind": "missing",
+      "note": "Файл Logo_WL со страницы lab-w.com оказался белым прямоугольником и убран. Знак лаборатории Wonderfull не извлечён.",
+      "urls": [
+        "https://lab-w.com/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-setters",
+      "kind": "missing",
+      "note": "На setters.agency в HTML не найден файл логотипа. Попалась только иконка стрелки, она не сохранена.",
+      "urls": [
+        "https://www.setters.agency/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-hybrid",
+      "kind": "missing",
+      "note": "На hybrid.ai в HTML попались иконки интерфейса, не знак компании. Они не сохранены.",
+      "urls": [
+        "https://hybrid.ai/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-realweb",
+      "kind": "missing",
+      "note": "Первый запрос realweb.ru не открылся. Повторная страница отдала социальные иконки, не логотип агентства.",
+      "urls": [
+        "https://realweb.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-sinners",
+      "kind": "blocked",
+      "note": "sinners.studio ответил HTTP 403. Обход ограничения не выполнялся.",
+      "urls": [
+        "https://sinners.studio/ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-justnow",
+      "kind": "missing",
+      "note": "justnow.ru ответил HTTP 404. Найденная витрина похожа на другую retail media платформу, файл к карточке JustNow не привязан.",
+      "urls": [
+        "https://justnow.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-possible",
+      "kind": "identity",
+      "note": "На old.grape.ru написано, что в 2022 году агентство перестало называться Possible и вернулось к имени Grape. Знак Possible не найден, знак Grape на карточку не положен.",
+      "urls": [
+        "https://old.grape.ru/en/about-en"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-yandex",
+      "kind": "missing",
+      "note": "Отдельной карточки «Яндекс Реклама» больше нет: сентябрьская подпись относится к org-yandex. Отдельный знак рекламы не найден.",
+      "urls": [
+        "https://yandex.ru/adv/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-genius",
+      "kind": "missing",
+      "note": "На geniusgroup.cc в HTML видны логотипы клиентов и иконка интерфейса. Знак Genius Group среди них не выделен.",
+      "urls": [
+        "https://geniusgroup.cc/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-nectarine",
+      "kind": "missing",
+      "note": "На nectarin.ru в HTML есть логотипы в блоке благодарностей клиентов. Знак агентства «Нектарин» отдельно не извлечён.",
+      "urls": [
+        "https://nectarin.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-npf",
+      "kind": "missing",
+      "note": "npfgroup.com в этом проходе не открылся.",
+      "urls": [
+        "https://npfgroup.com/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-total-view",
+      "kind": "missing",
+      "note": "totalview.ru в этом проходе не открылся.",
+      "urls": [
+        "https://totalview.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-1994lab",
+      "kind": "missing",
+      "note": "1994lab.ru в этом проходе не открылся.",
+      "urls": [
+        "https://1994lab.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-leo-burnett",
+      "kind": "missing",
+      "note": "leoburnett.ru в этом проходе не открылся. Каталог Тэглайн указывает этот адрес как сайт Leo Burnett Moscow.",
+      "urls": [
+        "https://leoburnett.ru/",
+        "https://tagline.ru/leo-burnett/"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-salt",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница Salt не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-marylin",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница Marylin не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-cros",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница Cros Digital не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-rta",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница R:TA не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-digital-audio",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница Digital Audio не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-redday",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница Redday не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-usilitel",
+      "kind": "queue",
+      "note": "В каталоге АКМР указан сайт usilitelvkusa.ru. В этом проходе он не открывался.",
+      "urls": [
+        "https://corpmedia.ru/akmr/members/?id=2810"
+      ],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-creative-family",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница Creative Family не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-d-innovative",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница D Innovative Group не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-actis-wunderman",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-andriyashkin",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-aori",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-banana-trends",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-cms-magazine",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-ddvb",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-didenok",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-getresponse-russia",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-kb-12",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-rodnya",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-sunlight",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-trendfox",
+      "kind": "queue",
+      "note": "В этом проходе отдельная страница не открывалась.",
+      "urls": [],
+      "checked_at": "2026-11-12"
+    },
+    {
+      "organization_id": "org-2sharp",
+      "kind": "missing",
+      "note": "Вектор из навигации 2sharp.ru сохранён, но без заливки страницы он не читается. Повторный запрос сайта не открылся.",
+      "urls": [
+        "https://2sharp.ru/"
+      ],
+      "checked_at": "2026-11-12"
+    }
+  ]
+}

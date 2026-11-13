@@ -1,0 +1,181 @@
+{
+  "candidates": [
+    {
+      "organization_id": "org-agima",
+      "source_page": "https://www.agima.ru/",
+      "file_url": "https://www.agima.ru/_astro/agima-logo.CTuloxRy.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Логотип в шапке действующего сайта agima.ru.",
+      "presumed_current": true,
+      "ambiguity": "В октябре 2026 агентство сообщило о новой айдентике и коротком знаке «A.». Файл снят с действующего сайта, отдельный прежний знак здесь не приложен."
+    },
+    {
+      "organization_id": "org-agima",
+      "source_page": "https://www.agima.ru/",
+      "file_url": "https://www.agima.ru/icon.svg",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта agima.ru, не полный логотип.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-adventum",
+      "source_page": "https://www.adventum.ru/",
+      "file_url": "https://www.adventum.ru/logo/adventum/default.svg",
+      "source_type": "official-site",
+      "variant": "horizontal",
+      "description": "Основной знак Adventum на официальном сайте.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-adventum",
+      "source_page": "https://www.adventum.ru/",
+      "file_url": "https://www.adventum.ru/logo/adventum/micro.svg",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Компактный знак Adventum на официальном сайте.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-akar",
+      "source_page": "https://akarussia.ru/",
+      "file_url": "https://akarussia.ru/wp-content/uploads/2024/08/logo.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Логотип АКАР в шапке akarussia.ru.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-akar",
+      "source_page": "https://akarussia.ru/",
+      "file_url": "https://akarussia.ru/wp-content/uploads/2024/10/512h512.svg",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Квадратный значок сайта АКАР.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-completo",
+      "source_page": "https://www.completo.ru/",
+      "file_url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/logo-completo-dark.png",
+      "source_type": "official-site",
+      "variant": "on-light",
+      "description": "Тёмный логотип Completo в шапке официального сайта.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-completo",
+      "source_page": "https://www.completo.ru/",
+      "file_url": "https://www.completo.ru/local/templates/completo/html/build/picture/upload/Completo_logoNEW_white_08-10-2018.png",
+      "source_type": "official-site",
+      "variant": "on-dark",
+      "description": "Светлая версия логотипа Completo с той же страницы. Дата в имени файла не считается периодом использования.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-depot",
+      "source_page": "https://www.depotwpf.com/",
+      "file_url": "https://www.depotwpf.com/local/templates/main/img/logo_green.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Зелёный знак в шапке depotwpf.com.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-depot",
+      "source_page": "https://www.depotwpf.com/",
+      "file_url": "https://www.depotwpf.com/favicon.svg",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта Depot.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-medianation-2026",
+      "source_page": "https://medianation.ru/",
+      "file_url": "https://medianation.ru/app/.nuxt/dist/client/img/logo.bcb2f9f.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Логотип в шапке medianation.ru.",
+      "presumed_current": true,
+      "ambiguity": "Сайт подписан Medianation. На карточку Media Nation 2019 и 2021 этот файл не переносится."
+    },
+    {
+      "organization_id": "org-okkam",
+      "source_page": "https://okkam.group/",
+      "file_url": "https://static.tildacdn.com/tild6135-3236-4035-b862-666266643935/Group.svg",
+      "source_type": "official-site",
+      "variant": "primary",
+      "description": "Графический файл из шапки okkam.group.",
+      "presumed_current": true,
+      "ambiguity": "Имя файла Group.svg. Нужно глазами убедиться, что это знак группы Okkam, а не Okkam Creative и не чужой логотип."
+    },
+    {
+      "organization_id": "org-rore",
+      "source_page": "https://rore.group/",
+      "file_url": "https://static.tildacdn.com/tild3235-6137-4566-a635-313565643332/RORE-vert_w.png",
+      "source_type": "official-site",
+      "variant": "on-dark",
+      "description": "Светлый вертикальный знак со страницы rore.group.",
+      "presumed_current": true,
+      "ambiguity": "Заголовок сайта: RoRe Group — российская группа компаний «Родная Речь». Это одна карточка org-rore."
+    },
+    {
+      "organization_id": "org-rore",
+      "source_page": "https://rore.group/",
+      "file_url": "https://static.tildacdn.com/tild3334-3634-4139-b237-653235663233/rore.svg",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта rore.group.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-voshod",
+      "source_page": "https://voskhod.agency/",
+      "file_url": "https://voskhod.agency/icon.svg?7779a6dc3134dbe7",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта РА «ВОСХОД». Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-twiga",
+      "source_page": "https://twiga.ru/",
+      "file_url": "https://twiga.ru/favicon.svg",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта twiga.ru. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true
+    },
+    {
+      "organization_id": "org-friends",
+      "source_page": "https://friends.moscow/",
+      "file_url": "https://friends.moscow/icon.svg?09ae2e0669e5e7e3",
+      "source_type": "official-site",
+      "variant": "compact",
+      "description": "Значок сайта friends.moscow. Полный логотип из шапки этим запросом не извлечён.",
+      "presumed_current": true
+    }
+  ],
+  "gaps": [
+    {
+      "organization_id": "org-avito-ads",
+      "kind": "blocked",
+      "note": "avito.ru ответил HTTP 429 на автоматический запрос. Обход ограничения не выполнялся.",
+      "urls": ["https://www.avito.ru/"]
+    },
+    {
+      "organization_id": "org-like",
+      "kind": "identity",
+      "note": "Сайт like-rm.com называется Like Retail Marketing. В данных карточка называется Like Retail Media. Файл не привязан, чтобы не смешать похожие имена.",
+      "urls": ["https://like-rm.com/"]
+    },
+    {
+      "organization_id": "org-media-nation",
+      "kind": "identity",
+      "note": "Логотип medianation.ru оставлен только у карточки MediaNation. На карточку Media Nation он не копировался.",
+      "urls": ["https://medianation.ru/"]
+    }
+  ]
+}

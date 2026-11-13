@@ -1,0 +1,341 @@
+[
+  {
+    "organization_id": "org-sinners",
+    "url": "https://sinners.studio/ru/",
+    "blocked": true,
+    "status": 403,
+    "found": []
+  },
+  {
+    "organization_id": "org-zebra",
+    "url": "https://zebrahero.com/",
+    "final_url": "https://zebrahero.com/",
+    "status": 200,
+    "title": "Zebra Hero — Независимое креативное агентство и продакшн",
+    "found": [
+      {
+        "url": "https://zebrahero.com/wp-content/themes/zebra-hero-2025/static/fav/fav.svg?38",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-dpg",
+    "url": "https://dpgrussia.com/",
+    "final_url": "https://dpgrussia.com/",
+    "status": 200,
+    "title": "DPG Russia &#8212; Маркетинговое агентство",
+    "found": [
+      {
+        "url": "https://dpgrussia.com/wp-content/themes/dpg/dist/assets/img/logo-main.svg",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-justnow",
+    "url": "https://justnow.ru/",
+    "status": 404,
+    "found": []
+  },
+  {
+    "organization_id": "org-illan",
+    "url": "https://illan.ru/",
+    "final_url": "https://illan.ru/",
+    "status": 200,
+    "title": "Дизайн и разработка корпоративного мерча на заказ для компаний – ILLAN",
+    "found": [
+      {
+        "url": "https://illan.ru/thumb/2/LzPJGGK0FsfS4TcXBLBbcw/640r480/d/flip_logo.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://illan.ru/thumb/2/dcZbzAzMQxDC97YKylYDFg/640r480/d/whole_logo.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://illan.ru/thumb/2/oP-sOm3fnQ0kaTHu-6uqRg/640r480/d/logo_holdmark.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://illan.ru/thumb/2/4OSXfUkWPLZEvtROYs0DoA/640r480/d/logo_farforite.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://illan.ru/thumb/2/8G4l91FKH_krkAuuuXl57w/640r480/d/logo_welcome_pack.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://illan.ru/thumb/2/DoWA4LFnM5A8S4-t3p-ETA/640r480/d/logo_metal.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://illan.ru/favicon.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-wonderfull",
+    "url": "https://lab-w.com/",
+    "final_url": "https://lab-w.com/",
+    "status": 200,
+    "title": "Wonderfull. Лаборатория клиентского опыта: исследования, клиентоцентричная трансформация, стратегия, обучение, консалтинг.",
+    "found": [
+      {
+        "url": "https://static.tildacdn.com/tild3635-3735-4339-b431-356139666632/20.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://static.tildacdn.com/tild3139-6366-4035-b863-633364373339/pole_rf_logo.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://static.tildacdn.com/tild6538-3735-4633-a364-663736303133/Logo_WL02.png",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-socialist",
+    "url": "https://socialist.pro/",
+    "final_url": "https://socialist.pro/",
+    "status": 200,
+    "title": "SOCIALIST",
+    "found": [
+      {
+        "url": "https://static.tildacdn.com/tild3339-3136-4336-b935-303464326333/Union_10.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://static.tildacdn.com/tild3764-3164-4133-b261-613061386630/logogo.svg",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-npf",
+    "url": "https://npfgroup.com/",
+    "error": "fetch failed",
+    "found": []
+  },
+  {
+    "organization_id": "org-total-view",
+    "url": "https://totalview.ru/",
+    "error": "fetch failed",
+    "found": []
+  },
+  {
+    "organization_id": "org-genius",
+    "url": "https://geniusgroup.cc/",
+    "final_url": "https://geniusgroup.cc/",
+    "status": 200,
+    "title": "Genius Group — рекламные технологии, стратегия и креатив",
+    "found": [
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-01.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-15.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-19.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-10.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-23.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-21.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-02.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-24.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-27.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-03.png",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-13-lossless.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/desk/group-experience-20261027/logos/client-14-lossless.webp",
+        "why": "img"
+      },
+      {
+        "url": "https://geniusgroup.cc/favicon.svg?v=genius-cross-20261103",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-nectarine",
+    "url": "https://nectarin.ru/",
+    "final_url": "https://nectarin.ru/",
+    "status": 200,
+    "title": "Агентство «Нектарин» | Главная",
+    "found": [
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/05.png",
+        "why": "img"
+      },
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/01.png",
+        "why": "img"
+      },
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/02.png",
+        "why": "img"
+      },
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/03.png",
+        "why": "img"
+      },
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/04.png",
+        "why": "img"
+      },
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/07.png",
+        "why": "img"
+      },
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/08.png",
+        "why": "img"
+      },
+      {
+        "url": "https://nectarin.ru/local/templates/nectarin/img/gratitude/logo/06.png",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-roden",
+    "url": "https://roden-agency.ru/",
+    "final_url": "https://roden-agency.ru/",
+    "status": 200,
+    "title": "Аудит и стратегия digital-продвижения для брендов — Roden Media",
+    "found": [
+      {
+        "url": "https://static.tildacdn.com/tild6561-6232-4161-a562-656265396365/Group_46.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://static.tildacdn.com/tild6538-3735-4932-b164-613861393737/Frame_123.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-segmento",
+    "url": "https://segmento.ru/",
+    "final_url": "https://segmento.ru/",
+    "status": 200,
+    "title": "Рекламная платформа Segmento - ведение медийной и таргетированной рекламы",
+    "found": [
+      {
+        "url": "https://segmento.ru/img/svg/logo_new.svg",
+        "why": "img"
+      },
+      {
+        "url": "https://segmento.ru/upload/resize_cache/iblock/3a2/656_520_2/v13tvhk0jtxrue0abb8wwbmfe73d97pq.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://segmento.ru/safari-pinned-tab.svg",
+        "why": "svg-icon"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-2sharp",
+    "url": "https://2sharp.ru/",
+    "error": "fetch failed",
+    "found": []
+  },
+  {
+    "organization_id": "org-zeytz",
+    "url": "https://zeytz.ru/",
+    "final_url": "https://zeytz.ru/",
+    "status": 200,
+    "title": "Производство и логистика рекламной продукции.",
+    "found": [
+      {
+        "url": "https://zeytz.ru/img/logo.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/a9f/keh9g955wa8koasnr3butezd7jvc81c7.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/725/bl6vuwmh072gjavgr8eoccucu2rwrt4g.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/aa3/aa329ada5b801a52c9960e0018007d2d.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/318/3181794ff4fb467fd6ad803439e9b031.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/37e/37e24f7f37e62a77e1480681e1881563.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/412/41229579c42fb2d3d335c2f6b6e69c53.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/117/1171af93cc8b7533dc39478a4e5dd4b8.png",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/a18/a181e15b76eefefa95a653db92329219.jpg",
+        "why": "img"
+      },
+      {
+        "url": "https://zeytz.ru/upload/uf/eee/eee1141dcd2d06cf574d8e4a6172bf24.jpg",
+        "why": "img"
+      }
+    ]
+  },
+  {
+    "organization_id": "org-1994lab",
+    "url": "https://1994lab.ru/",
+    "error": "fetch failed",
+    "found": []
+  },
+  {
+    "organization_id": "org-leo-burnett",
+    "url": "https://leoburnett.ru/",
+    "error": "fetch failed",
+    "found": []
+  },
+  {
+    "organization_id": "org-realweb",
+    "url": "https://realweb.ru/",
+    "error": "fetch failed",
+    "found": []
+  }
+]
